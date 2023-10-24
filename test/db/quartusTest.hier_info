@@ -1,0 +1,19 @@
+|task2_3
+A0 => and_1.IN0
+A0 => and_3.IN0
+A0 => and_0.IN0
+A0 => and_2.IN0
+A1 => and_2.IN1
+A1 => and_3.IN1
+A1 => and_0.IN1
+A1 => and_1.IN1
+EN => and_0.IN2
+EN => and_1.IN2
+EN => and_2.IN2
+EN => and_3.IN2
+Y[0] <= and_0.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= and_1.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= and_2.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= and_3.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,91 @@
+$date
+	Tue Oct 24 09:24:56 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_task2_4 $end
+$var wire 1 ! F $end
+$var parameter 32 " PERIOD $end
+$var reg 1 # X $end
+$var reg 1 $ Y $end
+$var reg 1 % Z $end
+$scope module u_task2_4 $end
+$var wire 1 ! F $end
+$var wire 1 # X $end
+$var wire 1 & XN $end
+$var wire 1 ' XNYZN $end
+$var wire 1 ( XYN $end
+$var wire 1 ) XYNZ $end
+$var wire 1 $ Y $end
+$var wire 1 * YN $end
+$var wire 1 % Z $end
+$var wire 1 + ZN $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+1+
+1*
+0)
+1(
+0'
+1&
+0%
+0$
+0#
+0!
+$end
+#20000
+1!
+0+
+1)
+1%
+#30000
+1'
+1!
+0(
+1+
+0)
+0*
+0%
+1$
+#40000
+0!
+0'
+0+
+1%
+#50000
+1+
+1*
+0&
+1(
+0%
+0$
+1#
+#60000
+1!
+0+
+1)
+1%
+#70000
+0!
+1+
+0)
+0*
+0%
+1$
+#80000
+1!
+0+
+1)
+1%
+#90000

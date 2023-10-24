@@ -1,0 +1,48 @@
+# Reading pref.tcl
+# do quartusTest_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying G:/software/FPGA/TOOLS/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/test {G:/software/FPGA/workplace/test/task3.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:11:56 on Oct 23,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/test" G:/software/FPGA/workplace/test/task3.v 
+# -- Compiling module task3
+# 
+# Top level modules:
+# 	task3
+# End time: 09:11:57 on Oct 23,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/test {G:/software/FPGA/workplace/test/task3_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:11:57 on Oct 23,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/test" G:/software/FPGA/workplace/test/task3_tb.v 
+# -- Compiling module tb_task3
+# -- Compiling module task3
+# 
+# Top level modules:
+# 	tb_task3
+# End time: 09:11:57 on Oct 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs="+acc"  tb_task3
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs=""+acc"" tb_task3 
+# Start time: 09:11:57 on Oct 23,2023
+# Loading work.tb_task3
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 09:35:30 on Oct 23,2023, Elapsed time: 0:23:33
+# Errors: 0, Warnings: 0
