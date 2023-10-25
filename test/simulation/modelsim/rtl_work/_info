@@ -9,52 +9,51 @@ z2
 !i10f 100
 cModel Technology
 Z0 dG:/software/FPGA/workplace/test/simulation/modelsim
-vtask3
-Z1 !s110 1698023517
+vtask2_2
+Z1 !s110 1698197386
 !i10b 1
-!s100 KN[HH1d_6PL`4LAblPKEU1
+!s100 bJbfe:`LIi=FUL=[2[n_H1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I72>7LOi9ogFf2eIhVSciS1
+IODcM3lo<7H?<AXmQ3]F_h0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1697082560
-8G:/software/FPGA/workplace/test/task3.v
-Z4 FG:/software/FPGA/workplace/test/task3.v
-!i122 0
-L0 1 8
-Z5 OV;L;2020.1;71
+w1698197271
+8G:/software/FPGA/workplace/test/task2_2.v
+FG:/software/FPGA/workplace/test/task2_2.v
+!i122 1
+L0 1 26
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1698023516.000000
-!s107 G:/software/FPGA/workplace/test/task3.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/software/FPGA/workplace/test|G:/software/FPGA/workplace/test/task3.v|
+Z5 !s108 1698197386.000000
+!s107 G:/software/FPGA/workplace/test/task2_2.v|G:/software/FPGA/workplace/test/tb_task2_2.v|
+Z6 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/software/FPGA/workplace/test|G:/software/FPGA/workplace/test/tb_task2_2.v|
 !i113 1
-Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work +incdir+G:/software/FPGA/workplace/test
-Z8 tCvgOpt 0
-vtb_task3
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+G:/software/FPGA/workplace/test
+Z9 tCvgOpt 0
+vtb_task2_2
 R1
 !i10b 1
-!s100 58]o`kU`ad3802ZzZUU]n2
+!s100 ^VM>gUcDFMKIhKYU@Y5>B1
 R2
-IMmachHf=moiHJC@1JD9<l2
+IJ`M1FnCbS]2076K;=3cNk3
 R3
 R0
-w1698023491
-8G:/software/FPGA/workplace/test/task3_tb.v
-FG:/software/FPGA/workplace/test/task3_tb.v
-R4
+w1698197262
+8G:/software/FPGA/workplace/test/tb_task2_2.v
+FG:/software/FPGA/workplace/test/tb_task2_2.v
 !i122 1
-L0 3 51
-R5
+L0 3 45
+R4
 r1
 !s85 0
 31
-!s108 1698023517.000000
-!s107 G:/software/FPGA/workplace/test/task3.v|G:/software/FPGA/workplace/test/task3_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/software/FPGA/workplace/test|G:/software/FPGA/workplace/test/task3_tb.v|
-!i113 1
+R5
+Z10 !s107 G:/software/FPGA/workplace/test/task2_2.v|G:/software/FPGA/workplace/test/tb_task2_2.v|
 R6
+!i113 1
 R7
 R8
+R9

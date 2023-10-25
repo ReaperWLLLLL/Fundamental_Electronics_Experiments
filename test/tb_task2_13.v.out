@@ -1,0 +1,64 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "G:\software\FPGA\iverilog\lib\ivl\system.vpi";
+:vpi_module "G:\software\FPGA\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "G:\software\FPGA\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "G:\software\FPGA\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "G:\software\FPGA\iverilog\lib\ivl\va_math.vpi";
+S_000001cadea157d0 .scope module, "tb_task2_13" "tb_task2_13" 2 5;
+ .timescale -9 -12;
+P_000001cade78d350 .param/l "PERIOD" 0 2 8, +C4<00000000000000000000000000001010>;
+v000001cade78c8e0_0 .var "x", 0 0;
+v000001cadea12810_0 .var "y", 0 0;
+v000001cadea128b0_0 .net "z", 0 0, L_000001cade9e36e0;  1 drivers
+S_000001cadea15960 .scope module, "u_task2_13" "task2_13" 2 17, 3 1 0, S_000001cadea157d0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "x";
+    .port_info 1 /INPUT 1 "y";
+    .port_info 2 /OUTPUT 1 "z";
+L_000001cade9e3580 .functor NOT 1, v000001cadea12810_0, C4<0>, C4<0>, C4<0>;
+L_000001cade9e36e0 .functor AND 1, v000001cade78c8e0_0, L_000001cade9e3580, C4<1>, C4<1>;
+v000001cadea15af0_0 .net *"_ivl_0", 0 0, L_000001cade9e3580;  1 drivers
+v000001cade9e3180_0 .net "x", 0 0, v000001cade78c8e0_0;  1 drivers
+v000001cadea15b90_0 .net "y", 0 0, v000001cadea12810_0;  1 drivers
+v000001cade78c840_0 .net "z", 0 0, L_000001cade9e36e0;  alias, 1 drivers
+    .scope S_000001cadea157d0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001cade78c8e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001cadea12810_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_000001cadea157d0;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001cade78c8e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001cadea12810_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001cade78c8e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001cadea12810_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001cade78c8e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001cadea12810_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001cade78c8e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001cadea12810_0, 0, 1;
+    %delay 10000, 0;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_task2_13.v";
+    "./task2_13.v";

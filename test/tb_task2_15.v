@@ -1,6 +1,6 @@
 //~ `New testbench
 `timescale 1ns / 1ps
-`include "test\\task2_15.v"
+`include "task2_15.v"
 module tb_task2_15;
 
     // task2_15 Parameters
@@ -20,6 +20,8 @@ module tb_task2_15;
     );
 
     initial begin
+        $dumpfile("./wave/tb_task2_15.vcd");
+        $dumpvars(0, tb_task2_15);
         in1 = 0;
         in2 = 0;
         #10 in1 = 0; in2 = 1;

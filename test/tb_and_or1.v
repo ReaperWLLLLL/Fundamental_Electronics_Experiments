@@ -1,6 +1,6 @@
 //~ `New testbench
 `timescale  1ns / 1ps
-`include "test\\and_or1.v"
+`include "and_or1.v"
 module tb_and_or1;
 
 // and_or1 Parameters

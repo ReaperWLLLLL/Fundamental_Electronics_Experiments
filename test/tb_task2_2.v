@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`include "test\\task2_2.v"
+`include "task2_2.v"
 module tb_task2_2;
 
     // task2_2 Parameters
@@ -23,6 +23,8 @@ module tb_task2_2;
     );
 
     initial begin
+        $dumpfile("./wave/tb_task2_2.vcd");
+        $dumpvars(0, tb_task2_2);
         A = 0; B = 0; C = 0;
         #PERIOD;
         A = 0; B = 0; C = 1;

@@ -1,7 +1,7 @@
 //~ `New testbench
 `timescale 1ns / 1ps
 
-`include "test\\task2_13.v"
+`include "task2_13.v"
 module tb_task2_13;
 
     // task2_13 Parameters

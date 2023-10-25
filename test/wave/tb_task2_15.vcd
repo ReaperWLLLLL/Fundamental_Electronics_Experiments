@@ -1,0 +1,81 @@
+$date
+	Wed Oct 25 20:03:16 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_task2_15 $end
+$var wire 1 ! out $end
+$var parameter 32 " PERIOD $end
+$var reg 1 # in1 $end
+$var reg 1 $ in2 $end
+$scope module u_task2_15 $end
+$var wire 1 # in1 $end
+$var wire 1 $ in2 $end
+$var wire 1 % notinh2 $end
+$var wire 1 ! out $end
+$var wire 1 & notout $end
+$var wire 1 ' inh2 $end
+$var wire 1 ( inh1 $end
+$scope module U1 $end
+$var wire 1 ) in $end
+$var wire 1 $ invin $end
+$var wire 1 * notinvin $end
+$var wire 1 ( out $end
+$upscope $end
+$scope module U2 $end
+$var wire 1 $ in $end
+$var wire 1 # invin $end
+$var wire 1 + notinvin $end
+$var wire 1 ' out $end
+$upscope $end
+$scope module U4 $end
+$var wire 1 % in $end
+$var wire 1 ( invin $end
+$var wire 1 , notinvin $end
+$var wire 1 & out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+1,
+1+
+1*
+0)
+0(
+0'
+1&
+1%
+0$
+0#
+0!
+$end
+#10000
+1!
+0&
+0%
+0*
+1'
+1$
+#20000
+0!
+1&
+1%
+1*
+0'
+0+
+0$
+1#
+#30000
+0*
+1$
+#40000

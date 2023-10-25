@@ -1,4 +1,4 @@
-module task2 (
+ module task2 (
     //设置八个输入端口
     input [7:0] a,
     output [7:0] b

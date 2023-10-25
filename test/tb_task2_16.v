@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`include "test\\task2_16.v"
+`include "task2_16.v"
 module tb_task2_16;
 
     // task2_16 Parameters

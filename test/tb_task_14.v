@@ -1,6 +1,6 @@
 //~ `New testbench
 `timescale 1ns/1ps
-`include "test\\task2_14.v"
+`include "task2_14.v"
 module tb_task2_14;
 
     // task2_14 Parameters
@@ -16,7 +16,7 @@ module tb_task2_14;
 
     // task2_14 Outputs
     wire alarm;
-    
+
     task2_14 u_task2_14 (
         .panic(panic),
         .enable(enable),

@@ -1,0 +1,104 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "G:\software\FPGA\iverilog\lib\ivl\system.vpi";
+:vpi_module "G:\software\FPGA\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "G:\software\FPGA\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "G:\software\FPGA\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "G:\software\FPGA\iverilog\lib\ivl\va_math.vpi";
+S_000001b465c55fd0 .scope module, "tb_task2_15" "tb_task2_15" 2 4;
+ .timescale -9 -12;
+P_000001b465c68480 .param/l "PERIOD" 0 2 7, +C4<00000000000000000000000000001010>;
+v000001b465caf8a0_0 .var "in1", 0 0;
+v000001b465cafe40_0 .var "in2", 0 0;
+v000001b465caff80_0 .net "out", 0 0, L_000001b465c64b90;  1 drivers
+S_000001b465c1e360 .scope module, "u_task2_15" "task2_15" 2 16, 3 2 0, S_000001b465c55fd0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "in1";
+    .port_info 1 /INPUT 1 "in2";
+    .port_info 2 /OUTPUT 1 "out";
+L_000001b465c331d0 .functor NOT 1, L_000001b465c33700, C4<0>, C4<0>, C4<0>;
+L_000001b465c64b90 .functor NOT 1, L_000001b465c64d50, C4<0>, C4<0>, C4<0>;
+v000001b465cafee0_0 .net "in1", 0 0, v000001b465caf8a0_0;  1 drivers
+v000001b465cafc60_0 .net "in2", 0 0, v000001b465cafe40_0;  1 drivers
+v000001b465cafd00_0 .net "inh1", 0 0, L_000001b465c1a300;  1 drivers
+v000001b465cb0160_0 .net "inh2", 0 0, L_000001b465c33700;  1 drivers
+v000001b465cafda0_0 .net "notinh2", 0 0, L_000001b465c331d0;  1 drivers
+v000001b465caf9e0_0 .net "notout", 0 0, L_000001b465c64d50;  1 drivers
+v000001b465cafbc0_0 .net "out", 0 0, L_000001b465c64b90;  alias, 1 drivers
+S_000001b465c1e4f0 .scope module, "U1" "inh" 3 7, 4 1 0, S_000001b465c1e360;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "in";
+    .port_info 1 /INPUT 1 "invin";
+    .port_info 2 /OUTPUT 1 "out";
+L_000001b465c65de0 .functor NOT 1, v000001b465cafe40_0, C4<0>, C4<0>, C4<0>;
+L_000001b465cb09f8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+L_000001b465c1a300 .functor AND 1, L_000001b465cb09f8, L_000001b465c65de0, C4<1>, C4<1>;
+v000001b465c1a260_0 .net "in", 0 0, L_000001b465cb09f8;  1 drivers
+v000001b465c1e680_0 .net "invin", 0 0, v000001b465cafe40_0;  alias, 1 drivers
+v000001b465c1e720_0 .net "notinvin", 0 0, L_000001b465c65de0;  1 drivers
+v000001b465c32dc0_0 .net "out", 0 0, L_000001b465c1a300;  alias, 1 drivers
+S_000001b465c32e60 .scope module, "U2" "inh" 3 8, 4 1 0, S_000001b465c1e360;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "in";
+    .port_info 1 /INPUT 1 "invin";
+    .port_info 2 /OUTPUT 1 "out";
+L_000001b465c335a0 .functor NOT 1, v000001b465caf8a0_0, C4<0>, C4<0>, C4<0>;
+L_000001b465c33700 .functor AND 1, v000001b465cafe40_0, L_000001b465c335a0, C4<1>, C4<1>;
+v000001b465c32ff0_0 .net "in", 0 0, v000001b465cafe40_0;  alias, 1 drivers
+v000001b465c33090_0 .net "invin", 0 0, v000001b465caf8a0_0;  alias, 1 drivers
+v000001b465c33130_0 .net "notinvin", 0 0, L_000001b465c335a0;  1 drivers
+v000001b465caf940_0 .net "out", 0 0, L_000001b465c33700;  alias, 1 drivers
+S_000001b465cb0860 .scope module, "U4" "inh" 3 10, 4 1 0, S_000001b465c1e360;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "in";
+    .port_info 1 /INPUT 1 "invin";
+    .port_info 2 /OUTPUT 1 "out";
+L_000001b465c647a0 .functor NOT 1, L_000001b465c1a300, C4<0>, C4<0>, C4<0>;
+L_000001b465c64d50 .functor AND 1, L_000001b465c331d0, L_000001b465c647a0, C4<1>, C4<1>;
+v000001b465cb0520_0 .net "in", 0 0, L_000001b465c331d0;  alias, 1 drivers
+v000001b465cb07a0_0 .net "invin", 0 0, L_000001b465c1a300;  alias, 1 drivers
+v000001b465cb00c0_0 .net "notinvin", 0 0, L_000001b465c647a0;  1 drivers
+v000001b465cb0340_0 .net "out", 0 0, L_000001b465c64d50;  alias, 1 drivers
+    .scope S_000001b465c55fd0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001b465caf8a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001b465cafe40_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_000001b465c55fd0;
+T_1 ;
+    %vpi_call 2 23 "$dumpfile", "./wave/tb_task2_15.vcd" {0 0 0};
+    %vpi_call 2 24 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001b465c55fd0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001b465caf8a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001b465cafe40_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001b465caf8a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001b465cafe40_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001b465caf8a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001b465cafe40_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001b465caf8a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001b465cafe40_0, 0, 1;
+    %delay 10000, 0;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "tb_task2_15.v";
+    "./task2_15.v";
+    "./inh.v";
