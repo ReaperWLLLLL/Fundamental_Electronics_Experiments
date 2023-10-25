@@ -1,5 +1,5 @@
 |task2_15
-in1 => in1.IN1
+in1 => in1.IN2
 in2 => in2.IN2
 out <= inh:U4.out
 

@@ -92,8 +92,8 @@ TDO                          : 20        : output :                   :         
 nCE                          : 21        :        :                   :         : 1         :                
 GND+                         : 22        :        :                   :         : 1         :                
 GND+                         : 23        :        :                   :         : 1         :                
-in2                          : 24        : input  : 2.5 V             :         : 2         : N              
-in1                          : 25        : input  : 2.5 V             :         : 2         : N              
+in1                          : 24        : input  : 2.5 V             :         : 2         : N              
+in2                          : 25        : input  : 2.5 V             :         : 2         : N              
 VCCIO2                       : 26        : power  :                   : 2.5V    : 2         :                
 GND                          : 27        : gnd    :                   :         :           :                
 out                          : 28        : output : 2.5 V             :         : 2         : N              

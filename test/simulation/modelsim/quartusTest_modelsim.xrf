@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+source_file = 1, G:/software/FPGA/workplace/test/mux2.v
 source_file = 1, G:/software/FPGA/workplace/test/task2_18.v
 source_file = 1, G:/software/FPGA/workplace/test/task2_17.v
 source_file = 1, G:/software/FPGA/workplace/test/task2_16.v
@@ -17,9 +18,9 @@ source_file = 1, G:/software/FPGA/workplace/test/inh.v
 source_file = 1, G:/software/FPGA/workplace/test/db/quartusTest.cbx.xml
 design_name = task2_15
 instance = comp, \out~output , out~output, task2_15, 1
-instance = comp, \in2~input , in2~input, task2_15, 1
 instance = comp, \in1~input , in1~input, task2_15, 1
-instance = comp, \U2|U2 , U2|U2, task2_15, 1
+instance = comp, \in2~input , in2~input, task2_15, 1
+instance = comp, \U4|U2~0 , U4|U2~0, task2_15, 1
 design_name = hard_block
 instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
 instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1

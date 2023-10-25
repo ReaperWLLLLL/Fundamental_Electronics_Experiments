@@ -8,11 +8,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "in2",
+					"name" : "in1",
 					"strict" : false
 				},
 				{
-					"name" : "in1",
+					"name" : "in2",
 					"strict" : false
 				}
 			]

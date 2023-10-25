@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "10/25/2023 20:02:35"
+// DATE "10/25/2023 20:38:34"
 
 // 
 // Device: Altera 10CL006YE144C8G Package TQFP144
@@ -39,8 +39,8 @@ output 	out;
 
 // Design Ports Information
 // out	=>  Location: PIN_28,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// in2	=>  Location: PIN_24,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// in1	=>  Location: PIN_25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in1	=>  Location: PIN_24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in2	=>  Location: PIN_25,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -55,9 +55,9 @@ tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
 wire \out~output_o ;
-wire \in2~input_o ;
 wire \in1~input_o ;
-wire \U2|U2~combout ;
+wire \in2~input_o ;
+wire \U4|U2~0_combout ;
 
 
 hard_block auto_generated_inst(
@@ -67,7 +67,7 @@ hard_block auto_generated_inst(
 
 // Location: IOOBUF_X0_Y9_N9
 cyclone10lp_io_obuf \out~output (
-	.i(\U2|U2~combout ),
+	.i(\U4|U2~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -79,16 +79,6 @@ defparam \out~output .open_drain_output = "false";
 // synopsys translate_on
 
 // Location: IOIBUF_X0_Y11_N15
-cyclone10lp_io_ibuf \in2~input (
-	.i(in2),
-	.ibar(gnd),
-	.o(\in2~input_o ));
-// synopsys translate_off
-defparam \in2~input .bus_hold = "false";
-defparam \in2~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X0_Y11_N22
 cyclone10lp_io_ibuf \in1~input (
 	.i(in1),
 	.ibar(gnd),
@@ -98,21 +88,31 @@ defparam \in1~input .bus_hold = "false";
 defparam \in1~input .simulate_z_as = "z";
 // synopsys translate_on
 
+// Location: IOIBUF_X0_Y11_N22
+cyclone10lp_io_ibuf \in2~input (
+	.i(in2),
+	.ibar(gnd),
+	.o(\in2~input_o ));
+// synopsys translate_off
+defparam \in2~input .bus_hold = "false";
+defparam \in2~input .simulate_z_as = "z";
+// synopsys translate_on
+
 // Location: LCCOMB_X1_Y11_N24
-cyclone10lp_lcell_comb \U2|U2 (
+cyclone10lp_lcell_comb \U4|U2~0 (
 // Equation(s):
-// \U2|U2~combout  = (\in2~input_o  & !\in1~input_o )
+// \U4|U2~0_combout  = \in1~input_o  $ (\in2~input_o )
 
 	.dataa(gnd),
-	.datab(\in2~input_o ),
+	.datab(\in1~input_o ),
 	.datac(gnd),
-	.datad(\in1~input_o ),
+	.datad(\in2~input_o ),
 	.cin(gnd),
-	.combout(\U2|U2~combout ),
+	.combout(\U4|U2~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \U2|U2 .lut_mask = 16'h00CC;
-defparam \U2|U2 .sum_lutc_input = "datac";
+defparam \U4|U2~0 .lut_mask = 16'h33CC;
+defparam \U4|U2~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 assign out = \out~output_o ;
