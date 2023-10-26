@@ -1,24 +1,10 @@
-|task2_15
-in1 => in1.IN1
-in2 => in2.IN2
-out <= inh:U4.out
-
-
-|task2_15|inh:U1
-in => U2.IN0
-invin => U2.IN1
-out <= U2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|task2_15|inh:U2
-in => U2.IN0
-invin => U2.IN1
-out <= U2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|task2_15|inh:U4
-in => U2.IN0
-invin => U2.IN1
-out <= U2.DB_MAX_OUTPUT_PORT_TYPE
+|task2_4
+X => or_XYN.IN0
+X => and_XNYZN.IN0
+Y => and_XNYZN.IN1
+Y => or_XYN.IN1
+Z => and_XYNZ.IN1
+Z => and_XNYZN.IN2
+F << or_F.DB_MAX_OUTPUT_PORT_TYPE
 
 

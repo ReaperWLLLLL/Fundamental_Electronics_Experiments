@@ -92,11 +92,11 @@ TDO                          : 20        : output :                   :         
 nCE                          : 21        :        :                   :         : 1         :                
 GND+                         : 22        :        :                   :         : 1         :                
 GND+                         : 23        :        :                   :         : 1         :                
-in2                          : 24        : input  : 2.5 V             :         : 2         : N              
-in1                          : 25        : input  : 2.5 V             :         : 2         : N              
+GND+                         : 24        :        :                   :         : 2         :                
+GND+                         : 25        :        :                   :         : 2         :                
 VCCIO2                       : 26        : power  :                   : 2.5V    : 2         :                
 GND                          : 27        : gnd    :                   :         :           :                
-out                          : 28        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 28        :        :                   :         : 2         :                
 VCCINT                       : 29        : power  :                   : 1.2V    :           :                
 GND                          : 30        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 31        :        :                   :         : 2         :                
@@ -133,9 +133,9 @@ VCCINT                       : 61        : power  :                   : 1.2V    
 VCCIO4                       : 62        : power  :                   : 2.5V    : 4         :                
 GND                          : 63        : gnd    :                   :         :           :                
 GND                          : 64        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 65        :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 66        :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 67        :        :                   :         : 4         :                
+Z                            : 65        : input  : 2.5 V             :         : 4         : Y              
+Y                            : 66        : input  : 2.5 V             :         : 4         : Y              
+X                            : 67        : input  : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 68        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 69        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 70        :        :                   :         : 4         :                
@@ -189,7 +189,7 @@ VCCIO7                       : 117       : power  :                   : 2.5V    
 GND                          : 118       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 119       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 120       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 121       :        :                   :         : 7         :                
+F                            : 121       : output : 2.5 V             :         : 7         : Y              
 VCCIO7                       : 122       : power  :                   : 2.5V    : 7         :                
 GND                          : 123       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 124       :        :                   :         : 7         :                
