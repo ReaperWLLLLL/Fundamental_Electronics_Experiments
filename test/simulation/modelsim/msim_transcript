@@ -10,34 +10,35 @@
 # Copying G:/software/FPGA/TOOLS/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/test {G:/software/FPGA/workplace/test/task2_2.v}
+# vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/test {G:/software/FPGA/workplace/test/task2_15.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:29:45 on Oct 25,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/test" G:/software/FPGA/workplace/test/task2_2.v 
-# -- Compiling module task2_2
+# Start time: 20:39:34 on Oct 25,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/test" G:/software/FPGA/workplace/test/task2_15.v 
+# -- Compiling module inh
+# -- Compiling module task2_15
 # 
 # Top level modules:
-# 	task2_2
-# End time: 09:29:45 on Oct 25,2023, Elapsed time: 0:00:00
+# 	task2_15
+# End time: 20:39:34 on Oct 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/test {G:/software/FPGA/workplace/test/tb_task2_2.v}
+# vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/test {G:/software/FPGA/workplace/test/mux2_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:29:46 on Oct 25,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/test" G:/software/FPGA/workplace/test/tb_task2_2.v 
-# -- Compiling module task2_2
-# -- Compiling module tb_task2_2
+# Start time: 20:39:34 on Oct 25,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/test" G:/software/FPGA/workplace/test/mux2_tb.v 
+# -- Compiling module mux2
+# -- Compiling module mux2_tb
 # 
 # Top level modules:
-# 	tb_task2_2
-# End time: 09:29:46 on Oct 25,2023, Elapsed time: 0:00:00
+# 	mux2_tb
+# End time: 20:39:34 on Oct 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs="+acc"  tb_task2_2
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs=""+acc"" tb_task2_2 
-# Start time: 09:29:46 on Oct 25,2023
-# Loading work.tb_task2_2
-# Loading work.task2_2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs="+acc"  mux2_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs=""+acc"" mux2_tb 
+# Start time: 20:39:34 on Oct 25,2023
+# Loading work.mux2_tb
+# Loading work.mux2
 # 
 # add wave *
 # view structure
@@ -45,8 +46,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Error: (vsim-7) Failed to open VCD file "./wave/tb_task2_2.vcd" in write mode.
-# No such file or directory. (errno = ENOENT)    : G:/software/FPGA/workplace/test/tb_task2_2.v(26)
-#    Time: 0 ps  Iteration: 0  Instance: /tb_task2_2
-# End time: 09:32:47 on Oct 25,2023, Elapsed time: 0:03:01
+# ** Error: (vsim-7) Failed to open VCD file "./wave/mux2_tb.vcd" in write mode.
+# No such file or directory. (errno = ENOENT)    : G:/software/FPGA/workplace/test/mux2_tb.v(16)
+#    Time: 0 ps  Iteration: 0  Instance: /mux2_tb
+# End time: 20:43:08 on Oct 25,2023, Elapsed time: 0:03:34
 # Errors: 1, Warnings: 0

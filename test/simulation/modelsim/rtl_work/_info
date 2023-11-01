@@ -9,51 +9,99 @@ z2
 !i10f 100
 cModel Technology
 Z0 dG:/software/FPGA/workplace/test/simulation/modelsim
-vtask2_2
-Z1 !s110 1698197386
+vinh
+Z1 !s110 1698237574
 !i10b 1
-!s100 bJbfe:`LIi=FUL=[2[n_H1
+!s100 Pf_fzkkNH=LWIeTgH@ejH1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IODcM3lo<7H?<AXmQ3]F_h0
+IUI5iIlk;JMRoo9CeV?HQP2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1698197271
-8G:/software/FPGA/workplace/test/task2_2.v
-FG:/software/FPGA/workplace/test/task2_2.v
-!i122 1
-L0 1 26
+w1698128711
+8G:/software/FPGA/workplace/test/inh.v
+FG:/software/FPGA/workplace/test/inh.v
+!i122 0
+L0 1 8
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1698197386.000000
-!s107 G:/software/FPGA/workplace/test/task2_2.v|G:/software/FPGA/workplace/test/tb_task2_2.v|
-Z6 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/software/FPGA/workplace/test|G:/software/FPGA/workplace/test/tb_task2_2.v|
+Z5 !s108 1698237574.000000
+Z6 !s107 G:/software/FPGA/workplace/test/inh.v|G:/software/FPGA/workplace/test/task2_15.v|
+Z7 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/software/FPGA/workplace/test|G:/software/FPGA/workplace/test/task2_15.v|
 !i113 1
-Z7 o-vlog01compat -work work
-Z8 !s92 -vlog01compat -work work +incdir+G:/software/FPGA/workplace/test
-Z9 tCvgOpt 0
-vtb_task2_2
+Z8 o-vlog01compat -work work
+Z9 !s92 -vlog01compat -work work +incdir+G:/software/FPGA/workplace/test
+Z10 tCvgOpt 0
+vmux2
 R1
 !i10b 1
-!s100 ^VM>gUcDFMKIhKYU@Y5>B1
+!s100 z8:6Oa6mDgM`5n:IQ]N962
 R2
-IJ`M1FnCbS]2076K;=3cNk3
+In?D>RPcNI3`gLPVSeazfV0
 R3
 R0
-w1698197262
-8G:/software/FPGA/workplace/test/tb_task2_2.v
-FG:/software/FPGA/workplace/test/tb_task2_2.v
+w1698237186
+8G:/software/FPGA/workplace/test/mux2.v
+FG:/software/FPGA/workplace/test/mux2.v
 !i122 1
-L0 3 45
+L0 1 7
 R4
 r1
 !s85 0
 31
 R5
-Z10 !s107 G:/software/FPGA/workplace/test/task2_2.v|G:/software/FPGA/workplace/test/tb_task2_2.v|
-R6
+!s107 G:/software/FPGA/workplace/test/mux2.v|G:/software/FPGA/workplace/test/mux2_tb.v|
+Z11 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/software/FPGA/workplace/test|G:/software/FPGA/workplace/test/mux2_tb.v|
 !i113 1
-R7
 R8
 R9
+R10
+vmux2_tb
+R1
+!i10b 1
+!s100 GOJfHnilkQJ=IjV`2PkB=1
+R2
+IYi?7eBcl<nai7e;_D7kRQ1
+R3
+R0
+w1698237380
+8G:/software/FPGA/workplace/test/mux2_tb.v
+FG:/software/FPGA/workplace/test/mux2_tb.v
+!i122 1
+L0 3 25
+R4
+r1
+!s85 0
+31
+R5
+Z12 !s107 G:/software/FPGA/workplace/test/mux2.v|G:/software/FPGA/workplace/test/mux2_tb.v|
+R11
+!i113 1
+R8
+R9
+R10
+vtask2_15
+R1
+!i10b 1
+!s100 RGZd6c3Hnh32N]oR>]9Zh0
+R2
+IjcD;:@9;zIgg<l9kJL^eK3
+R3
+R0
+w1698235586
+8G:/software/FPGA/workplace/test/task2_15.v
+FG:/software/FPGA/workplace/test/task2_15.v
+!i122 0
+L0 2 11
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10

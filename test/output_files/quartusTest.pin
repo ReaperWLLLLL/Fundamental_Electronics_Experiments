@@ -92,8 +92,13 @@ TDO                          : 20        : output :                   :         
 nCE                          : 21        :        :                   :         : 1         :                
 GND+                         : 22        :        :                   :         : 1         :                
 GND+                         : 23        :        :                   :         : 1         :                
+<<<<<<< HEAD
 GND+                         : 24        :        :                   :         : 2         :                
 GND+                         : 25        :        :                   :         : 2         :                
+=======
+in1                          : 24        : input  : 2.5 V             :         : 2         : N              
+in2                          : 25        : input  : 2.5 V             :         : 2         : N              
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 VCCIO2                       : 26        : power  :                   : 2.5V    : 2         :                
 GND                          : 27        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 28        :        :                   :         : 2         :                

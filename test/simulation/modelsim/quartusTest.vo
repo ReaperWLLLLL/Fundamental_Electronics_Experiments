@@ -17,7 +17,11 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
+<<<<<<< HEAD
 // DATE "10/26/2023 10:02:16"
+=======
+// DATE "10/25/2023 20:38:34"
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 
 // 
 // Device: Altera 10CL006YE144C8G Package TQFP144
@@ -40,10 +44,16 @@ input 	Z;
 output 	F;
 
 // Design Ports Information
+<<<<<<< HEAD
 // F	=>  Location: PIN_121,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Z	=>  Location: PIN_65,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // X	=>  Location: PIN_67,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Y	=>  Location: PIN_66,	 I/O Standard: 2.5 V,	 Current Strength: Default
+=======
+// out	=>  Location: PIN_28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in1	=>  Location: PIN_24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in2	=>  Location: PIN_25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 
 
 wire gnd;
@@ -57,11 +67,18 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+<<<<<<< HEAD
 wire \F~output_o ;
 wire \Z~input_o ;
 wire \Y~input_o ;
 wire \X~input_o ;
 wire \or_F~0_combout ;
+=======
+wire \out~output_o ;
+wire \in1~input_o ;
+wire \in2~input_o ;
+wire \U4|U2~0_combout ;
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 
 
 hard_block auto_generated_inst(
@@ -69,9 +86,15 @@ hard_block auto_generated_inst(
 	.devclrn(devclrn),
 	.devoe(devoe));
 
+<<<<<<< HEAD
 // Location: IOOBUF_X23_Y24_N16
 cyclone10lp_io_obuf \F~output (
 	.i(\or_F~0_combout ),
+=======
+// Location: IOOBUF_X0_Y9_N9
+cyclone10lp_io_obuf \out~output (
+	.i(\U4|U2~0_combout ),
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -82,6 +105,7 @@ defparam \F~output .bus_hold = "false";
 defparam \F~output .open_drain_output = "false";
 // synopsys translate_on
 
+<<<<<<< HEAD
 // Location: IOIBUF_X28_Y0_N22
 cyclone10lp_io_ibuf \Z~input (
 	.i(Z),
@@ -95,6 +119,11 @@ defparam \Z~input .simulate_z_as = "z";
 // Location: IOIBUF_X28_Y0_N1
 cyclone10lp_io_ibuf \Y~input (
 	.i(Y),
+=======
+// Location: IOIBUF_X0_Y11_N15
+cyclone10lp_io_ibuf \in1~input (
+	.i(in1),
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 	.ibar(gnd),
 	.o(\Y~input_o ));
 // synopsys translate_off
@@ -102,6 +131,7 @@ defparam \Y~input .bus_hold = "false";
 defparam \Y~input .simulate_z_as = "z";
 // synopsys translate_on
 
+<<<<<<< HEAD
 // Location: IOIBUF_X30_Y0_N22
 cyclone10lp_io_ibuf \X~input (
 	.i(X),
@@ -127,6 +157,33 @@ cyclone10lp_lcell_comb \or_F~0 (
 // synopsys translate_off
 defparam \or_F~0 .lut_mask = 16'hCC3C;
 defparam \or_F~0 .sum_lutc_input = "datac";
+=======
+// Location: IOIBUF_X0_Y11_N22
+cyclone10lp_io_ibuf \in2~input (
+	.i(in2),
+	.ibar(gnd),
+	.o(\in2~input_o ));
+// synopsys translate_off
+defparam \in2~input .bus_hold = "false";
+defparam \in2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y11_N24
+cyclone10lp_lcell_comb \U4|U2~0 (
+// Equation(s):
+// \U4|U2~0_combout  = \in1~input_o  $ (\in2~input_o )
+
+	.dataa(gnd),
+	.datab(\in1~input_o ),
+	.datac(gnd),
+	.datad(\in2~input_o ),
+	.cin(gnd),
+	.combout(\U4|U2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \U4|U2~0 .lut_mask = 16'h33CC;
+defparam \U4|U2~0 .sum_lutc_input = "datac";
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 // synopsys translate_on
 
 assign F = \F~output_o ;

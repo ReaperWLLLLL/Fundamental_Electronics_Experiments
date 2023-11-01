@@ -1,5 +1,9 @@
 Analysis & Synthesis report for quartusTest
+<<<<<<< HEAD
 Thu Oct 26 10:02:07 2023
+=======
+Wed Oct 25 20:38:26 2023
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +47,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Thu Oct 26 10:02:07 2023       ;
+=======
+; Analysis & Synthesis Status        ; Successful - Wed Oct 25 20:38:26 2023       ;
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; quartusTest                                 ;
 ; Top-level Entity Name              ; task2_4                                     ;
@@ -172,6 +180,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
 
 
+<<<<<<< HEAD
 +------------------------------------------------------+
 ; Analysis & Synthesis Resource Usage Summary          ;
 +---------------------------------------------+--------+
@@ -202,6 +211,38 @@ https://fpgasoftware.intel.com/eula.
 ; Total fan-out                               ; 8      ;
 ; Average fan-out                             ; 0.89   ;
 +---------------------------------------------+--------+
+=======
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 1           ;
+;                                             ;             ;
+; Total combinational functions               ; 1           ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 0           ;
+;     -- 3 input functions                    ; 0           ;
+;     -- <=2 input functions                  ; 1           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 1           ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 3           ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; inh:U4|U2~0 ;
+; Maximum fan-out                             ; 1           ;
+; Total fan-out                               ; 6           ;
+; Average fan-out                             ; 0.86        ;
++---------------------------------------------+-------------+
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,7 +250,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+<<<<<<< HEAD
 ; |task2_4                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |task2_4            ; task2_4     ; work         ;
+=======
+; |task2_15                  ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |task2_15           ; task2_15    ; work         ;
+;    |inh:U4|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_15|inh:U4    ; inh         ; work         ;
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -259,10 +305,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Thu Oct 26 10:01:59 2023
+=======
+    Info: Processing started: Wed Oct 25 20:38:18 2023
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off quartusTest -c quartusTest
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.v
+    Info (12023): Found entity 1: mux2 File: G:/software/FPGA/workplace/test/mux2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file task2_18.v
     Info (12023): Found entity 1: task2_18 File: G:/software/FPGA/workplace/test/task2_18.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file task2_17.v
@@ -303,7 +355,11 @@ Info (21057): Implemented 5 device resources after synthesis - the final resourc
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4814 megabytes
+<<<<<<< HEAD
     Info: Processing ended: Thu Oct 26 10:02:07 2023
+=======
+    Info: Processing ended: Wed Oct 25 20:38:26 2023
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:08
 

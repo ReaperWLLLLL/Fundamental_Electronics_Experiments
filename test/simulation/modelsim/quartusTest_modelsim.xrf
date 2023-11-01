@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+source_file = 1, G:/software/FPGA/workplace/test/mux2.v
 source_file = 1, G:/software/FPGA/workplace/test/task2_18.v
 source_file = 1, G:/software/FPGA/workplace/test/task2_17.v
 source_file = 1, G:/software/FPGA/workplace/test/task2_16.v
@@ -15,12 +16,20 @@ source_file = 1, G:/software/FPGA/workplace/test/and_or1.v
 source_file = 1, G:/software/FPGA/workplace/test/task3.v
 source_file = 1, G:/software/FPGA/workplace/test/inh.v
 source_file = 1, G:/software/FPGA/workplace/test/db/quartusTest.cbx.xml
+<<<<<<< HEAD
 design_name = task2_4
 instance = comp, \F~output , F~output, task2_4, 1
 instance = comp, \Z~input , Z~input, task2_4, 1
 instance = comp, \Y~input , Y~input, task2_4, 1
 instance = comp, \X~input , X~input, task2_4, 1
 instance = comp, \or_F~0 , or_F~0, task2_4, 1
+=======
+design_name = task2_15
+instance = comp, \out~output , out~output, task2_15, 1
+instance = comp, \in1~input , in1~input, task2_15, 1
+instance = comp, \in2~input , in2~input, task2_15, 1
+instance = comp, \U4|U2~0 , U4|U2~0, task2_15, 1
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
 design_name = hard_block
 instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
 instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1

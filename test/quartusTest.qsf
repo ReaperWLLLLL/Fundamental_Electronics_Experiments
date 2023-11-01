@@ -58,7 +58,7 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_task2_2 -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH mux2_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME tb_and_or1 -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_and_or1
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_and_or1 -section_id tb_and_or1
@@ -76,6 +76,13 @@ set_location_assignment PIN_120 -to b[6]
 set_global_assignment -name EDA_TEST_BENCH_NAME task3_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id task3_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_task3 -section_id task3_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_task2_2 -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_task2_2
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_task2_2 -section_id tb_task2_2
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE mux2.v
 set_global_assignment -name VERILOG_FILE task2_18.v
 set_global_assignment -name VERILOG_FILE task2_17.v
 set_global_assignment -name VERILOG_FILE task2_16.v
@@ -90,12 +97,11 @@ set_global_assignment -name VERILOG_FILE task2_2.v
 set_global_assignment -name VERILOG_FILE task2.v
 set_global_assignment -name VERILOG_FILE and_or1.v
 set_global_assignment -name VERILOG_FILE task3.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_and_or1.v -section_id tb_and_or1
 set_global_assignment -name EDA_TEST_BENCH_FILE task3_tb.v -section_id task3_tb
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_task2_2 -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_task2_2
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_task2_2 -section_id tb_task2_2
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_task2_2.v -section_id tb_task2_2
+<<<<<<< HEAD
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -104,3 +110,9 @@ set_location_assignment PIN_66 -to Y
 set_location_assignment PIN_65 -to Z
 set_location_assignment PIN_121 -to F
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+=======
+set_global_assignment -name EDA_TEST_BENCH_NAME mux2_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id mux2_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME mux2_tb -section_id mux2_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE mux2_tb.v -section_id mux2_tb
+>>>>>>> bf1f37aba416ffd0dc948eb232db1333e9126298
