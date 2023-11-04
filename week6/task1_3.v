@@ -48,7 +48,7 @@ wire button2_posedge = pulse2_2 & ~pulse2_3;
 
 reg pulse3_1, pulse3_2, pulse3_3;
 always @(posedge clk or posedge reset) begin
-    //这里实现了按键3的下降沿检测
+    //这里实现了按键3的下降沿检测，我知道这很蠢，但是我不想改
     if(reset)
     begin 
         pulse3_1 <= 1'b0;
@@ -88,18 +88,119 @@ always @ (posedge clk or posedge reset)
 reg [31:0] cnt;
 always @ (posedge clk or posedge reset)begin
     //这里实现了按键的延时
-    if(reset)
+    if(reset) begin
         cnt <= 32'b0;
-    else if(button1_negedge || button2_negedge || button3_negedge)
-        cnt <= 32'b0;
-    else if(button1_posedge || button2_posedge || button3_posedge)
-        cnt <= cnt + 32'b0;
-    else if(cnt == 32'd25000000)
-        cnt <= 32'b0;
-    else
-        cnt <= cnt + 32'b1;
+    end
+    else if(delay_flag) begin
+        if(cnt == 32'd25000000-1)
+            cnt <= 32'b0;
+        else begin
+            cnt <= 32'b0;
+        end
+    end
 end
 
 
-endmodule
+reg delay_flag; //还挺好奇三个按键是否得用三个flag
+always @(posedge clk or posedge reset) begin
+    if(reset) begin
+        delay_flag <= 1'b0;
+    end
+    else if(button1_negedge || button2_negedge || button3_negedge) begin
+        delay_flag <= 1'b1;
+    end
+    else if(cnt == 32'd25000000-1) begin
+        delay_flag <= 1'b0;
+    end
+end
 
+reg button1_state, button2_state, button3_state;
+always @(posedge clk or posedge reset) begin
+    if(reset) begin
+        button1_state <= 1'b0;
+        button2_state <= 1'b0;
+        button3_state <= 1'b0;
+    end
+    else if(cnt == 32'd25000000-1) begin
+        button1_state <= ~button_io1;
+        button2_state <= ~button_io2;
+        button3_state <= ~button_io3;
+    end
+    else begin
+        button1_state <= 0;
+        button2_state <= 0;
+        button3_state <= 0;
+    end
+end
+
+reg led_state1_flag, led_state2_flag, led_state3_flag;
+always @(posedge clk or posedge reset) begin
+    if(reset) begin
+        led_io <= 8'b0;
+    end
+    else if(button1_state) begin
+        led_state1_flag <= 1;
+        led_state2_flag <= 0;
+        led_state3_flag <= 0;
+    end     
+    else if(button2_state) begin
+        led_state1_flag <= 0;
+        led_state2_flag <= 1;
+        led_state3_flag <= 0;
+    end
+    else if(button3_state) begin
+        led_state1_flag <= 0;
+        led_state2_flag <= 0;
+        led_state3_flag <= 1;
+    end
+    else if(stop_flag) begin
+        led_state1_flag <= 0;
+        led_state2_flag <= 0;
+        led_state3_flag <= 0;
+    end
+end
+
+reg led_cnt;//led计数器
+reg stop_flag;//停止标志位
+always @(posedge div_reg or posedge reset) begin
+    if(reset) begin
+        led_io <= 8'b0;
+        led_cnt <= 8'b0;
+        stop_flag <= 1'b0;
+    end
+    else if(led_state1_flag) begin
+        if(led_io == 8'b0) begin
+            led_io <= 8'b00000001;
+        end
+        else begin
+            led_io <= led_io << 1;
+        end
+    end
+
+    else if(led_state2_flag) begin
+        if(led_io == 8'b0) begin
+            led_io <= 8'b10000000;
+        end
+        else begin
+            led_io <= led_io >> 1;
+        end
+    end
+    else if(led_state3_flag) begin
+        if(led_io != 8'b0) begin
+            led_io <= 8'b0;
+        end
+        else begin
+            led_io <= 8'b11111111;
+        end
+        led_cnt <= led_cnt + 1;
+    end
+
+    if(led_cnt == 8'd2) begin
+        stop_flag <= 1'b1;
+    end
+    else begin
+        stop_flag <= 1'b0;
+    end
+end
+
+endmodule
