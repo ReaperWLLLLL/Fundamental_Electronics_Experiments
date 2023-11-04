@@ -92,10 +92,10 @@ always @ (posedge clk or posedge reset)begin
         cnt <= 32'b0;
     end
     else if(delay_flag) begin
-        if(cnt == 32'd25000000-1)
+        if(cnt == 32'd2500000-1)
             cnt <= 32'b0;
         else begin
-            cnt <= 32'b0;
+            cnt <= cnt + 32'b1;
         end
     end
 end
@@ -109,7 +109,7 @@ always @(posedge clk or posedge reset) begin
     else if(button1_negedge || button2_negedge || button3_negedge) begin
         delay_flag <= 1'b1;
     end
-    else if(cnt == 32'd25000000-1) begin
+    else if(cnt == 32'd2500000-1) begin
         delay_flag <= 1'b0;
     end
 end
@@ -121,7 +121,7 @@ always @(posedge clk or posedge reset) begin
         button2_state <= 1'b0;
         button3_state <= 1'b0;
     end
-    else if(cnt == 32'd25000000-1) begin
+    else if(cnt == 32'd2500000-1) begin
         button1_state <= ~button_io1;
         button2_state <= ~button_io2;
         button3_state <= ~button_io3;
