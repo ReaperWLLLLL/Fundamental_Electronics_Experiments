@@ -1,12 +1,12 @@
-//我如果拿16进制当定时器，那想必也是十分合理吧
 
-module task2_3(
+module task2_4(
     input clk,
     input reset,
+    input [7:0] switch_io,
     output reg buzz
 );
 
-reg [11:0] real_time;//记录当前时间，以秒为单位
+reg [7:0] real_time;//记录当前时间，以秒为单位
 reg [15:0] data;//这里的data是一个16位的寄存器，储存数码管的值
 reg [3:0] data_temp; //存储当前显示的数码管的值
 reg [3:0] digit; //这里的digit是一个4位的寄存器，储存当前显示的数码管的位数
@@ -17,11 +17,11 @@ reg buzz_cnt;
 reg stop_flag;
 always @(posedge clk, posedge reset) begin
     if(reset) begin
-        data[3:0] = 4'd0;
-        data[7:4] = 4'd1;
-        data[11:8] = 4'd1;
-        data[15:12] = 4'd0;
-        real_time = 12'd70;//70s
+        real_time = switch_io;
+        data[3:0] = ((real_time)%60)%10;
+        data[7:4] = ((real_time)%60)/10;
+        data[11:8] = ((real_time)/60)%10;
+        data[15:12] = ((real_time)/60)/10; 
     end
     else if(cnt == 32'd25000000-1) begin
         if(real_time == 12'd0) begin

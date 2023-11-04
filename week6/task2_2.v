@@ -68,7 +68,6 @@ always @(posedge clk or posedge reset) begin
     if(reset) begin
         data_temp <= 4'b0000;
         digit <= 4'b1111;
-        segment <= 8'h00;
         state <= 2'b00; 
     end
     else begin
