@@ -1,0 +1,14 @@
+To,     Location
+clk,    PIN_23
+reset,  PIN_58
+button_io1, PIN_53
+button_io2, PIN_54
+button_io3, PIN_55
+led_io[0],  PIN_121
+led_io[1],  PIN_120
+led_io[2],  PIN_119
+led_io[3],  PIN_115
+led_io[4],  PIN_114
+led_io[5],  PIN_113
+led_io[6],  PIN_112
+led_io[7],  PIN_111
