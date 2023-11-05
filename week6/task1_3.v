@@ -136,7 +136,9 @@ end
 reg led_state1_flag, led_state2_flag, led_state3_flag;
 always @(posedge clk or posedge reset) begin
     if(reset) begin
-        led_io <= 8'b0;
+        led_state1_flag <= 1'b0;
+        led_state2_flag <= 1'b0;
+        led_state3_flag <= 1'b0;
     end
     else if(button1_state) begin
         led_state1_flag <= 1;
