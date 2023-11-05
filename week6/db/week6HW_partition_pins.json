@@ -4,39 +4,51 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "clk_div",
+					"name" : "digit[0]",
 					"strict" : false
 				},
 				{
-					"name" : "led_io[0]",
+					"name" : "digit[1]",
 					"strict" : false
 				},
 				{
-					"name" : "led_io[1]",
+					"name" : "digit[2]",
 					"strict" : false
 				},
 				{
-					"name" : "led_io[2]",
+					"name" : "digit[3]",
 					"strict" : false
 				},
 				{
-					"name" : "led_io[3]",
+					"name" : "segment[0]",
 					"strict" : false
 				},
 				{
-					"name" : "led_io[4]",
+					"name" : "segment[1]",
 					"strict" : false
 				},
 				{
-					"name" : "led_io[5]",
+					"name" : "segment[2]",
 					"strict" : false
 				},
 				{
-					"name" : "led_io[6]",
+					"name" : "segment[3]",
 					"strict" : false
 				},
 				{
-					"name" : "led_io[7]",
+					"name" : "segment[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segment[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segment[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segment[7]",
 					"strict" : false
 				},
 				{
@@ -48,15 +60,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "button_io1",
-					"strict" : false
-				},
-				{
-					"name" : "button_io2",
-					"strict" : false
-				},
-				{
-					"name" : "button_io3",
+					"name" : "button_io",
 					"strict" : false
 				}
 			]

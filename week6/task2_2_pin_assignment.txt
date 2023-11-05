@@ -1,0 +1,16 @@
+To,     Location
+clk,    PIN_23
+reset,  PIN_58
+button_io, PIN_53
+digit[0],   PIN_127
+digit[1],   PIN_126
+digit[2],   PIN_125
+digit[3],   PIN_124
+segment[0], PIN_136
+segment[1], PIN_138
+segment[2], PIN_133
+segment[3], PIN_129
+segment[4], PIN_128
+segment[5], PIN_137
+segment[6], PIN_135
+segment[7], PIN_132

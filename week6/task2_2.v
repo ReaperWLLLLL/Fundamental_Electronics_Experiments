@@ -3,13 +3,14 @@
 module task2_2(
     input clk,
     input reset,
-    input button_io
+    input button_io,
+    output reg [3:0] digit, //这里的digit是一个4位的寄存器，储存当前显示的数码管的位数
+    output reg [7:0] segment //这里的segment是一个8位的寄存器，用于驱动数码管
 );
 
 reg [15:0] data;//这里的data是一个16位的寄存器，储存数码管的值
 reg [3:0] data_temp; //存储当前显示的数码管的值
-reg [3:0] digit; //这里的digit是一个4位的寄存器，储存当前显示的数码管的位数
-reg [7:0] segment; //这里的segment是一个8位的寄存器，用于驱动数码管
+
 
 reg pulse1, pulse2, pulse3;
 always @(posedge clk, posedge reset) begin
@@ -28,6 +29,7 @@ always @(posedge clk, posedge reset) begin
     end
 end
 wire button_negedge = ~pulse2 & pulse3;
+wire button_posedge = pulse2 & pulse3;
 
 reg [31:0] cnt;
 always @ (posedge clk or posedge reset)begin
@@ -38,7 +40,7 @@ always @ (posedge clk or posedge reset)begin
     end
     else if(delay_flag) begin
         if(cnt == 32'd2500000-1) begin
-            if(button_io == 0) begin
+            if(button_io == 1'b1) begin
                 //感觉不太合规，但是少两个always
                 data <= data + 16'b1;
             end
@@ -55,7 +57,7 @@ always @(posedge clk or posedge reset) begin
     if(reset) begin
         delay_flag <= 1'b0;
     end
-    else if(button_negedge) begin
+    else if(button_posedge) begin
         delay_flag <= 1'b1;
     end
     else if(cnt == 32'd2500000-1) begin
