@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Nov 05 17:43:58 2023
+Fitter Status : Successful - Sun Nov 05 22:32:46 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : week6HW
 Top-level Entity Name : task1_3
 Family : Cyclone 10 LP
 Device : 10CL006YE144C8G
 Timing Models : Final
-Total logic elements : 129 / 6,272 ( 2 % )
-    Total combinational functions : 119 / 6,272 ( 2 % )
+Total logic elements : 130 / 6,272 ( 2 % )
+    Total combinational functions : 120 / 6,272 ( 2 % )
     Dedicated logic registers : 89 / 6,272 ( 1 % )
 Total registers : 89
 Total pins : 14 / 89 ( 16 % )

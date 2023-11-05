@@ -76,7 +76,7 @@ always @ (posedge clk or posedge reset)
 
     else
     begin
-        if(div_reg < 32'd25000000)
+        if(div_reg < 32'd12500000)
             div_reg <= div_reg + 32'b1;
         else
         begin
@@ -106,7 +106,7 @@ always @(posedge clk or posedge reset) begin
     if(reset) begin
         delay_flag <= 1'b0;
     end
-    else if(button1_negedge || button2_negedge || button3_negedge) begin
+    else if(button1_posedge || button2_posedge || button3_posedge) begin
         delay_flag <= 1'b1;
     end
     else if(cnt == 32'd2500000-1) begin
@@ -122,9 +122,9 @@ always @(posedge clk or posedge reset) begin
         button3_state <= 1'b0;
     end
     else if(cnt == 32'd2500000-1) begin
-        button1_state <= ~button_io1;
-        button2_state <= ~button_io2;
-        button3_state <= ~button_io3;
+        button1_state <= button_io1;
+        button2_state <= button_io2;
+        button3_state <= button_io3;
     end
     else begin
         button1_state <= 0;
@@ -150,28 +150,29 @@ always @(posedge clk or posedge reset) begin
         led_state2_flag <= 1;
         led_state3_flag <= 0;
     end
-    else if(button3_state) begin
-        led_state1_flag <= 0;
-        led_state2_flag <= 0;
-        led_state3_flag <= 1;
-    end
     else if(stop_flag) begin
         led_state1_flag <= 0;
         led_state2_flag <= 0;
         led_state3_flag <= 0;
     end
+    else if(button3_state) begin
+        led_state1_flag <= 0;
+        led_state2_flag <= 0;
+        led_state3_flag <= 1;
+    end
+
 end
 
 reg led_cnt;//led计数器
 reg stop_flag;//停止标志位
-always @(posedge div_reg or posedge reset) begin
+always @(posedge clk_div or posedge reset) begin
     if(reset) begin
         led_io <= 8'b0;
         led_cnt <= 8'b0;
         stop_flag <= 1'b0;
     end
     else if(led_state1_flag) begin
-        if(led_io == 8'b0) begin
+        if(led_io == 8'b10000000 || led_io == 8'b00000000) begin
             led_io <= 8'b00000001;
         end
         else begin
@@ -180,7 +181,7 @@ always @(posedge div_reg or posedge reset) begin
     end
 
     else if(led_state2_flag) begin
-        if(led_io == 8'b0) begin
+        if(led_io == 8'b00000001 || led_io == 8'b00000000) begin
             led_io <= 8'b10000000;
         end
         else begin
@@ -193,12 +194,15 @@ always @(posedge div_reg or posedge reset) begin
         end
         else begin
             led_io <= 8'b11111111;
+            led_cnt <= led_cnt + 1;
         end
-        led_cnt <= led_cnt + 1;
     end
 
-    if(led_cnt == 8'd2) begin
+    if(led_cnt == 8'd2 ) begin//这个地方是8'd1为啥过不了？
         stop_flag <= 1'b1;
+    end
+    else if(led_cnt == 8'd3) begin
+        led_cnt <= 0;
     end
     else begin
         stop_flag <= 1'b0;

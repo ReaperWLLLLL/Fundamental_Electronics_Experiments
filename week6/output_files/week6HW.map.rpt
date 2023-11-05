@@ -1,5 +1,5 @@
 Analysis & Synthesis report for week6HW
-Sun Nov 05 17:43:51 2023
+Sun Nov 05 22:32:41 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,13 +44,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 05 17:43:51 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 05 22:32:41 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week6HW                                     ;
 ; Top-level Entity Name              ; task1_3                                     ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 129                                         ;
-;     Total combinational functions  ; 119                                         ;
+; Total logic elements               ; 130                                         ;
+;     Total combinational functions  ; 120                                         ;
 ;     Dedicated logic registers      ; 89                                          ;
 ; Total registers                    ; 89                                          ;
 ; Total pins                         ; 14                                          ;
@@ -155,12 +155,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.2%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -178,16 +178,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 129         ;
+; Estimated Total logic elements              ; 130         ;
 ;                                             ;             ;
-; Total combinational functions               ; 119         ;
+; Total combinational functions               ; 120         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 26          ;
-;     -- 3 input functions                    ; 11          ;
-;     -- <=2 input functions                  ; 82          ;
+;     -- 4 input functions                    ; 25          ;
+;     -- 3 input functions                    ; 14          ;
+;     -- <=2 input functions                  ; 81          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 57          ;
+;     -- normal mode                          ; 58          ;
 ;     -- arithmetic mode                      ; 62          ;
 ;                                             ;             ;
 ; Total registers                             ; 89          ;
@@ -200,8 +200,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; reset~input ;
 ; Maximum fan-out                             ; 89          ;
-; Total fan-out                               ; 676         ;
-; Average fan-out                             ; 2.86        ;
+; Total fan-out                               ; 687         ;
+; Average fan-out                             ; 2.90        ;
 +---------------------------------------------+-------------+
 
 
@@ -210,7 +210,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |task1_3                   ; 119 (119)           ; 89 (89)                   ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |task1_3            ; task1_3     ; work         ;
+; |task1_3                   ; 120 (120)           ; 89 (89)                   ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |task1_3            ; task1_3     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -221,11 +221,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 89    ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Number of registers using Synchronous Clear  ; 38    ;
 ; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 89    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 39    ;
+; Number of registers using Clock Enable       ; 41    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -235,8 +235,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |task1_3|led_io[2]~reg0    ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |task1_3|led_state3_flag   ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |task1_3|led_io[2]~reg0    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -249,20 +249,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; cycloneiii_ff         ; 89                          ;
 ;     CLR               ; 14                          ;
 ;     CLR SCLR          ; 32                          ;
-;     CLR SLD           ; 4                           ;
+;     CLR SLD           ; 2                           ;
 ;     ENA CLR           ; 35                          ;
-;     ENA CLR SLD       ; 4                           ;
-; cycloneiii_lcell_comb ; 119                         ;
+;     ENA CLR SCLR SLD  ; 6                           ;
+; cycloneiii_lcell_comb ; 120                         ;
 ;     arith             ; 62                          ;
 ;         2 data inputs ; 62                          ;
-;     normal            ; 57                          ;
+;     normal            ; 58                          ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 18                          ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 26                          ;
+;         2 data inputs ; 17                          ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 25                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 3.27                        ;
+; Average LUT depth     ; 3.30                        ;
 +-----------------------+-----------------------------+
 
 
@@ -281,7 +281,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Nov 05 17:43:42 2023
+    Info: Processing started: Sun Nov 05 22:32:34 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off week6HW -c week6HW
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -290,24 +290,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file task1_3
 Info (12021): Found 1 design units, including 1 entities, in source file task1_2.v
     Info (12023): Found entity 1: task1_2 File: G:/software/FPGA/workplace/week6/task1_2.v Line: 1
 Info (12127): Elaborating entity "task1_3" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at task1_3.v(28): object "button1_posedge" assigned a value but never read File: G:/software/FPGA/workplace/week6/task1_3.v Line: 28
-Warning (10036): Verilog HDL or VHDL warning at task1_3.v(47): object "button2_posedge" assigned a value but never read File: G:/software/FPGA/workplace/week6/task1_3.v Line: 47
-Warning (10036): Verilog HDL or VHDL warning at task1_3.v(66): object "button3_posedge" assigned a value but never read File: G:/software/FPGA/workplace/week6/task1_3.v Line: 66
-Warning (10646): Verilog HDL Event Control warning at task1_3.v(167): posedge or negedge of vector "div_reg" depends solely on its least-significant bit File: G:/software/FPGA/workplace/week6/task1_3.v Line: 167
-Warning (10230): Verilog HDL assignment warning at task1_3.v(170): truncated value with size 8 to match size of target (1) File: G:/software/FPGA/workplace/week6/task1_3.v Line: 170
+Warning (10036): Verilog HDL or VHDL warning at task1_3.v(27): object "button1_negedge" assigned a value but never read File: G:/software/FPGA/workplace/week6/task1_3.v Line: 27
+Warning (10036): Verilog HDL or VHDL warning at task1_3.v(46): object "button2_negedge" assigned a value but never read File: G:/software/FPGA/workplace/week6/task1_3.v Line: 46
+Warning (10036): Verilog HDL or VHDL warning at task1_3.v(65): object "button3_negedge" assigned a value but never read File: G:/software/FPGA/workplace/week6/task1_3.v Line: 65
+Warning (10230): Verilog HDL assignment warning at task1_3.v(171): truncated value with size 8 to match size of target (1) File: G:/software/FPGA/workplace/week6/task1_3.v Line: 171
 Warning (10230): Verilog HDL assignment warning at task1_3.v(197): truncated value with size 32 to match size of target (1) File: G:/software/FPGA/workplace/week6/task1_3.v Line: 197
-Critical Warning (10237): Verilog HDL warning at task1_3.v(204): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: G:/software/FPGA/workplace/week6/task1_3.v Line: 204
+Critical Warning (10237): Verilog HDL warning at task1_3.v(208): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: G:/software/FPGA/workplace/week6/task1_3.v Line: 208
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 143 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 144 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 129 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Sun Nov 05 17:43:51 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:07
+    Info (21061): Implemented 130 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4827 megabytes
+    Info: Processing ended: Sun Nov 05 22:32:41 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 
