@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "clk_div",
+					"strict" : false
+				},
+				{
 					"name" : "digit[0]",
 					"strict" : false
 				},

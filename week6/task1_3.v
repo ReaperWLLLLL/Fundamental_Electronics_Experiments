@@ -127,9 +127,9 @@ always @(posedge clk or posedge reset) begin
         button3_state <= button_io3;
     end
     else begin
-        button1_state <= 0;
-        button2_state <= 0;
-        button3_state <= 0;
+        button1_state <= 1'b0;
+        button2_state <= 1'b0;
+        button3_state <= 1'b0;
     end
 end
 
@@ -141,24 +141,24 @@ always @(posedge clk or posedge reset) begin
         led_state3_flag <= 1'b0;
     end
     else if(button1_state) begin
-        led_state1_flag <= 1;
-        led_state2_flag <= 0;
-        led_state3_flag <= 0;
+        led_state1_flag <= 1'b1;
+        led_state2_flag <= 1'b0;
+        led_state3_flag <= 1'b0;
     end     
     else if(button2_state) begin
-        led_state1_flag <= 0;
-        led_state2_flag <= 1;
-        led_state3_flag <= 0;
+        led_state1_flag <= 1'b0;
+        led_state2_flag <= 1'b1;
+        led_state3_flag <= 1'b0;
     end
     else if(stop_flag) begin
-        led_state1_flag <= 0;
-        led_state2_flag <= 0;
-        led_state3_flag <= 0;
+        led_state1_flag <= 1'b0;
+        led_state2_flag <= 1'b0;
+        led_state3_flag <= 1'b0;
     end
     else if(button3_state) begin
-        led_state1_flag <= 0;
-        led_state2_flag <= 0;
-        led_state3_flag <= 1;
+        led_state1_flag <= 1'b0;
+        led_state2_flag <= 1'b0;
+        led_state3_flag <= 1'b1;
     end
 
 end
