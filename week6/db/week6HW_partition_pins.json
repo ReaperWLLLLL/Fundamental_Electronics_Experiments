@@ -8,6 +8,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "buzz",
+					"strict" : false
+				},
+				{
 					"name" : "digit[0]",
 					"strict" : false
 				},
@@ -64,7 +68,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "button_io",
+					"name" : "switch_io[7]",
+					"strict" : false
+				},
+				{
+					"name" : "switch_io[6]",
+					"strict" : false
+				},
+				{
+					"name" : "switch_io[5]",
+					"strict" : false
+				},
+				{
+					"name" : "switch_io[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switch_io[3]",
+					"strict" : false
+				},
+				{
+					"name" : "switch_io[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switch_io[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switch_io[0]",
 					"strict" : false
 				}
 			]

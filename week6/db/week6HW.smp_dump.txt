@@ -1,5 +1,5 @@
 
-State Machine - |task2_2|state
+State Machine - |task2_4|state
 Name state.11 state.10 state.01 state.00 
 state.00 0 0 0 0 
 state.01 0 0 1 1 

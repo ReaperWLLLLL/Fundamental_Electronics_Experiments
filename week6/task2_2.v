@@ -35,7 +35,7 @@ wire button_posedge = pulse2 & pulse3;
 
 reg [31:0] div_reg;
 always @ (posedge clk or posedge reset) begin
-    //这里实现了一个1ms的计数器
+    //这里实现了一个1Hz的计数器
     if(reset)
     begin
         div_reg <= 32'b0;
