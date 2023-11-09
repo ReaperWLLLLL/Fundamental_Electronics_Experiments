@@ -72,6 +72,7 @@ clk => div_reg[28].CLK
 clk => div_reg[29].CLK
 clk => div_reg[30].CLK
 clk => div_reg[31].CLK
+clk => stop_flag.CLK
 clk => buzz~reg0.CLK
 clk => buzz_flag.CLK
 clk => data[0].CLK
@@ -179,6 +180,7 @@ reset => div_reg[28].ACLR
 reset => div_reg[29].ACLR
 reset => div_reg[30].ACLR
 reset => div_reg[31].ACLR
+reset => stop_flag.ACLR
 reset => buzz~reg0.PRESET
 reset => buzz_flag.ACLR
 reset => data[0].ALOAD
@@ -230,19 +232,19 @@ switch_io[6] => real_time[6].ADATA
 switch_io[7] => Mod1.IN6
 switch_io[7] => Div1.IN6
 switch_io[7] => real_time[7].ADATA
-clk_div << clk_div~reg0.DB_MAX_OUTPUT_PORT_TYPE
-buzz << buzz~reg0.DB_MAX_OUTPUT_PORT_TYPE
-digit[0] << digit[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-digit[1] << digit[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-digit[2] << digit[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-digit[3] << digit[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-segment[0] << segment[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-segment[1] << segment[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-segment[2] << segment[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-segment[3] << segment[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-segment[4] << segment[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-segment[5] << segment[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-segment[6] << segment[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-segment[7] << segment[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_div <= clk_div~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buzz <= buzz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit[0] <= digit[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit[1] <= digit[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit[2] <= digit[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit[3] <= digit[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segment[0] <= segment[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segment[1] <= segment[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segment[2] <= segment[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segment[3] <= segment[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segment[4] <= segment[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segment[5] <= segment[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segment[6] <= segment[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+segment[7] <= segment[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

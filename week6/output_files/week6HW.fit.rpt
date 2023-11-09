@@ -1,5 +1,5 @@
 Fitter report for week6HW
-Tue Nov 07 09:02:28 2023
+Tue Nov 07 09:19:48 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Nov 07 09:02:28 2023       ;
+; Fitter Status                      ; Successful - Tue Nov 07 09:19:48 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week6HW                                     ;
 ; Top-level Entity Name              ; task2_4                                     ;
@@ -156,19 +156,19 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.93        ;
+; Average used               ; 1.90        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   6.2%      ;
-;     Processor 3            ;   6.2%      ;
-;     Processor 4            ;   6.2%      ;
-;     Processor 5            ;   6.2%      ;
-;     Processor 6            ;   6.2%      ;
-;     Processor 7            ;   6.2%      ;
-;     Processor 8            ;   6.2%      ;
-;     Processors 9-16        ;   6.2%      ;
+;     Processor 2            ;   6.0%      ;
+;     Processor 3            ;   6.0%      ;
+;     Processor 4            ;   6.0%      ;
+;     Processor 5            ;   6.0%      ;
+;     Processor 6            ;   6.0%      ;
+;     Processor 7            ;   6.0%      ;
+;     Processor 8            ;   6.0%      ;
+;     Processors 9-16        ;   6.0%      ;
 +----------------------------+-------------+
 
 
@@ -1361,7 +1361,7 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node clk~input (placed in PIN 23 (CLK1, DIFFCLK_0n)) File: G:/software/FPGA/workplace/week6/task2_4.v Line: 3
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info (176353): Automatically promoted node clk_div~reg0  File: G:/software/FPGA/workplace/week6/task2_4.v Line: 75
+Info (176353): Automatically promoted node clk_div~reg0  File: G:/software/FPGA/workplace/week6/task2_4.v Line: 78
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node clk_div~0 File: G:/software/FPGA/workplace/week6/task2_4.v Line: 6
@@ -1398,7 +1398,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "led_io[5]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "led_io[6]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "led_io[7]" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1411,7 +1411,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.47 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.46 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1420,8 +1420,8 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file G:/software/FPGA/workplace/week6/output_files/week6HW.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 6503 megabytes
-    Info: Processing ended: Tue Nov 07 09:02:28 2023
+    Info: Peak virtual memory: 6504 megabytes
+    Info: Processing ended: Tue Nov 07 09:19:48 2023
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:03
 

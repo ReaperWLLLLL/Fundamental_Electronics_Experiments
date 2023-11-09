@@ -59,6 +59,8 @@ always @(posedge clk, posedge reset) begin
             buzz_cnt <= buzz_cnt + 3'd1;
         end
     end
+    else begin
+    end
 end
 
 reg [31:0] div_reg;
