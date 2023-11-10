@@ -1,5 +1,5 @@
 //这玩意倒是可以完全照抄task1_3，验证这个没问题，1_3应该也没问题
-
+`define CNT_MAX 32'd2500000
 module task2_2(
     input clk,
     input reset,
@@ -8,7 +8,7 @@ module task2_2(
     output reg [3:0] digit, //这里的digit是一个4位的寄存器，储存当前显示的数码管的位数
     output reg [7:0] segment //这里的segment是一个8位的寄存器，用于驱动数码管
 );
-localparam SIMULATION_PARAMETER = 32'd1; //仿真缩小时间尺度，实机为1
+localparam SIMULATION_PARAMETER = 32'd100000; //仿真缩小时间尺度，实机为1
 
 reg [15:0] data;//这里的data是一个16位的寄存器，储存数码管的值
 reg [3:0] data_temp; //存储当前显示的数码管的值
@@ -31,7 +31,7 @@ always @(posedge clk, posedge reset) begin
     end
 end
 wire button_negedge = ~pulse2 & pulse3;
-wire button_posedge = pulse2 & pulse3;
+wire button_posedge = pulse2 & ~pulse3;
 
 reg [31:0] div_reg;
 always @ (posedge clk or posedge reset) begin
@@ -61,7 +61,7 @@ always @ (posedge clk or posedge reset)begin
         data <= 16'b0000_0000_0000_0000;
     end
     else if(delay_flag) begin
-        if(cnt == 32'd2500000/SIMULATION_PARAMETER-1) begin
+        if(cnt == `CNT_MAX-1) begin //这里要加个`是真的逆天
             if(button_io == 1'b1) begin
                 //感觉不太合规，但是少两个always
                 data <= data + 16'b0000_0000_0000_0001;
@@ -82,7 +82,7 @@ always @(posedge clk or posedge reset) begin
     else if(button_posedge) begin
         delay_flag <= 1'b1;
     end
-    else if(cnt == 32'd2500000/SIMULATION_PARAMETER-1) begin
+    else if(cnt == `CNT_MAX-1) begin
         delay_flag <= 1'b0;
     end
 end

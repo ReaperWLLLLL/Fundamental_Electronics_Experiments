@@ -25,13 +25,12 @@ module tb_task1_2;
         $dumpvars(0, tb_task1_2);
         clk = 0;
         reset = 1;
-
         #10 
         reset = 0;
     end
 
     always begin
-        #0.01 clk = ~clk;
+        # clk = ~clk;
         if( $time > 1000 ) $finish;
     end
 

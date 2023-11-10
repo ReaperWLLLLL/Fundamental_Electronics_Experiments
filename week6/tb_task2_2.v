@@ -31,9 +31,10 @@ module tb_task2_2;
         clk = 0;
         reset = 0;
         button_io = 0;
-        // Wait 100 ns for global reset to finish
         reset = 1;
-        #100;
+        #10
+        reset = 0;
+        #10000;
         $finish;
     end
     always begin
@@ -42,7 +43,6 @@ module tb_task2_2;
     always begin
         #1 button_io = 1;
         #10 button_io = 0;
-
     end
 
 endmodule
