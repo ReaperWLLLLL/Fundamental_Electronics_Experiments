@@ -161,7 +161,6 @@ always @(posedge clk or posedge reset) begin
         led_state2_flag <= 1'b0;
         led_state3_flag <= 1'b1;
     end
-
 end
 
 reg led_cnt;//led计数器
