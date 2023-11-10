@@ -1,4 +1,4 @@
-
+`define CNT_MAX 32'd25
 module task2_4(
     input clk,
     input reset,
@@ -26,7 +26,7 @@ always @(posedge clk, posedge reset) begin
         data[15:12] = ((real_time)/60)/10;
         buzz_flag <= 1'b0; 
     end
-    else if(cnt == 32'd25000000-1) begin
+    else if(cnt == `CNT_MAX-1) begin
         if(real_time == 8'd0) begin
             buzz_flag = 1'b1;
             if(stop_flag == 1'b1) begin
@@ -49,7 +49,7 @@ always @(posedge clk, posedge reset) begin
         stop_flag <= 1'b0;
         buzz <= 1'b1;
     end
-    else if(cnt == 32'd25000000-1 && buzz_flag == 1'b1) begin
+    else if(cnt == `CNT_MAX-1 && buzz_flag == 1'b1) begin
         buzz = ~buzz;
         if(buzz_cnt == 3'd5) begin
             buzz_cnt <= 3'd0;
@@ -90,7 +90,7 @@ always @ (posedge clk or posedge reset)begin
     if(reset) begin
         cnt <= 32'b0;
     end
-    else if(cnt == 32'd25000000-1) begin
+    else if(cnt == `CNT_MAX-1) begin
         cnt <= 32'b0;
     end
     else begin

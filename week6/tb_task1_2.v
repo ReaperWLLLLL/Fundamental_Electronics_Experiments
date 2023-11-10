@@ -30,7 +30,7 @@ module tb_task1_2;
     end
 
     always begin
-        # clk = ~clk;
+        #1 clk = ~clk;
         if( $time > 1000 ) $finish;
     end
 
