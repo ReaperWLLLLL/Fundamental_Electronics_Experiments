@@ -1,3 +1,4 @@
+//task1_2 is a part of task1_3, so below is the code of task1_3 
 module my_key_seg1(
 	input clk,
 	input clk1, //for digit
@@ -305,6 +306,7 @@ always @(posedge clk, posedge rst) begin
 		endcase
 	end
 end
+
 always @(posedge clk1, posedge rst) begin
 	if(rst) begin
 		seg = 8'hc0;
