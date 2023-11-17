@@ -1,5 +1,5 @@
 Analysis & Synthesis report for week8HW
-Thu Nov 09 10:59:19 2023
+Fri Nov 17 12:20:15 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,15 +13,17 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |key_seg_top|my_key_seg:uut_my_key_seg|state
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: my_key_seg:uut_my_key_seg
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  8. State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|operator
+  9. State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state
+ 10. State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state1
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Inverted Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -48,16 +50,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 09 10:59:19 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 17 12:20:15 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week8HW                                     ;
-; Top-level Entity Name              ; key_seg_top                                 ;
+; Top-level Entity Name              ; task1_2_top                                 ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 59                                          ;
-;     Total combinational functions  ; 57                                          ;
-;     Dedicated logic registers      ; 33                                          ;
-; Total registers                    ; 33                                          ;
-; Total pins                         ; 21                                          ;
+; Total logic elements               ; 234                                         ;
+;     Total combinational functions  ; 209                                         ;
+;     Dedicated logic registers      ; 151                                         ;
+; Total registers                    ; 151                                         ;
+; Total pins                         ; 28                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -71,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10CL006YE144C8G    ;                    ;
-; Top-level entity name                                            ; key_seg_top        ; week8HW            ;
+; Top-level entity name                                            ; task1_2_top        ; week8HW            ;
 ; Family name                                                      ; Cyclone 10 LP      ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,20 +166,20 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processors 2-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                       ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                   ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
-; key_seg_top.v                    ; yes             ; User Verilog HDL File        ; G:/software/FPGA/workplace/week8/key_seg_top.v ;         ;
-; key_fre_div.v                    ; yes             ; Auto-Found Verilog HDL File  ; G:/software/FPGA/workplace/week8/key_fre_div.v ;         ;
-; key_seg.v                        ; yes             ; Auto-Found Verilog HDL File  ; G:/software/FPGA/workplace/week8/key_seg.v     ;         ;
-; my_key_seg.v                     ; yes             ; Auto-Found Verilog HDL File  ; G:/software/FPGA/workplace/week8/my_key_seg.v  ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
+; task1_2/task1_2_top.v            ; yes             ; User Verilog HDL File        ; G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v      ;         ;
+; task1_2/my_key_seg1.v            ; yes             ; Auto-Found Verilog HDL File  ; G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v      ;         ;
+; task1_2/my_key_fre_div.v         ; yes             ; Auto-Found Verilog HDL File  ; G:/software/FPGA/workplace/week8/task1_2/my_key_fre_div.v   ;         ;
+; task1_2/button_detection.v       ; yes             ; Auto-Found Verilog HDL File  ; G:/software/FPGA/workplace/week8/task1_2/button_detection.v ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -185,67 +187,134 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 59        ;
+; Estimated Total logic elements              ; 234       ;
 ;                                             ;           ;
-; Total combinational functions               ; 57        ;
+; Total combinational functions               ; 209       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 17        ;
-;     -- 3 input functions                    ; 16        ;
-;     -- <=2 input functions                  ; 24        ;
+;     -- 4 input functions                    ; 68        ;
+;     -- 3 input functions                    ; 8         ;
+;     -- <=2 input functions                  ; 133       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 39        ;
-;     -- arithmetic mode                      ; 18        ;
+;     -- normal mode                          ; 117       ;
+;     -- arithmetic mode                      ; 92        ;
 ;                                             ;           ;
-; Total registers                             ; 33        ;
-;     -- Dedicated logic registers            ; 33        ;
+; Total registers                             ; 151       ;
+;     -- Dedicated logic registers            ; 151       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 21        ;
+; I/O pins                                    ; 28        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 33        ;
-; Total fan-out                               ; 306       ;
-; Average fan-out                             ; 2.32      ;
+; Maximum fan-out                             ; 151       ;
+; Total fan-out                               ; 1104      ;
+; Average fan-out                             ; 2.65      ;
 +---------------------------------------------+-----------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Entity Name ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+-------------+--------------+
-; |key_seg_top                   ; 57 (1)              ; 33 (0)                    ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |key_seg_top                           ; key_seg_top ; work         ;
-;    |key_fre_div:uut_fre_div|   ; 33 (33)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |key_seg_top|key_fre_div:uut_fre_div   ; key_fre_div ; work         ;
-;    |my_key_seg:uut_my_key_seg| ; 23 (23)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |key_seg_top|my_key_seg:uut_my_key_seg ; my_key_seg  ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                          ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Entity Name      ; Library Name ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+------------------+--------------+
+; |task1_2_top                               ; 209 (0)             ; 151 (0)                   ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |task1_2_top                                       ; task1_2_top      ; work         ;
+;    |button_detection:uut_button_detection| ; 56 (56)             ; 46 (46)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|button_detection:uut_button_detection ; button_detection ; work         ;
+;    |my_key_fre_div:uut_fre_div|            ; 99 (99)             ; 64 (64)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_fre_div:uut_fre_div            ; my_key_fre_div   ; work         ;
+;    |my_key_seg1:uut_my_key_seg|            ; 54 (54)             ; 41 (41)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg            ; my_key_seg1      ; work         ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------+
-; State Machine - |key_seg_top|my_key_seg:uut_my_key_seg|state ;
-+----------+----------+----------+----------+------------------+
-; Name     ; state.S3 ; state.S2 ; state.S1 ; state.S0         ;
-+----------+----------+----------+----------+------------------+
-; state.S0 ; 0        ; 0        ; 0        ; 0                ;
-; state.S1 ; 0        ; 0        ; 1        ; 1                ;
-; state.S2 ; 0        ; 1        ; 0        ; 1                ;
-; state.S3 ; 1        ; 0        ; 0        ; 1                ;
-+----------+----------+----------+----------+------------------+
++--------------------------------------------------------------------------------------------------------+
+; State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|operator                                       ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Name         ; operator.101 ; operator.100 ; operator.011 ; operator.010 ; operator.001 ; operator.000 ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; operator.000 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; operator.001 ; 0            ; 0            ; 0            ; 0            ; 1            ; 1            ;
+; operator.010 ; 0            ; 0            ; 0            ; 1            ; 0            ; 1            ;
+; operator.011 ; 0            ; 0            ; 1            ; 0            ; 0            ; 1            ;
+; operator.100 ; 0            ; 1            ; 0            ; 0            ; 0            ; 1            ;
+; operator.101 ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; my_key_seg:uut_my_key_seg|state~4     ; Lost fanout        ;
-; my_key_seg:uut_my_key_seg|state~5     ; Lost fanout        ;
-; Total Number of Removed Registers = 2 ;                    ;
-+---------------------------------------+--------------------+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state ;
++----------+----------+----------+----------+-------------------+
+; Name     ; state.11 ; state.10 ; state.01 ; state.00          ;
++----------+----------+----------+----------+-------------------+
+; state.00 ; 0        ; 0        ; 0        ; 0                 ;
+; state.01 ; 0        ; 0        ; 1        ; 1                 ;
+; state.10 ; 0        ; 1        ; 0        ; 1                 ;
+; state.11 ; 1        ; 0        ; 0        ; 1                 ;
++----------+----------+----------+----------+-------------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------+
+; State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state1 ;
++-----------+-----------+-----------+-----------+----------------+
+; Name      ; state1.11 ; state1.10 ; state1.01 ; state1.00      ;
++-----------+-----------+-----------+-----------+----------------+
+; state1.00 ; 0         ; 0         ; 0         ; 0              ;
+; state1.01 ; 0         ; 0         ; 1         ; 1              ;
+; state1.10 ; 0         ; 1         ; 0         ; 1              ;
+; state1.11 ; 1         ; 0         ; 0         ; 1              ;
++-----------+-----------+-----------+-----------+----------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++-----------------------------------------+---------------------------------------------------+
+; Register name                           ; Reason for Removal                                ;
++-----------------------------------------+---------------------------------------------------+
+; my_key_seg1:uut_my_key_seg|data[12..15] ; Stuck at GND due to stuck port data_in            ;
+; my_key_seg1:uut_my_key_seg|seg[7]       ; Stuck at VCC due to stuck port data_in            ;
+; my_key_seg1:uut_my_key_seg|first_num[7] ; Merged with my_key_seg1:uut_my_key_seg|data[7]    ;
+; my_key_seg1:uut_my_key_seg|first_num[6] ; Merged with my_key_seg1:uut_my_key_seg|data[6]    ;
+; my_key_seg1:uut_my_key_seg|first_num[5] ; Merged with my_key_seg1:uut_my_key_seg|data[5]    ;
+; my_key_seg1:uut_my_key_seg|first_num[4] ; Merged with my_key_seg1:uut_my_key_seg|data[4]    ;
+; my_key_seg1:uut_my_key_seg|first_num[3] ; Merged with my_key_seg1:uut_my_key_seg|data[3]    ;
+; my_key_seg1:uut_my_key_seg|first_num[2] ; Merged with my_key_seg1:uut_my_key_seg|data[2]    ;
+; my_key_seg1:uut_my_key_seg|first_num[1] ; Merged with my_key_seg1:uut_my_key_seg|data[1]    ;
+; my_key_seg1:uut_my_key_seg|first_num[0] ; Merged with my_key_seg1:uut_my_key_seg|data[0]    ;
+; my_key_seg1:uut_my_key_seg|operator~5   ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|operator~6   ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|operator~7   ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|state~4      ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|state~5      ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|state1~4     ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|state1~5     ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|operator.000 ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|operator.001 ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|operator.010 ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|operator.011 ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|operator.100 ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|operator.101 ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|state.01     ; Merged with my_key_seg1:uut_my_key_seg|hl[0]      ;
+; my_key_seg1:uut_my_key_seg|state.10     ; Merged with my_key_seg1:uut_my_key_seg|hl[1]      ;
+; my_key_seg1:uut_my_key_seg|state.11     ; Merged with my_key_seg1:uut_my_key_seg|hl[2]      ;
+; my_key_fre_div:uut_fre_div|div_cnt1[0]  ; Merged with my_key_fre_div:uut_fre_div|div_cnt[0] ;
+; my_key_fre_div:uut_fre_div|div_cnt1[1]  ; Merged with my_key_fre_div:uut_fre_div|div_cnt[1] ;
+; Total Number of Removed Registers = 31  ;                                                   ;
++-----------------------------------------+---------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                    ;
++---------------------------------------+--------------------+-----------------------------------------------------------------------------------+
+; Register name                         ; Reason for Removal ; Registers Removed due to This Register                                            ;
++---------------------------------------+--------------------+-----------------------------------------------------------------------------------+
+; my_key_seg1:uut_my_key_seg|operator~5 ; Lost Fanouts       ; my_key_seg1:uut_my_key_seg|operator.001, my_key_seg1:uut_my_key_seg|operator.011, ;
+;                                       ;                    ; my_key_seg1:uut_my_key_seg|operator.101                                           ;
+; my_key_seg1:uut_my_key_seg|operator~6 ; Lost Fanouts       ; my_key_seg1:uut_my_key_seg|operator.010                                           ;
+; my_key_seg1:uut_my_key_seg|operator~7 ; Lost Fanouts       ; my_key_seg1:uut_my_key_seg|operator.100                                           ;
++---------------------------------------+--------------------+-----------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -253,46 +322,51 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
+; Total registers                              ; 151   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 3     ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 151   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 7     ;
+; Number of registers using Clock Enable       ; 52    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; my_key_seg:uut_my_key_seg|seg_sel      ; 1       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
++-----------------------------------------------------------+
+; Inverted Register Statistics                              ;
++-------------------------------------------------+---------+
+; Inverted Register                               ; Fan out ;
++-------------------------------------------------+---------+
+; button_detection:uut_button_detection|vl_out[0] ; 1       ;
+; button_detection:uut_button_detection|vl_out[1] ; 1       ;
+; button_detection:uut_button_detection|vl_out[2] ; 1       ;
+; button_detection:uut_button_detection|vl_out[3] ; 1       ;
+; my_key_seg1:uut_my_key_seg|hl[0]                ; 12      ;
+; my_key_seg1:uut_my_key_seg|hl[1]                ; 11      ;
+; my_key_seg1:uut_my_key_seg|hl[2]                ; 13      ;
+; my_key_seg1:uut_my_key_seg|hl[3]                ; 10      ;
+; my_key_seg1:uut_my_key_seg|digit[0]             ; 1       ;
+; my_key_seg1:uut_my_key_seg|digit[1]             ; 1       ;
+; my_key_seg1:uut_my_key_seg|digit[2]             ; 1       ;
+; my_key_seg1:uut_my_key_seg|digit[3]             ; 1       ;
+; my_key_seg1:uut_my_key_seg|seg[6]               ; 1       ;
+; my_key_seg1:uut_my_key_seg|current_key[0]       ; 1       ;
+; my_key_seg1:uut_my_key_seg|current_key[1]       ; 1       ;
+; my_key_seg1:uut_my_key_seg|current_key[2]       ; 1       ;
+; my_key_seg1:uut_my_key_seg|current_key[3]       ; 1       ;
+; Total number of inverted registers = 17         ;         ;
++-------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; 256:1              ; 7 bits    ; 1190 LEs      ; 70 LEs               ; 1120 LEs               ; Yes        ; |key_seg_top|my_key_seg:uut_my_key_seg|seg[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: my_key_seg:uut_my_key_seg ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; S0             ; 00    ; Unsigned Binary                               ;
-; S1             ; 01    ; Unsigned Binary                               ;
-; S2             ; 10    ; Unsigned Binary                               ;
-; S3             ; 11    ; Unsigned Binary                               ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |task1_2_top|my_key_seg1:uut_my_key_seg|data_temp[2]   ;
+; 256:1              ; 4 bits    ; 680 LEs       ; 128 LEs              ; 552 LEs                ; Yes        ; |task1_2_top|my_key_seg1:uut_my_key_seg|current_key[3] ;
+; 256:1              ; 5 bits    ; 850 LEs       ; 20 LEs               ; 830 LEs                ; No         ; |task1_2_top|my_key_seg1:uut_my_key_seg|Selector12     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -300,24 +374,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 21                          ;
-; cycloneiii_ff         ; 33                          ;
-;     CLR               ; 25                          ;
-;     ENA CLR           ; 4                           ;
-;     ENA CLR SLD       ; 3                           ;
-;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 62                          ;
-;     arith             ; 18                          ;
-;         2 data inputs ; 18                          ;
-;     normal            ; 44                          ;
+; boundary_port         ; 28                          ;
+; cycloneiii_ff         ; 151                         ;
+;     CLR               ; 99                          ;
+;     ENA CLR           ; 52                          ;
+; cycloneiii_lcell_comb ; 223                         ;
+;     arith             ; 92                          ;
+;         2 data inputs ; 91                          ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 131                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 8                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 16                          ;
-;         4 data inputs ; 17                          ;
+;         1 data inputs ; 25                          ;
+;         2 data inputs ; 30                          ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 68                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.80                        ;
-; Average LUT depth     ; 2.39                        ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 3.04                        ;
 +-----------------------+-----------------------------+
 
 
@@ -336,34 +409,46 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 09 10:59:11 2023
+    Info: Processing started: Fri Nov 17 12:20:08 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off week8HW -c week8HW
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 4 design units, including 4 entities, in source file key_seg_top.v
-    Info (12023): Found entity 1: key_fre_div File: G:/software/FPGA/workplace/week8/key_fre_div.v Line: 1
-    Info (12023): Found entity 2: key_seg File: G:/software/FPGA/workplace/week8/key_seg.v Line: 1
-    Info (12023): Found entity 3: my_key_seg File: G:/software/FPGA/workplace/week8/my_key_seg.v Line: 1
-    Info (12023): Found entity 4: key_seg_top File: G:/software/FPGA/workplace/week8/key_seg_top.v Line: 4
-Info (12127): Elaborating entity "key_seg_top" for the top level hierarchy
-Info (12128): Elaborating entity "key_fre_div" for hierarchy "key_fre_div:uut_fre_div" File: G:/software/FPGA/workplace/week8/key_seg_top.v Line: 22
-Info (12128): Elaborating entity "my_key_seg" for hierarchy "my_key_seg:uut_my_key_seg" File: G:/software/FPGA/workplace/week8/key_seg_top.v Line: 31
-Info (13000): Registers with preset signals will power-up high File: G:/software/FPGA/workplace/week8/my_key_seg.v Line: 6
+Warning (10274): Verilog HDL macro warning at button_detection.v(4): overriding existing definition for macro "CNT_MAX", which was defined in "task1_2/my_key_fre_div.v", line 2 File: G:/software/FPGA/workplace/week8/task1_2/button_detection.v Line: 4
+Info (12021): Found 4 design units, including 4 entities, in source file task1_2/task1_2_top.v
+    Info (12023): Found entity 1: my_key_seg1 File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 1
+    Info (12023): Found entity 2: my_key_fre_div File: G:/software/FPGA/workplace/week8/task1_2/my_key_fre_div.v Line: 4
+    Info (12023): Found entity 3: button_detection File: G:/software/FPGA/workplace/week8/task1_2/button_detection.v Line: 4
+    Info (12023): Found entity 4: task1_2_top File: G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v Line: 4
+Info (12127): Elaborating entity "task1_2_top" for the top level hierarchy
+Info (12128): Elaborating entity "my_key_fre_div" for hierarchy "my_key_fre_div:uut_fre_div" File: G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v Line: 22
+Info (12128): Elaborating entity "button_detection" for hierarchy "button_detection:uut_button_detection" File: G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v Line: 29
+Info (12128): Elaborating entity "my_key_seg1" for hierarchy "my_key_seg1:uut_my_key_seg" File: G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v Line: 39
+Warning (10036): Verilog HDL or VHDL warning at my_key_seg1.v(187): object "result" assigned a value but never read File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 187
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(99): truncated value with size 32 to match size of target (1) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 99
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(103): truncated value with size 32 to match size of target (1) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 103
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(113): truncated value with size 32 to match size of target (1) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 113
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(118): truncated value with size 32 to match size of target (1) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 118
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(139): truncated value with size 32 to match size of target (1) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 139
+Warning (10199): Verilog HDL Case Statement warning at my_key_seg1.v(209): case item expression never matches the case expression File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 209
+Warning (10199): Verilog HDL Case Statement warning at my_key_seg1.v(214): case item expression never matches the case expression File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 214
+Warning (10240): Verilog HDL Always Construct warning at my_key_seg1.v(189): inferring latch(es) for variable "sel_flag", which holds its previous value in one or more paths through the always construct File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 189
+Info (10041): Inferred latch for "sel_flag" at my_key_seg1.v(198) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 198
+Info (13000): Registers with preset signals will power-up high File: G:/software/FPGA/workplace/week8/task1_2/button_detection.v Line: 33
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "bz" is stuck at VCC File: G:/software/FPGA/workplace/week8/key_seg_top.v Line: 13
+    Warning (13410): Pin "seg[7]" is stuck at VCC File: G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v Line: 14
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Info (17049): 13 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 81 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 262 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 60 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4826 megabytes
-    Info: Processing ended: Thu Nov 09 10:59:19 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+    Info (21059): Implemented 22 output pins
+    Info (21061): Implemented 234 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Fri Nov 17 12:20:15 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
 
 

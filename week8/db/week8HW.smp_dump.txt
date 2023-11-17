@@ -1,7 +1,23 @@
 
-State Machine - |key_seg_top|my_key_seg:uut_my_key_seg|state
-Name state.S3 state.S2 state.S1 state.S0 
-state.S0 0 0 0 0 
-state.S1 0 0 1 1 
-state.S2 0 1 0 1 
-state.S3 1 0 0 1 
+State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|operator
+Name operator.101 operator.100 operator.011 operator.010 operator.001 operator.000 
+operator.000 0 0 0 0 0 0 
+operator.001 0 0 0 0 1 1 
+operator.010 0 0 0 1 0 1 
+operator.011 0 0 1 0 0 1 
+operator.100 0 1 0 0 0 1 
+operator.101 1 0 0 0 0 1 
+
+State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state
+Name state.11 state.10 state.01 state.00 
+state.00 0 0 0 0 
+state.01 0 0 1 1 
+state.10 0 1 0 1 
+state.11 1 0 0 1 
+
+State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state1
+Name state1.11 state1.10 state1.01 state1.00 
+state1.00 0 0 0 0 
+state1.01 0 0 1 1 
+state1.10 0 1 0 1 
+state1.11 1 0 0 1 

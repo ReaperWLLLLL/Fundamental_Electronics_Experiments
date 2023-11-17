@@ -1,5 +1,5 @@
 Analysis & Synthesis report for week6HW
-Tue Nov 07 09:19:42 2023
+Mon Nov 13 20:34:11 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 07 09:19:42 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 13 20:34:11 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week6HW                                     ;
 ; Top-level Entity Name              ; task2_4                                     ;
@@ -174,7 +174,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.4%      ;
+;     Processors 2-16        ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -296,12 +296,11 @@ Encoding Type:  One-Hot
 +---------------------------------------+----------------------------------------+
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
-; stop_flag                             ; Stuck at GND due to stuck port data_in ;
 ; data[12..15]                          ; Stuck at GND due to stuck port data_in ;
 ; state~4                               ; Lost fanout                            ;
 ; state~5                               ; Lost fanout                            ;
 ; data[7,11]                            ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 9 ;                                        ;
+; Total Number of Removed Registers = 8 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
 
@@ -614,18 +613,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 07 09:19:35 2023
+    Info: Processing started: Mon Nov 13 20:34:02 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off week6HW -c week6HW
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file task2_4.v
     Info (12023): Found entity 1: task2_4 File: G:/software/FPGA/workplace/week6/task2_4.v Line: 2
+Warning (10274): Verilog HDL macro warning at task2_3.v(3): overriding existing definition for macro "CNT_MAX", which was defined in "task2_4.v", line 2 File: G:/software/FPGA/workplace/week6/task2_3.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file task2_3.v
     Info (12023): Found entity 1: task2_3 File: G:/software/FPGA/workplace/week6/task2_3.v Line: 3
+Warning (10274): Verilog HDL macro warning at task2_2.v(3): overriding existing definition for macro "CNT_MAX", which was defined in "task2_4.v", line 2 File: G:/software/FPGA/workplace/week6/task2_2.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file task2_2.v
     Info (12023): Found entity 1: task2_2 File: G:/software/FPGA/workplace/week6/task2_2.v Line: 3
+Warning (10274): Verilog HDL macro warning at task1_3.v(2): overriding existing definition for macro "CNT_MAX", which was defined in "task2_4.v", line 2 File: G:/software/FPGA/workplace/week6/task1_3.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file task1_3.v
-    Info (12023): Found entity 1: task1_3 File: G:/software/FPGA/workplace/week6/task1_3.v Line: 1
+    Info (12023): Found entity 1: task1_3 File: G:/software/FPGA/workplace/week6/task1_3.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file task1_2.v
     Info (12023): Found entity 1: task1_2 File: G:/software/FPGA/workplace/week6/task1_2.v Line: 1
 Info (12127): Elaborating entity "task2_4" for the top level hierarchy
@@ -639,6 +641,8 @@ Warning (10230): Verilog HDL assignment warning at task2_4.v(40): truncated valu
 Warning (10230): Verilog HDL assignment warning at task2_4.v(41): truncated value with size 32 to match size of target (4) File: G:/software/FPGA/workplace/week6/task2_4.v Line: 41
 Warning (10230): Verilog HDL assignment warning at task2_4.v(48): truncated value with size 3 to match size of target (1) File: G:/software/FPGA/workplace/week6/task2_4.v Line: 48
 Warning (10230): Verilog HDL assignment warning at task2_4.v(59): truncated value with size 3 to match size of target (1) File: G:/software/FPGA/workplace/week6/task2_4.v Line: 59
+Warning (10240): Verilog HDL Always Construct warning at task2_4.v(46): inferring latch(es) for variable "stop_flag", which holds its previous value in one or more paths through the always construct File: G:/software/FPGA/workplace/week6/task2_4.v Line: 46
+Info (10041): Inferred latch for "stop_flag" at task2_4.v(46) File: G:/software/FPGA/workplace/week6/task2_4.v Line: 46
 Info (278001): Inferred 10 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod4" File: G:/software/FPGA/workplace/week6/task2_4.v Line: 39
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: G:/software/FPGA/workplace/week6/task2_4.v Line: 38
@@ -736,11 +740,11 @@ Info (21057): Implemented 534 device resources after synthesis - the final resou
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 510 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4837 megabytes
-    Info: Processing ended: Tue Nov 07 09:19:42 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:08
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4834 megabytes
+    Info: Processing ended: Mon Nov 13 20:34:11 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +------------------------------------------+

@@ -1,4 +1,4 @@
-`define CNT_MAX 32'd25
+`define CNT_MAX 32'd25000000
 module task2_4(
     input clk,
     input reset,
