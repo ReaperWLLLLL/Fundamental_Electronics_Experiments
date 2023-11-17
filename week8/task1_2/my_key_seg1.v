@@ -86,7 +86,7 @@ end
 assign hl_vl = {hl,vl};       
 
 //try to use mealy machine to solve the problem
-reg[2:0] FSM_state;
+reg [2:0] FSM_state;
 parameter FIRST = 3'b001;
 parameter SECOND = 3'b010;
 parameter RESULT = 3'b100;
@@ -98,6 +98,87 @@ parameter SUB_OPERATOR = 5'b01000;
 parameter COMPARE_OPERATOR = 5'b10000;
 
 //the first part of the FSM, trying to get state according to input
+reg [11:0] first_num;
+reg [11:0] second_num;
+reg [15:0] result;
+always @(posedge clk, posedge rst) begin
+	if(rst) begin
+		FSM_state <= FIRST;
+		operator <= 5'b00000;
+		first_num <= 12'b0000_0000_0000;
+		second_num <= 12'b0000_0000_0000;
+	end
+	else begin
+		case(FSM_state)
+			FIRST: begin
+				if(input_type == NUMBER) begin
+					first_num <= {first_num[7:0],input_temp[3:0]};
+					FSM_state <= FIRST;
+				end
+				else if(input_type == OPERATOR) begin
+					operator <= input_temp;
+					FSM_state <= SECOND;
+				end
+				else begin
+					FSM_state <= FIRST;
+				end
+			end
+			SECOND: begin
+				if(input_type == NUMBER) begin
+					second_num <= {second_num[7:0],input_temp[3:0]};
+					FSM_state <= SECOND;
+				end
+				else if(input_type == EQUAL) begin
+					FSM_state <= RESULT;
+				end
+				else begin
+					FSM_state <= SECOND;
+				end
+			end
+			RESULT: begin
+				case(operator)
+					OR_OPERATOR: begin
+						result <= first_num | second_num;
+						FSM_state <= RESULT;
+					end
+					AND_OPERATOR: begin
+						result <= first_num & second_num;
+						FSM_state <= RESULT;
+					end
+					ADD_OPERATOR: begin
+						result[3:0] <= (first_num[3:0] + second_num[3:0])%10;
+						result[7:4] <= (first_num[7:4] + second_num[7:4] + (first_num[3:0] + second_num[3:0])/10)%10;
+						result[11:8] <= (first_num[11:8] + second_num[11:8] + (first_num[7:4] + second_num[7:4] + (first_num[3:0] + second_num[3:0])/10)/10)%10;
+
+						FSM_state <= RESULT;
+					end
+					SUB_OPERATOR: begin
+						result[3:0] <= (first_num[3:0] - second_num[3:0])%10;
+						result[7:4] <= (first_num[7:4] - second_num[7:4] + (first_num[3:0] - second_num[3:0])/10)%10;
+						result[11:8] <= (first_num[11:8] - second_num[11:8] + (first_num[7:4] - second_num[7:4] + (first_num[3:0] - second_num[3:0])/10)/10)%10;
+						FSM_state <= RESULT;
+					end
+					COMPARE_OPERATOR: begin
+						if(first_num > second_num) begin
+							result <= 12'b1;
+						end
+						else begin
+							result <= 12'b0;
+						end
+						FSM_state <= RESULT;
+					end
+					default: begin
+						result <= 12'b0;
+						FSM_state <= RESULT;
+					end
+				endcase
+			end
+			default: begin
+				FSM_state <= FIRST;
+			end
+	endcase
+	end
+end
 
 //process the origin input to a simple one
 reg [2:0] input_type;
@@ -181,30 +262,49 @@ always @ (posedge clk,posedge rst) begin
 			end
 			8'b1011_1110: begin
 				//for 9
-				key_flag <= 1;
-				current_key <= 4'b1001;
+				input_type <= NUMBER;
+				input_temp <= 5'b01001;
 			end
 			8'b1101_1110: begin
 				//for 8
-				key_flag <= 1;
-				current_key <= 4'b1000;
+				input_type <= NUMBER;
+				input_temp <= 5'b01000;
 			end
 			8'b1110_1110: begin
 				//for 7
-				key_flag <= 1;
-				current_key <= 4'b0111;
+				input_type <= NUMBER;
+				input_temp <= 5'b00111;
 			end
 			default: begin
-			  	key_flag <= 0;
-				current_key <= 4'b1111;
+				input_type <= 3'b000;
+				input_temp <= 5'b00000;
 			end
-
 		endcase
 	end
 end
 
-
-
+//the second part of the FSM, trying to show the result according to the state
+always @(posedge clk, posedge rst) begin
+	if(rst) begin
+		data <= 16'b0000_0000_0000_0000;
+	end
+	else begin
+		case(FSM_state)
+			FIRST: begin
+				data <= first_num;
+			end
+			SECOND: begin
+				data <= second_num;
+			end
+			RESULT: begin
+				data <= result;
+			end
+			default: begin
+				data <= 16'b0000_0000_0000_0000;
+			end
+		endcase
+	end
+end
 always @(posedge clk1, posedge rst) begin
 	if(rst) begin
 		seg = 8'hc0;
@@ -233,3 +333,4 @@ always @(posedge clk1, posedge rst) begin
 end
 
 endmodule
+

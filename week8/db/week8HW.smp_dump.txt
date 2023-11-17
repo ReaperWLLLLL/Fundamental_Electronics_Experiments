@@ -1,12 +1,16 @@
 
-State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|operator
-Name operator.101 operator.100 operator.011 operator.010 operator.001 operator.000 
-operator.000 0 0 0 0 0 0 
-operator.001 0 0 0 0 1 1 
-operator.010 0 0 0 1 0 1 
-operator.011 0 0 1 0 0 1 
-operator.100 0 1 0 0 0 1 
-operator.101 1 0 0 0 0 1 
+State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|input_type
+Name input_type.000 input_type.EQUAL input_type.OPERATOR input_type.NUMBER 
+input_type.000 0 0 0 0 
+input_type.NUMBER 1 0 0 1 
+input_type.OPERATOR 1 0 1 0 
+input_type.EQUAL 1 1 0 0 
+
+State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|FSM_state
+Name FSM_state.RESULT FSM_state.SECOND FSM_state.FIRST 
+FSM_state.FIRST 0 0 0 
+FSM_state.SECOND 0 1 1 
+FSM_state.RESULT 1 0 1 
 
 State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state
 Name state.11 state.10 state.01 state.00 
