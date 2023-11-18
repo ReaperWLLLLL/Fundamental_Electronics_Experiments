@@ -1,2 +1,2 @@
-Info (10281): Verilog HDL Declaration information at my_key_seg1.v(92): object "RESULT" differs only in case from object "result" in the same scope File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 92
-Info (10281): Verilog HDL Declaration information at my_key_seg1.v(93): object "operator" differs only in case from object "OPERATOR" in the same scope File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 93
+Info (10281): Verilog HDL Declaration information at my_key_seg1.v(93): object "RESULT" differs only in case from object "result" in the same scope File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 93
+Info (10281): Verilog HDL Declaration information at my_key_seg1.v(94): object "operator" differs only in case from object "OPERATOR" in the same scope File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 94

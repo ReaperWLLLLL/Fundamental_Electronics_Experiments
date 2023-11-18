@@ -1,5 +1,5 @@
 Flow report for week8HW
-Fri Nov 17 20:10:08 2023
+Sat Nov 18 15:36:21 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,20 +41,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 17 20:10:08 2023       ;
+; Flow Status                        ; Successful - Sat Nov 18 15:36:21 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week8HW                                     ;
-; Top-level Entity Name              ; task2_2_top                                 ;
+; Top-level Entity Name              ; task1_2_top                                 ;
 ; Family                             ; Cyclone 10 LP                               ;
 ; Device                             ; 10CL006YE144C8G                             ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 133 / 6,272 ( 2 % )                         ;
-;     Total combinational functions  ; 126 / 6,272 ( 2 % )                         ;
-;     Dedicated logic registers      ; 91 / 6,272 ( 1 % )                          ;
-; Total registers                    ; 91                                          ;
-; Total pins                         ; 16 / 89 ( 18 % )                            ;
+; Total logic elements               ; 2,139 / 6,272 ( 34 % )                      ;
+;     Total combinational functions  ; 2,119 / 6,272 ( 34 % )                      ;
+;     Dedicated logic registers      ; 206 / 6,272 ( 3 % )                         ;
+; Total registers                    ; 206                                         ;
+; Total pins                         ; 28 / 89 ( 31 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 2,048 / 276,480 ( < 1 % )                   ;
+; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/17/2023 20:09:51 ;
+; Start date & time ; 11/18/2023 15:35:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; week8HW             ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 88974379758660.170022299114228         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 88974379758660.170029295314500         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -87,13 +87,13 @@ https://fpgasoftware.intel.com/eula.
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; task2_2_top ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; task2_2_top ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; task2_2_top ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; task1_2_top ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; task1_2_top ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; task1_2_top ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; task2_2_top                            ; week8HW       ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; task1_2_top                            ; week8HW       ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -102,12 +102,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4825 MB             ; 00:00:07                           ;
-; Fitter               ; 00:00:03     ; 1.3                     ; 6501 MB             ; 00:00:02                           ;
-; Assembler            ; 00:00:00     ; 1.0                     ; 4679 MB             ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.2                     ; 4903 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4638 MB             ; 00:00:00                           ;
-; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:10                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4843 MB             ; 00:00:10                           ;
+; Fitter               ; 00:00:09     ; 1.6                     ; 6521 MB             ; 00:00:03                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4689 MB             ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.7                     ; 4919 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4647 MB             ; 00:00:00                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:14                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

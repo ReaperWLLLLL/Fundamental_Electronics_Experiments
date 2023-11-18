@@ -4,11 +4,35 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "clk_div_out",
+					"name" : "vl_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "clk_div_out1",
+					"name" : "vl_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vl_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vl_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hl[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hl[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hl[3]",
 					"strict" : false
 				},
 				{
@@ -25,6 +49,14 @@
 				},
 				{
 					"name" : "digit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_div_out",
+					"strict" : false
+				},
+				{
+					"name" : "clk_div_out1",
 					"strict" : false
 				},
 				{
@@ -56,11 +88,27 @@
 					"strict" : false
 				},
 				{
+					"name" : "vl[0]",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
 					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "vl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vl[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vl[3]",
 					"strict" : false
 				}
 			]

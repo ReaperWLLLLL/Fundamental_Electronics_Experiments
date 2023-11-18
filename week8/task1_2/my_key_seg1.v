@@ -150,13 +150,14 @@ always @(posedge clk, posedge rst) begin
 						result[3:0] <= (first_num[3:0] + second_num[3:0])%10;
 						result[7:4] <= (first_num[7:4] + second_num[7:4] + (first_num[3:0] + second_num[3:0])/10)%10;
 						result[11:8] <= (first_num[11:8] + second_num[11:8] + (first_num[7:4] + second_num[7:4] + (first_num[3:0] + second_num[3:0])/10)/10)%10;
-
+						result[15:12] <= (first_num[11:8] + second_num[11:8] + (first_num[7:4] + second_num[7:4] + (first_num[3:0] + second_num[3:0])/10)/10)/10;
 						FSM_state <= RESULT;
 					end
 					SUB_OPERATOR: begin
 						result[3:0] <= (first_num[3:0] - second_num[3:0])%10;
 						result[7:4] <= (first_num[7:4] - second_num[7:4] + (first_num[3:0] - second_num[3:0])/10)%10;
 						result[11:8] <= (first_num[11:8] - second_num[11:8] + (first_num[7:4] - second_num[7:4] + (first_num[3:0] - second_num[3:0])/10)/10)%10;
+						result[15:12] <= (first_num[11:8] - second_num[11:8] + (first_num[7:4] - second_num[7:4] + (first_num[3:0] - second_num[3:0])/10)/10)/10;
 						FSM_state <= RESULT;
 					end
 					COMPARE_OPERATOR: begin

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for week8HW
-Fri Nov 17 20:09:58 2023
+Sat Nov 18 15:36:05 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,17 +13,31 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis RAM Summary
-  9. State Machine - |task2_2_top|digit1:uut4|state
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Source assignments for myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated
- 14. Parameter Settings for User Entity Instance: myrom:uut1|altsyncram:altsyncram_component
- 15. altsyncram Parameter Settings by Entity Instance
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  8. State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|input_type
+  9. State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|FSM_state
+ 10. State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state
+ 11. State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state1
+ 12. Registers Removed During Synthesis
+ 13. General Register Statistics
+ 14. Inverted Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Parameter Settings for User Entity Instance: my_key_seg1:uut_my_key_seg
+ 17. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div2
+ 18. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div8
+ 19. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod2
+ 20. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod5
+ 21. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod1
+ 22. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod4
+ 23. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod0
+ 24. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod3
+ 25. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div1
+ 26. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div7
+ 27. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div0
+ 28. Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div6
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+ 32. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -50,18 +64,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 17 20:09:58 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 18 15:36:05 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week8HW                                     ;
-; Top-level Entity Name              ; task2_2_top                                 ;
+; Top-level Entity Name              ; task1_2_top                                 ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 131                                         ;
-;     Total combinational functions  ; 126                                         ;
-;     Dedicated logic registers      ; 91                                          ;
-; Total registers                    ; 91                                          ;
-; Total pins                         ; 16                                          ;
+; Total logic elements               ; 2,165                                       ;
+;     Total combinational functions  ; 2,119                                       ;
+;     Dedicated logic registers      ; 206                                         ;
+; Total registers                    ; 206                                         ;
+; Total pins                         ; 28                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 2,048                                       ;
+; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -73,7 +87,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10CL006YE144C8G    ;                    ;
-; Top-level entity name                                            ; task2_2_top        ; week8HW            ;
+; Top-level entity name                                            ; task1_2_top        ; week8HW            ;
 ; Family name                                                      ; Cyclone 10 LP      ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,37 +175,54 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.1%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.2%      ;
+;     Processor 5            ;   0.2%      ;
+;     Processor 6            ;   0.2%      ;
+;     Processor 7            ;   0.2%      ;
+;     Processor 8            ;   0.2%      ;
+;     Processors 9-16        ;   0.2%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
-; task2_2/task2_2_top.v            ; yes             ; User Verilog HDL File                 ; G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v                       ;         ;
-; task2_2/week8HW.hex              ; yes             ; User Hexadecimal (Intel-Format) File  ; G:/software/FPGA/workplace/week8/task2_2/week8HW.hex                         ;         ;
-; task2_2/myrom.v                  ; yes             ; Auto-Found Verilog HDL File           ; G:/software/FPGA/workplace/week8/task2_2/myrom.v                             ;         ;
-; task2_2/addrgen.v                ; yes             ; Auto-Found Verilog HDL File           ; G:/software/FPGA/workplace/week8/task2_2/addrgen.v                           ;         ;
-; task2_2/fre_div2_2.v             ; yes             ; Auto-Found Verilog HDL File           ; G:/software/FPGA/workplace/week8/task2_2/fre_div2_2.v                        ;         ;
-; task2_2/digit1.v                 ; yes             ; Auto-Found Verilog HDL File           ; G:/software/FPGA/workplace/week8/task2_2/digit1.v                            ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                          ; g:/software/fpga/tools/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                          ; g:/software/fpga/tools/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                          ; g:/software/fpga/tools/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                          ; g:/software/fpga/tools/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                          ; g:/software/fpga/tools/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                          ; g:/software/fpga/tools/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                          ; g:/software/fpga/tools/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                          ; g:/software/fpga/tools/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                          ; g:/software/fpga/tools/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_soa1.tdf           ; yes             ; Auto-Generated Megafunction           ; G:/software/FPGA/workplace/week8/db/altsyncram_soa1.tdf                      ;         ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; task1_2/task1_2_top.v            ; yes             ; User Verilog HDL File        ; G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v                     ;         ;
+; task1_2/my_key_seg1.v            ; yes             ; Auto-Found Verilog HDL File  ; G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v                     ;         ;
+; task1_2/my_key_fre_div.v         ; yes             ; Auto-Found Verilog HDL File  ; G:/software/FPGA/workplace/week8/task1_2/my_key_fre_div.v                  ;         ;
+; task1_2/button_detection.v       ; yes             ; Auto-Found Verilog HDL File  ; G:/software/FPGA/workplace/week8/task1_2/button_detection.v                ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; g:/software/fpga/tools/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; g:/software/fpga/tools/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; g:/software/fpga/tools/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; g:/software/fpga/tools/quartus/libraries/megafunctions/aglobal201.inc      ;         ;
+; db/lpm_divide_bhm.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/lpm_divide_bhm.tdf                     ;         ;
+; db/sign_div_unsign_akh.tdf       ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/sign_div_unsign_akh.tdf                ;         ;
+; db/alt_u_div_14f.tdf             ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/alt_u_div_14f.tdf                      ;         ;
+; db/add_sub_0pc.tdf               ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/add_sub_0pc.tdf                        ;         ;
+; db/add_sub_1pc.tdf               ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/add_sub_1pc.tdf                        ;         ;
+; db/lpm_divide_pim.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/lpm_divide_pim.tdf                     ;         ;
+; db/sign_div_unsign_olh.tdf       ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/sign_div_unsign_olh.tdf                ;         ;
+; db/alt_u_div_t6f.tdf             ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/alt_u_div_t6f.tdf                      ;         ;
+; db/lpm_divide_e9m.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/lpm_divide_e9m.tdf                     ;         ;
+; db/lpm_divide_sam.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/lpm_divide_sam.tdf                     ;         ;
+; db/lpm_divide_d9m.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/lpm_divide_d9m.tdf                     ;         ;
+; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/sign_div_unsign_9kh.tdf                ;         ;
+; db/alt_u_div_v3f.tdf             ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/alt_u_div_v3f.tdf                      ;         ;
+; db/lpm_divide_c9m.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/lpm_divide_c9m.tdf                     ;         ;
+; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/sign_div_unsign_8kh.tdf                ;         ;
+; db/alt_u_div_t3f.tdf             ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/alt_u_div_t3f.tdf                      ;         ;
+; db/lpm_divide_ahm.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/lpm_divide_ahm.tdf                     ;         ;
+; db/lpm_divide_9hm.tdf            ; yes             ; Auto-Generated Megafunction  ; G:/software/FPGA/workplace/week8/db/lpm_divide_9hm.tdf                     ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -199,82 +230,163 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 131       ;
+; Estimated Total logic elements              ; 2,165     ;
 ;                                             ;           ;
-; Total combinational functions               ; 126       ;
+; Total combinational functions               ; 2119      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 31        ;
-;     -- 3 input functions                    ; 2         ;
-;     -- <=2 input functions                  ; 93        ;
+;     -- 4 input functions                    ; 341       ;
+;     -- 3 input functions                    ; 641       ;
+;     -- <=2 input functions                  ; 1137      ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 59        ;
-;     -- arithmetic mode                      ; 67        ;
+;     -- normal mode                          ; 1370      ;
+;     -- arithmetic mode                      ; 749       ;
 ;                                             ;           ;
-; Total registers                             ; 91        ;
-;     -- Dedicated logic registers            ; 91        ;
+; Total registers                             ; 206       ;
+;     -- Dedicated logic registers            ; 206       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 16        ;
-; Total memory bits                           ; 2048      ;
+; I/O pins                                    ; 28        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 91        ;
-; Total fan-out                               ; 683       ;
-; Average fan-out                             ; 2.66      ;
+; Maximum fan-out                             ; 191       ;
+; Total fan-out                               ; 6008      ;
+; Average fan-out                             ; 2.52      ;
 +---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                    ; Entity Name     ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+-----------------+--------------+
-; |task2_2_top                              ; 126 (0)             ; 91 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 16   ; 0            ; |task2_2_top                                                                           ; task2_2_top     ; work         ;
-;    |addrgen:uut2|                         ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|addrgen:uut2                                                              ; addrgen         ; work         ;
-;    |digit1:uut4|                          ; 14 (14)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|digit1:uut4                                                               ; digit1          ; work         ;
-;    |fre_div2_2:uut3|                      ; 104 (104)           ; 64 (64)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|fre_div2_2:uut3                                                           ; fre_div2_2      ; work         ;
-;    |myrom:uut1|                           ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|myrom:uut1                                                                ; myrom           ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|myrom:uut1|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_soa1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated ; altsyncram_soa1 ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+-----------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                  ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                     ; Entity Name         ; Library Name ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |task1_2_top                               ; 2119 (0)            ; 206 (0)                   ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |task1_2_top                                                                                                                            ; task1_2_top         ; work         ;
+;    |button_detection:uut_button_detection| ; 56 (56)             ; 46 (46)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|button_detection:uut_button_detection                                                                                      ; button_detection    ; work         ;
+;    |my_key_fre_div:uut_fre_div|            ; 99 (99)             ; 64 (64)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_fre_div:uut_fre_div                                                                                                 ; my_key_fre_div      ; work         ;
+;    |my_key_seg1:uut_my_key_seg|            ; 1964 (240)          ; 96 (96)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg                                                                                                 ; my_key_seg1         ; work         ;
+;       |lpm_divide:Div0|                    ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_9hm:auto_generated|   ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div0|lpm_divide_9hm:auto_generated                                                   ; lpm_divide_9hm      ; work         ;
+;             |sign_div_unsign_8kh:divider|  ; 17 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div0|lpm_divide_9hm:auto_generated|sign_div_unsign_8kh:divider                       ; sign_div_unsign_8kh ; work         ;
+;                |alt_u_div_t3f:divider|     ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div0|lpm_divide_9hm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_t3f:divider ; alt_u_div_t3f       ; work         ;
+;       |lpm_divide:Div1|                    ; 30 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ahm:auto_generated|   ; 30 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div1|lpm_divide_ahm:auto_generated                                                   ; lpm_divide_ahm      ; work         ;
+;             |sign_div_unsign_9kh:divider|  ; 30 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div1|lpm_divide_ahm:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
+;                |alt_u_div_v3f:divider|     ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div1|lpm_divide_ahm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_v3f:divider ; alt_u_div_v3f       ; work         ;
+;       |lpm_divide:Div2|                    ; 31 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div2                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_bhm:auto_generated|   ; 31 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div2|lpm_divide_bhm:auto_generated                                                   ; lpm_divide_bhm      ; work         ;
+;             |sign_div_unsign_akh:divider|  ; 31 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div2|lpm_divide_bhm:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh ; work         ;
+;                |alt_u_div_14f:divider|     ; 31 (31)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div2|lpm_divide_bhm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_14f:divider ; alt_u_div_14f       ; work         ;
+;       |lpm_divide:Div6|                    ; 40 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div6                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_pim:auto_generated|   ; 40 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div6|lpm_divide_pim:auto_generated                                                   ; lpm_divide_pim      ; work         ;
+;             |sign_div_unsign_olh:divider|  ; 40 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div6|lpm_divide_pim:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_t6f:divider|     ; 40 (40)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div6|lpm_divide_pim:auto_generated|sign_div_unsign_olh:divider|alt_u_div_t6f:divider ; alt_u_div_t6f       ; work         ;
+;       |lpm_divide:Div7|                    ; 368 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div7                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_pim:auto_generated|   ; 368 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div7|lpm_divide_pim:auto_generated                                                   ; lpm_divide_pim      ; work         ;
+;             |sign_div_unsign_olh:divider|  ; 368 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div7|lpm_divide_pim:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_t6f:divider|     ; 368 (368)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div7|lpm_divide_pim:auto_generated|sign_div_unsign_olh:divider|alt_u_div_t6f:divider ; alt_u_div_t6f       ; work         ;
+;       |lpm_divide:Div8|                    ; 368 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div8                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_pim:auto_generated|   ; 368 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div8|lpm_divide_pim:auto_generated                                                   ; lpm_divide_pim      ; work         ;
+;             |sign_div_unsign_olh:divider|  ; 368 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div8|lpm_divide_pim:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_t6f:divider|     ; 368 (368)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Div8|lpm_divide_pim:auto_generated|sign_div_unsign_olh:divider|alt_u_div_t6f:divider ; alt_u_div_t6f       ; work         ;
+;       |lpm_divide:Mod0|                    ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_c9m:auto_generated|   ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod0|lpm_divide_c9m:auto_generated                                                   ; lpm_divide_c9m      ; work         ;
+;             |sign_div_unsign_8kh:divider|  ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod0|lpm_divide_c9m:auto_generated|sign_div_unsign_8kh:divider                       ; sign_div_unsign_8kh ; work         ;
+;                |alt_u_div_t3f:divider|     ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod0|lpm_divide_c9m:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_t3f:divider ; alt_u_div_t3f       ; work         ;
+;       |lpm_divide:Mod1|                    ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod1                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_d9m:auto_generated|   ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod1|lpm_divide_d9m:auto_generated                                                   ; lpm_divide_d9m      ; work         ;
+;             |sign_div_unsign_9kh:divider|  ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod1|lpm_divide_d9m:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
+;                |alt_u_div_v3f:divider|     ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod1|lpm_divide_d9m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_v3f:divider ; alt_u_div_v3f       ; work         ;
+;       |lpm_divide:Mod2|                    ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod2                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_e9m:auto_generated|   ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod2|lpm_divide_e9m:auto_generated                                                   ; lpm_divide_e9m      ; work         ;
+;             |sign_div_unsign_akh:divider|  ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod2|lpm_divide_e9m:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh ; work         ;
+;                |alt_u_div_14f:divider|     ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod2|lpm_divide_e9m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_14f:divider ; alt_u_div_14f       ; work         ;
+;       |lpm_divide:Mod3|                    ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod3                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_sam:auto_generated|   ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod3|lpm_divide_sam:auto_generated                                                   ; lpm_divide_sam      ; work         ;
+;             |sign_div_unsign_olh:divider|  ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod3|lpm_divide_sam:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_t6f:divider|     ; 43 (43)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod3|lpm_divide_sam:auto_generated|sign_div_unsign_olh:divider|alt_u_div_t6f:divider ; alt_u_div_t6f       ; work         ;
+;       |lpm_divide:Mod4|                    ; 371 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod4                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_sam:auto_generated|   ; 371 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod4|lpm_divide_sam:auto_generated                                                   ; lpm_divide_sam      ; work         ;
+;             |sign_div_unsign_olh:divider|  ; 371 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod4|lpm_divide_sam:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_t6f:divider|     ; 371 (371)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod4|lpm_divide_sam:auto_generated|sign_div_unsign_olh:divider|alt_u_div_t6f:divider ; alt_u_div_t6f       ; work         ;
+;       |lpm_divide:Mod5|                    ; 370 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod5                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_sam:auto_generated|   ; 370 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod5|lpm_divide_sam:auto_generated                                                   ; lpm_divide_sam      ; work         ;
+;             |sign_div_unsign_olh:divider|  ; 370 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod5|lpm_divide_sam:auto_generated|sign_div_unsign_olh:divider                       ; sign_div_unsign_olh ; work         ;
+;                |alt_u_div_t6f:divider|     ; 370 (370)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task1_2_top|my_key_seg1:uut_my_key_seg|lpm_divide:Mod5|lpm_divide_sam:auto_generated|sign_div_unsign_olh:divider|alt_u_div_t6f:divider ; alt_u_div_t6f       ; work         ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
-; Name                                                                                 ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                   ;
-+--------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
-; myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; ./task2_2/week8HW.hex ;
-+--------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|input_type                                ;
++---------------------+----------------+------------------+---------------------+-------------------+
+; Name                ; input_type.000 ; input_type.EQUAL ; input_type.OPERATOR ; input_type.NUMBER ;
++---------------------+----------------+------------------+---------------------+-------------------+
+; input_type.000      ; 0              ; 0                ; 0                   ; 0                 ;
+; input_type.NUMBER   ; 1              ; 0                ; 0                   ; 1                 ;
+; input_type.OPERATOR ; 1              ; 0                ; 1                   ; 0                 ;
+; input_type.EQUAL    ; 1              ; 1                ; 0                   ; 0                 ;
++---------------------+----------------+------------------+---------------------+-------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------+
+; State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|FSM_state        ;
++------------------+------------------+------------------+-----------------+
+; Name             ; FSM_state.RESULT ; FSM_state.SECOND ; FSM_state.FIRST ;
++------------------+------------------+------------------+-----------------+
+; FSM_state.FIRST  ; 0                ; 0                ; 0               ;
+; FSM_state.SECOND ; 0                ; 1                ; 1               ;
+; FSM_state.RESULT ; 1                ; 0                ; 1               ;
++------------------+------------------+------------------+-----------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state ;
++----------+----------+----------+----------+-------------------+
+; Name     ; state.11 ; state.10 ; state.01 ; state.00          ;
++----------+----------+----------+----------+-------------------+
+; state.00 ; 0        ; 0        ; 0        ; 0                 ;
+; state.01 ; 0        ; 0        ; 1        ; 1                 ;
+; state.10 ; 0        ; 1        ; 0        ; 1                 ;
+; state.11 ; 1        ; 0        ; 0        ; 1                 ;
++----------+----------+----------+----------+-------------------+
 
 
 Encoding Type:  One-Hot
 +----------------------------------------------------------------+
-; State Machine - |task2_2_top|digit1:uut4|state                 ;
-+------------+------------+------------+------------+------------+
-; Name       ; state.1000 ; state.0100 ; state.0010 ; state.0001 ;
-+------------+------------+------------+------------+------------+
-; state.0001 ; 0          ; 0          ; 0          ; 0          ;
-; state.0010 ; 0          ; 0          ; 1          ; 1          ;
-; state.0100 ; 0          ; 1          ; 0          ; 1          ;
-; state.1000 ; 1          ; 0          ; 0          ; 1          ;
-+------------+------------+------------+------------+------------+
+; State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state1 ;
++-----------+-----------+-----------+-----------+----------------+
+; Name      ; state1.11 ; state1.10 ; state1.01 ; state1.00      ;
++-----------+-----------+-----------+-----------+----------------+
+; state1.00 ; 0         ; 0         ; 0         ; 0              ;
+; state1.01 ; 0         ; 0         ; 1         ; 1              ;
+; state1.10 ; 0         ; 1         ; 0         ; 1              ;
+; state1.11 ; 1         ; 0         ; 0         ; 1              ;
++-----------+-----------+-----------+-----------+----------------+
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; digit1:uut4|seg[7]                    ; Stuck at VCC due to stuck port data_in ;
-; fre_div2_2:uut3|div_cnt1[0]           ; Merged with fre_div2_2:uut3|div_cnt[0] ;
-; fre_div2_2:uut3|div_cnt1[1]           ; Merged with fre_div2_2:uut3|div_cnt[1] ;
-; Total Number of Removed Registers = 3 ;                                        ;
-+---------------------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                            ;
++-------------------------------------------+---------------------------------------------------+
+; Register name                             ; Reason for Removal                                ;
++-------------------------------------------+---------------------------------------------------+
+; my_key_seg1:uut_my_key_seg|seg[7]         ; Stuck at VCC due to stuck port data_in            ;
+; my_key_seg1:uut_my_key_seg|input_type.000 ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|state~4        ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|state~5        ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|state1~4       ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|state1~5       ; Lost fanout                                       ;
+; my_key_seg1:uut_my_key_seg|state.01       ; Merged with my_key_seg1:uut_my_key_seg|hl[0]      ;
+; my_key_seg1:uut_my_key_seg|state.10       ; Merged with my_key_seg1:uut_my_key_seg|hl[1]      ;
+; my_key_seg1:uut_my_key_seg|state.11       ; Merged with my_key_seg1:uut_my_key_seg|hl[2]      ;
+; my_key_fre_div:uut_fre_div|div_cnt1[0]    ; Merged with my_key_fre_div:uut_fre_div|div_cnt[0] ;
+; my_key_fre_div:uut_fre_div|div_cnt1[1]    ; Merged with my_key_fre_div:uut_fre_div|div_cnt[1] ;
+; Total Number of Removed Registers = 11    ;                                                   ;
++-------------------------------------------+---------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -282,118 +394,344 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 91    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 87    ;
+; Total registers                              ; 206   ;
+; Number of registers using Synchronous Clear  ; 1     ;
+; Number of registers using Synchronous Load   ; 12    ;
+; Number of registers using Asynchronous Clear ; 190   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 81    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; digit1:uut4|digit[0]                   ; 1       ;
-; digit1:uut4|digit[1]                   ; 1       ;
-; digit1:uut4|digit[2]                   ; 1       ;
-; digit1:uut4|digit[3]                   ; 1       ;
-; digit1:uut4|seg[6]                     ; 1       ;
-; Total number of inverted registers = 5 ;         ;
-+----------------------------------------+---------+
++-----------------------------------------------------------+
+; Inverted Register Statistics                              ;
++-------------------------------------------------+---------+
+; Inverted Register                               ; Fan out ;
++-------------------------------------------------+---------+
+; button_detection:uut_button_detection|vl_out[0] ; 1       ;
+; button_detection:uut_button_detection|vl_out[1] ; 1       ;
+; button_detection:uut_button_detection|vl_out[2] ; 1       ;
+; button_detection:uut_button_detection|vl_out[3] ; 1       ;
+; my_key_seg1:uut_my_key_seg|hl[0]                ; 13      ;
+; my_key_seg1:uut_my_key_seg|hl[1]                ; 14      ;
+; my_key_seg1:uut_my_key_seg|hl[2]                ; 13      ;
+; my_key_seg1:uut_my_key_seg|hl[3]                ; 10      ;
+; my_key_seg1:uut_my_key_seg|digit[0]             ; 1       ;
+; my_key_seg1:uut_my_key_seg|digit[1]             ; 1       ;
+; my_key_seg1:uut_my_key_seg|digit[2]             ; 1       ;
+; my_key_seg1:uut_my_key_seg|digit[3]             ; 1       ;
+; my_key_seg1:uut_my_key_seg|seg[6]               ; 1       ;
+; Total number of inverted registers = 13         ;         ;
++-------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Source assignments for myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated ;
-+---------------------------------+--------------------+------+------------------------------------+
-; Assignment                      ; Value              ; From ; To                                 ;
-+---------------------------------+--------------------+------+------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                  ;
-+---------------------------------+--------------------+------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |task1_2_top|my_key_seg1:uut_my_key_seg|data[1]      ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |task1_2_top|my_key_seg1:uut_my_key_seg|data_temp[3] ;
+; 32:1               ; 4 bits    ; 84 LEs        ; 8 LEs                ; 76 LEs                 ; Yes        ; |task1_2_top|my_key_seg1:uut_my_key_seg|result[15]   ;
+; 32:1               ; 11 bits   ; 231 LEs       ; 33 LEs               ; 198 LEs                ; Yes        ; |task1_2_top|my_key_seg1:uut_my_key_seg|result[7]    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: myrom:uut1|altsyncram:altsyncram_component ;
-+------------------------------------+-----------------------+----------------------------+
-; Parameter Name                     ; Value                 ; Type                       ;
-+------------------------------------+-----------------------+----------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                     ; Untyped                    ;
-; AUTO_CARRY_CHAINS                  ; ON                    ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS               ; OFF                   ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS                ; ON                    ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                   ; IGNORE_CASCADE             ;
-; WIDTH_BYTEENA                      ; 1                     ; Untyped                    ;
-; OPERATION_MODE                     ; ROM                   ; Untyped                    ;
-; WIDTH_A                            ; 8                     ; Signed Integer             ;
-; WIDTHAD_A                          ; 8                     ; Signed Integer             ;
-; NUMWORDS_A                         ; 256                   ; Signed Integer             ;
-; OUTDATA_REG_A                      ; UNREGISTERED          ; Untyped                    ;
-; ADDRESS_ACLR_A                     ; NONE                  ; Untyped                    ;
-; OUTDATA_ACLR_A                     ; NONE                  ; Untyped                    ;
-; WRCONTROL_ACLR_A                   ; NONE                  ; Untyped                    ;
-; INDATA_ACLR_A                      ; NONE                  ; Untyped                    ;
-; BYTEENA_ACLR_A                     ; NONE                  ; Untyped                    ;
-; WIDTH_B                            ; 1                     ; Untyped                    ;
-; WIDTHAD_B                          ; 1                     ; Untyped                    ;
-; NUMWORDS_B                         ; 1                     ; Untyped                    ;
-; INDATA_REG_B                       ; CLOCK1                ; Untyped                    ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                ; Untyped                    ;
-; RDCONTROL_REG_B                    ; CLOCK1                ; Untyped                    ;
-; ADDRESS_REG_B                      ; CLOCK1                ; Untyped                    ;
-; OUTDATA_REG_B                      ; UNREGISTERED          ; Untyped                    ;
-; BYTEENA_REG_B                      ; CLOCK1                ; Untyped                    ;
-; INDATA_ACLR_B                      ; NONE                  ; Untyped                    ;
-; WRCONTROL_ACLR_B                   ; NONE                  ; Untyped                    ;
-; ADDRESS_ACLR_B                     ; NONE                  ; Untyped                    ;
-; OUTDATA_ACLR_B                     ; NONE                  ; Untyped                    ;
-; RDCONTROL_ACLR_B                   ; NONE                  ; Untyped                    ;
-; BYTEENA_ACLR_B                     ; NONE                  ; Untyped                    ;
-; WIDTH_BYTEENA_A                    ; 1                     ; Signed Integer             ;
-; WIDTH_BYTEENA_B                    ; 1                     ; Untyped                    ;
-; RAM_BLOCK_TYPE                     ; AUTO                  ; Untyped                    ;
-; BYTE_SIZE                          ; 8                     ; Untyped                    ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE             ; Untyped                    ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ  ; Untyped                    ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ  ; Untyped                    ;
-; INIT_FILE                          ; ./task2_2/week8HW.hex ; Untyped                    ;
-; INIT_FILE_LAYOUT                   ; PORT_A                ; Untyped                    ;
-; MAXIMUM_DEPTH                      ; 0                     ; Untyped                    ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                ; Untyped                    ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                ; Untyped                    ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                ; Untyped                    ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                ; Untyped                    ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN       ; Untyped                    ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN       ; Untyped                    ;
-; ENABLE_ECC                         ; FALSE                 ; Untyped                    ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                 ; Untyped                    ;
-; WIDTH_ECCSTATUS                    ; 3                     ; Untyped                    ;
-; DEVICE_FAMILY                      ; Cyclone 10 LP         ; Untyped                    ;
-; CBXI_PARAMETER                     ; altsyncram_soa1       ; Untyped                    ;
-+------------------------------------+-----------------------+----------------------------+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: my_key_seg1:uut_my_key_seg ;
++------------------+-------+----------------------------------------------+
+; Parameter Name   ; Value ; Type                                         ;
++------------------+-------+----------------------------------------------+
+; FIRST            ; 001   ; Unsigned Binary                              ;
+; SECOND           ; 010   ; Unsigned Binary                              ;
+; RESULT           ; 100   ; Unsigned Binary                              ;
+; OR_OPERATOR      ; 00001 ; Unsigned Binary                              ;
+; AND_OPERATOR     ; 00010 ; Unsigned Binary                              ;
+; ADD_OPERATOR     ; 00100 ; Unsigned Binary                              ;
+; SUB_OPERATOR     ; 01000 ; Unsigned Binary                              ;
+; COMPARE_OPERATOR ; 10000 ; Unsigned Binary                              ;
+; NUMBER           ; 001   ; Unsigned Binary                              ;
+; OPERATOR         ; 010   ; Unsigned Binary                              ;
+; EQUAL            ; 100   ; Unsigned Binary                              ;
++------------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                       ;
-+-------------------------------------------+--------------------------------------------+
-; Name                                      ; Value                                      ;
-+-------------------------------------------+--------------------------------------------+
-; Number of entity instances                ; 1                                          ;
-; Entity Instance                           ; myrom:uut1|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; ROM                                        ;
-;     -- WIDTH_A                            ; 8                                          ;
-;     -- NUMWORDS_A                         ; 256                                        ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                               ;
-;     -- WIDTH_B                            ; 1                                          ;
-;     -- NUMWORDS_B                         ; 1                                          ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                     ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                               ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                       ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                  ;
-+-------------------------------------------+--------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div2 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 7              ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_bhm ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div8 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_pim ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod2 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 7              ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_e9m ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod5 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_sam ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod1 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_d9m ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod4 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_sam ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod0 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_c9m ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Mod3 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_sam ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div1 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_ahm ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div7 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_pim ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div0 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_9hm ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: my_key_seg1:uut_my_key_seg|lpm_divide:Div6 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_pim ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -401,23 +739,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 16                          ;
-; cycloneiii_ff         ; 91                          ;
-;     CLR               ; 87                          ;
-;     ENA               ; 4                           ;
-; cycloneiii_lcell_comb ; 132                         ;
-;     arith             ; 67                          ;
-;         2 data inputs ; 65                          ;
-;         3 data inputs ; 2                           ;
-;     normal            ; 65                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 12                          ;
-;         2 data inputs ; 21                          ;
-;         4 data inputs ; 31                          ;
-; cycloneiii_ram_block  ; 8                           ;
+; boundary_port         ; 28                          ;
+; cycloneiii_ff         ; 206                         ;
+;     CLR               ; 112                         ;
+;     CLR SCLR          ; 1                           ;
+;     CLR SLD           ; 12                          ;
+;     ENA               ; 16                          ;
+;     ENA CLR           ; 65                          ;
+; cycloneiii_lcell_comb ; 2133                        ;
+;     arith             ; 749                         ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 146                         ;
+;         3 data inputs ; 599                         ;
+;     normal            ; 1384                        ;
+;         0 data inputs ; 149                         ;
+;         1 data inputs ; 23                          ;
+;         2 data inputs ; 829                         ;
+;         3 data inputs ; 42                          ;
+;         4 data inputs ; 341                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.40                        ;
-; Average LUT depth     ; 2.98                        ;
+; Max LUT depth         ; 157.70                      ;
+; Average LUT depth     ; 100.14                      ;
 +-----------------------+-----------------------------+
 
 
@@ -426,7 +768,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -436,58 +778,155 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 17 20:09:51 2023
+    Info: Processing started: Sat Nov 18 15:35:52 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off week8HW -c week8HW
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 5 design units, including 5 entities, in source file task2_2/task2_2_top.v
-    Info (12023): Found entity 1: myrom File: G:/software/FPGA/workplace/week8/task2_2/myrom.v Line: 40
-    Info (12023): Found entity 2: addrgen File: G:/software/FPGA/workplace/week8/task2_2/addrgen.v Line: 1
-    Info (12023): Found entity 3: fre_div2_2 File: G:/software/FPGA/workplace/week8/task2_2/fre_div2_2.v Line: 4
-    Info (12023): Found entity 4: digit1 File: G:/software/FPGA/workplace/week8/task2_2/digit1.v Line: 1
-    Info (12023): Found entity 5: task2_2_top File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 6
-Info (12127): Elaborating entity "task2_2_top" for the top level hierarchy
-Info (12128): Elaborating entity "myrom" for hierarchy "myrom:uut1" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 20
-Info (12128): Elaborating entity "altsyncram" for hierarchy "myrom:uut1|altsyncram:altsyncram_component" File: G:/software/FPGA/workplace/week8/task2_2/myrom.v Line: 82
-Info (12130): Elaborated megafunction instantiation "myrom:uut1|altsyncram:altsyncram_component" File: G:/software/FPGA/workplace/week8/task2_2/myrom.v Line: 82
-Info (12133): Instantiated megafunction "myrom:uut1|altsyncram:altsyncram_component" with the following parameter: File: G:/software/FPGA/workplace/week8/task2_2/myrom.v Line: 82
-    Info (12134): Parameter "address_aclr_a" = "NONE"
-    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
-    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "./task2_2/week8HW.hex"
-    Info (12134): Parameter "intended_device_family" = "Cyclone 10 LP"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info (12134): Parameter "lpm_type" = "altsyncram"
-    Info (12134): Parameter "numwords_a" = "256"
-    Info (12134): Parameter "operation_mode" = "ROM"
-    Info (12134): Parameter "outdata_aclr_a" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
-    Info (12134): Parameter "widthad_a" = "8"
-    Info (12134): Parameter "width_a" = "8"
-    Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_soa1.tdf
-    Info (12023): Found entity 1: altsyncram_soa1 File: G:/software/FPGA/workplace/week8/db/altsyncram_soa1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_soa1" for hierarchy "myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated" File: g:/software/fpga/tools/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "addrgen" for hierarchy "addrgen:uut2" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 27
-Warning (10230): Verilog HDL assignment warning at addrgen.v(12): truncated value with size 32 to match size of target (8) File: G:/software/FPGA/workplace/week8/task2_2/addrgen.v Line: 12
-Info (12128): Elaborating entity "fre_div2_2" for hierarchy "fre_div2_2:uut3" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 34
-Info (12128): Elaborating entity "digit1" for hierarchy "digit1:uut4" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 42
-Info (13000): Registers with preset signals will power-up high File: G:/software/FPGA/workplace/week8/task2_2/digit1.v Line: 17
+Warning (10274): Verilog HDL macro warning at button_detection.v(4): overriding existing definition for macro "CNT_MAX", which was defined in "task1_2/my_key_fre_div.v", line 2 File: G:/software/FPGA/workplace/week8/task1_2/button_detection.v Line: 4
+Info (12021): Found 4 design units, including 4 entities, in source file task1_2/task1_2_top.v
+    Info (12023): Found entity 1: my_key_seg1 File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 2
+    Info (12023): Found entity 2: my_key_fre_div File: G:/software/FPGA/workplace/week8/task1_2/my_key_fre_div.v Line: 4
+    Info (12023): Found entity 3: button_detection File: G:/software/FPGA/workplace/week8/task1_2/button_detection.v Line: 4
+    Info (12023): Found entity 4: task1_2_top File: G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v Line: 4
+Info (12127): Elaborating entity "task1_2_top" for the top level hierarchy
+Info (12128): Elaborating entity "my_key_fre_div" for hierarchy "my_key_fre_div:uut_fre_div" File: G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v Line: 22
+Info (12128): Elaborating entity "button_detection" for hierarchy "button_detection:uut_button_detection" File: G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v Line: 29
+Info (12128): Elaborating entity "my_key_seg1" for hierarchy "my_key_seg1:uut_my_key_seg" File: G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v Line: 39
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(150): truncated value with size 32 to match size of target (4) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 150
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(151): truncated value with size 32 to match size of target (4) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 151
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(152): truncated value with size 32 to match size of target (4) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 152
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(153): truncated value with size 32 to match size of target (4) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 153
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(157): truncated value with size 32 to match size of target (4) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 157
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(158): truncated value with size 32 to match size of target (4) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 158
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(159): truncated value with size 32 to match size of target (4) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 159
+Warning (10230): Verilog HDL assignment warning at my_key_seg1.v(160): truncated value with size 32 to match size of target (4) File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 160
+Info (10264): Verilog HDL Case Statement information at my_key_seg1.v(140): all case item expressions in this case statement are onehot File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 140
+Info (278001): Inferred 12 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Div2" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 153
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Div8" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 160
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Mod2" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 152
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Mod5" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 159
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Mod1" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 151
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Mod4" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 158
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Mod0" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 150
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Mod3" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 157
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Div1" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 153
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Div7" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 160
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Div0" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 153
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "my_key_seg1:uut_my_key_seg|Div6" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 160
+Info (12130): Elaborated megafunction instantiation "my_key_seg1:uut_my_key_seg|lpm_divide:Div2" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 153
+Info (12133): Instantiated megafunction "my_key_seg1:uut_my_key_seg|lpm_divide:Div2" with the following parameter: File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 153
+    Info (12134): Parameter "LPM_WIDTHN" = "7"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bhm.tdf
+    Info (12023): Found entity 1: lpm_divide_bhm File: G:/software/FPGA/workplace/week8/db/lpm_divide_bhm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_akh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_akh File: G:/software/FPGA/workplace/week8/db/sign_div_unsign_akh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_14f.tdf
+    Info (12023): Found entity 1: alt_u_div_14f File: G:/software/FPGA/workplace/week8/db/alt_u_div_14f.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_0pc.tdf
+    Info (12023): Found entity 1: add_sub_0pc File: G:/software/FPGA/workplace/week8/db/add_sub_0pc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_1pc.tdf
+    Info (12023): Found entity 1: add_sub_1pc File: G:/software/FPGA/workplace/week8/db/add_sub_1pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "my_key_seg1:uut_my_key_seg|lpm_divide:Div8" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 160
+Info (12133): Instantiated megafunction "my_key_seg1:uut_my_key_seg|lpm_divide:Div8" with the following parameter: File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 160
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_pim.tdf
+    Info (12023): Found entity 1: lpm_divide_pim File: G:/software/FPGA/workplace/week8/db/lpm_divide_pim.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_olh File: G:/software/FPGA/workplace/week8/db/sign_div_unsign_olh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_t6f.tdf
+    Info (12023): Found entity 1: alt_u_div_t6f File: G:/software/FPGA/workplace/week8/db/alt_u_div_t6f.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "my_key_seg1:uut_my_key_seg|lpm_divide:Mod2" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 152
+Info (12133): Instantiated megafunction "my_key_seg1:uut_my_key_seg|lpm_divide:Mod2" with the following parameter: File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 152
+    Info (12134): Parameter "LPM_WIDTHN" = "7"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_e9m.tdf
+    Info (12023): Found entity 1: lpm_divide_e9m File: G:/software/FPGA/workplace/week8/db/lpm_divide_e9m.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "my_key_seg1:uut_my_key_seg|lpm_divide:Mod5" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 159
+Info (12133): Instantiated megafunction "my_key_seg1:uut_my_key_seg|lpm_divide:Mod5" with the following parameter: File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 159
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_sam.tdf
+    Info (12023): Found entity 1: lpm_divide_sam File: G:/software/FPGA/workplace/week8/db/lpm_divide_sam.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "my_key_seg1:uut_my_key_seg|lpm_divide:Mod1" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 151
+Info (12133): Instantiated megafunction "my_key_seg1:uut_my_key_seg|lpm_divide:Mod1" with the following parameter: File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 151
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_d9m.tdf
+    Info (12023): Found entity 1: lpm_divide_d9m File: G:/software/FPGA/workplace/week8/db/lpm_divide_d9m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9kh File: G:/software/FPGA/workplace/week8/db/sign_div_unsign_9kh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_v3f.tdf
+    Info (12023): Found entity 1: alt_u_div_v3f File: G:/software/FPGA/workplace/week8/db/alt_u_div_v3f.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "my_key_seg1:uut_my_key_seg|lpm_divide:Mod0" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 150
+Info (12133): Instantiated megafunction "my_key_seg1:uut_my_key_seg|lpm_divide:Mod0" with the following parameter: File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 150
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_c9m.tdf
+    Info (12023): Found entity 1: lpm_divide_c9m File: G:/software/FPGA/workplace/week8/db/lpm_divide_c9m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_8kh File: G:/software/FPGA/workplace/week8/db/sign_div_unsign_8kh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_t3f.tdf
+    Info (12023): Found entity 1: alt_u_div_t3f File: G:/software/FPGA/workplace/week8/db/alt_u_div_t3f.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "my_key_seg1:uut_my_key_seg|lpm_divide:Div1" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 153
+Info (12133): Instantiated megafunction "my_key_seg1:uut_my_key_seg|lpm_divide:Div1" with the following parameter: File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 153
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ahm.tdf
+    Info (12023): Found entity 1: lpm_divide_ahm File: G:/software/FPGA/workplace/week8/db/lpm_divide_ahm.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "my_key_seg1:uut_my_key_seg|lpm_divide:Div7" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 160
+Info (12133): Instantiated megafunction "my_key_seg1:uut_my_key_seg|lpm_divide:Div7" with the following parameter: File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 160
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "my_key_seg1:uut_my_key_seg|lpm_divide:Div0" File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 153
+Info (12133): Instantiated megafunction "my_key_seg1:uut_my_key_seg|lpm_divide:Div0" with the following parameter: File: G:/software/FPGA/workplace/week8/task1_2/my_key_seg1.v Line: 153
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9hm.tdf
+    Info (12023): Found entity 1: lpm_divide_9hm File: G:/software/FPGA/workplace/week8/db/lpm_divide_9hm.tdf Line: 25
+Info (13000): Registers with preset signals will power-up high File: G:/software/FPGA/workplace/week8/task1_2/button_detection.v Line: 33
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "seg[7]" is stuck at VCC File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 13
+    Warning (13410): Pin "seg[7]" is stuck at VCC File: G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v Line: 14
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file G:/software/FPGA/workplace/week8/output_files/week8HW.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 155 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 131 logic cells
-    Info (21064): Implemented 8 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4825 megabytes
-    Info: Processing ended: Fri Nov 17 20:09:58 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+Info (21057): Implemented 2193 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 22 output pins
+    Info (21061): Implemented 2165 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Sat Nov 18 15:36:05 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:10
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in G:/software/FPGA/workplace/week8/output_files/week8HW.map.smsg.
 
 

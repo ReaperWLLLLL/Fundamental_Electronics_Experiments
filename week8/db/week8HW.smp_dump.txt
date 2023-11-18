@@ -1,7 +1,27 @@
 
-State Machine - |task2_2_top|digit1:uut4|state
-Name state.1000 state.0100 state.0010 state.0001 
-state.0001 0 0 0 0 
-state.0010 0 0 1 1 
-state.0100 0 1 0 1 
-state.1000 1 0 0 1 
+State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|input_type
+Name input_type.000 input_type.EQUAL input_type.OPERATOR input_type.NUMBER 
+input_type.000 0 0 0 0 
+input_type.NUMBER 1 0 0 1 
+input_type.OPERATOR 1 0 1 0 
+input_type.EQUAL 1 1 0 0 
+
+State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|FSM_state
+Name FSM_state.RESULT FSM_state.SECOND FSM_state.FIRST 
+FSM_state.FIRST 0 0 0 
+FSM_state.SECOND 0 1 1 
+FSM_state.RESULT 1 0 1 
+
+State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state
+Name state.11 state.10 state.01 state.00 
+state.00 0 0 0 0 
+state.01 0 0 1 1 
+state.10 0 1 0 1 
+state.11 1 0 0 1 
+
+State Machine - |task1_2_top|my_key_seg1:uut_my_key_seg|state1
+Name state1.11 state1.10 state1.01 state1.00 
+state1.00 0 0 0 0 
+state1.01 0 0 1 1 
+state1.10 0 1 0 1 
+state1.11 1 0 0 1 
