@@ -47,7 +47,7 @@
 \section{task1\_2\&task1\_3}
 由于task1\_2是task1\_3的子模块，因此不单独介绍task1\_2。task1\_2要求的移位显示可以通过下类代码实现；
 \begin{framed}
-    \begin{lstlisting}[language=verilog,style=verilogStyle]
+	\begin{lstlisting}[language=verilog,style=verilogStyle]
         first_num <= {first_num[7:0],input_temp[3:0]};
     \end{lstlisting}
 \end{framed}
@@ -56,7 +56,7 @@
 \subsubsection{矩阵按键模块}
 \subsubsubsection{代码实现}
 \begin{framed}
-    \begin{lstlisting}[language=verilog,style=verilogStyle]
+	\begin{lstlisting}[language=verilog,style=verilogStyle]
 always @(posedge clk or posedge rst) begin
     if(rst) begin
         state <= 2'b00; 
@@ -93,14 +93,14 @@ assign hl_vl = {hl,vl};
 在这个模块中，通过控制hl的输出使能矩阵键盘的不同列，实现了矩阵键盘的扫描，并将结果输出到hl\_vl中。
 \subsubsubsection{仿真结果}
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{task1_3_1.png}
-    \caption{矩阵键盘仿真结果}
+	\centering
+	\includegraphics[width=0.8\textwidth]{task1_3_1.png}
+	\caption{矩阵键盘仿真结果}
 \end{figure}
 \subsubsection{按键处理模块}
 \subsubsubsection{代码实现}
 \begin{framed}
-    \begin{lstlisting}[language=verilog,style=verilogStyle]
+	\begin{lstlisting}[language=verilog,style=verilogStyle]
 //process the origin input to a simple one
 reg [2:0] input_type;
 parameter NUMBER = 3'b001;
@@ -208,21 +208,21 @@ end
 在这个模块中，根据hl\_vl的输入，将其转换为对应的操作数或操作符，并将其输出到input\_type和input\_temp中。
 \subsubsubsection{仿真结果}
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{task1_3_2.png}
-    \caption{按键处理模块仿真结果}
+	\centering
+	\includegraphics[width=0.8\textwidth]{task1_3_2.png}
+	\caption{按键处理模块仿真结果}
 \end{figure}
 \subsubsection{状态机模块}
 为了实现计算器的功能，我实现了一个简单的mearly状态机，其状态转移图如下：
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{task1_3_3.png}
-    \caption{状态机状态转移图}
+	\centering
+	\includegraphics[width=0.8\textwidth]{task1_3_3.png}
+	\caption{状态机状态转移图}
 \end{figure}
 其中，\texttt{FIRST}为显示第一个操作数，\texttt{SECOND}为显示第二个操作数，\texttt{RESULT}为显示计算结果。
 \subsubsubsection{代码实现}
 \begin{framed}
-    \begin{lstlisting}[language=verilog,style=verilogStyle]
+	\begin{lstlisting}[language=verilog,style=verilogStyle]
 //try to use mealy machine to solve the problem
 reg [2:0] FSM_state;
 parameter FIRST = 3'b001;
@@ -322,7 +322,7 @@ end
 \end{framed}
 以上为mearly状态机的第一部分，作用为根据输入切换状态，同时计算结果。
 \begin{framed}
-    \begin{lstlisting}[language=verilog,style=verilogStyle]
+	\begin{lstlisting}[language=verilog,style=verilogStyle]
 //the second part of the FSM, trying to show the result according to the state
 always @(posedge clk, posedge rst) begin
 	if(rst) begin
@@ -350,22 +350,22 @@ end
 mearly状态机的第二部分，作用为根据状态显示对应的结果。
 \subsubsubsection{仿真结果}
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{task1_3_4.png}
-    \caption{状态机模块仿真结果1}
+	\centering
+	\includegraphics[width=0.8\textwidth]{task1_3_4.png}
+	\caption{状态机模块仿真结果1}
 \end{figure}
 由上图可以看出，当\texttt{input\_type}为1时，\texttt{FSM\_state}会维持在\texttt{FIRST}状态。而当\texttt{input\_type}为2时，\texttt{FSM\_state}会转移到\texttt{SECOND}状态。证明状态机切换正常。
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{task1_3_5.png}
-    \caption{状态机模块仿真结果2}
+	\centering
+	\includegraphics[width=0.8\textwidth]{task1_3_5.png}
+	\caption{状态机模块仿真结果2}
 \end{figure}
 由上图可以看出，当\texttt{FSM\_state}为\texttt{FIRST}状态时，\texttt{data}与\texttt{first\_num}保持一致，而当\texttt{FSM\_state}为\texttt{SECOND}状态时，\texttt{data}与\texttt{second\_num}保持一致。证明状态机显示正常。
 \subsection{仿真设计}
 仿真结果已在上文中给出，代码实现如下。
 \subsubsection{代码实现}
 \begin{framed}
-    \begin{lstlisting}[language=verilog,style=verilogStyle]
+	\begin{lstlisting}[language=verilog,style=verilogStyle]
 //~ `New testbench
 `timescale 1ns/1ps
 `include "task1_2_top.v"
@@ -431,7 +431,7 @@ endmodule
 \subsubsection{地址生成模块}
 \subsubsubsection{代码实现}
 \begin{framed}
-    \begin{lstlisting}[language=verilog,style=verilogStyle]
+	\begin{lstlisting}[language=verilog,style=verilogStyle]
 module addrgen(
     input clk,
     input rst,
@@ -450,11 +450,54 @@ endmodule
     \end{lstlisting}
 \end{framed}
 作用为每1s将addr加1。
-\subsubsubsection{仿真结果}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{task2_2_1}
-    \caption{地址生成模块仿真结果}
-\end{figure}
+\subsection{仿真设计}
+\subsubsection{代码实现}
+\begin{framed}
+	\begin{lstlisting}[language=verilog,style=verilogStyle]
+		//~ `New testbench
+`timescale 1ns / 1ps
+`include "task2_2_top.v"
+module tb_task2_2;
 
+  // task2_2_top Parameters
+  parameter PERIOD = 10;
+
+
+  // task2_2_top Inputs
+  reg        clk = 0;
+  reg        rst = 0;
+
+  // task2_2_top Outputs
+  wire       clk_div_out;
+  wire       clk_div_out1;
+  wire [3:0] digit;
+  wire [7:0] seg;
+
+  task2_2_top u_task2_2_top (
+      .clk(clk),
+      .rst(rst),
+      .clk_div_out (clk_div_out),
+      .clk_div_out1(clk_div_out1),
+      .digit       (digit[3:0]),
+      .seg         (seg[7:0])
+  );
+
+  initial begin
+    //$dumpfile(".\\wave\\tb_task2_2_top.vcd");
+    //$dumpvars(0, tb_task2_2);
+    clk = 0;
+    rst = 0;
+    #100 rst = 1;
+    #100 rst = 0;
+    #500
+    $finish;
+  end
+
+  always begin
+    #1 clk = ~clk;
+  end
+
+endmodule
+\end{lstlisting}
+\end{framed}
 \end{document}

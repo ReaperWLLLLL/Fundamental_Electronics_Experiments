@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.1)  19 NOV 2023 21:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.1)  19 NOV 2023 21:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -635,40 +635,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
-[12]
-
-g:/software/FPGA/workplace/report/week8/week8.tex:456: LaTeX Error: File `task2_2_1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.456 ...egraphics[width=0.8\textwidth]{task2_2_1}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--458
-
- []
-
-[13] (./week8.aux) ) 
+[12] [13] [14] (./week8.aux) ) 
 Here is how much of TeX's memory you used:
- 10127 strings out of 476025
- 180352 string characters out of 5786531
+ 10086 strings out of 476025
+ 179734 string characters out of 5786531
  2101382 words of memory out of 5000000
- 30224 multiletter control sequences out of 15000+600000
+ 30195 multiletter control sequences out of 15000+600000
  543786 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  78i,7n,80p,730b,1405s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><g:/software/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><g:/software/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><g:/software/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><g:/software/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><g:/software/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><g:/software/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><g:/software/latex/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><g:/software/latex/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on week8.pdf (13 pages, 568518 bytes).
+Output written on week8.pdf (14 pages, 569092 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
+ 419 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

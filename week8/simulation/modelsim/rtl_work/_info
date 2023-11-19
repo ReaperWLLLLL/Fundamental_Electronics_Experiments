@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dG:/software/FPGA/workplace/week8/simulation/modelsim
 vaddrgen
-Z1 !s110 1700399521
+Z1 !s110 1700399979
 !i10b 1
 !s100 BLL?`32cXFboOLHIMM[B23
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1700399521.000000
+Z5 !s108 1700399979.000000
 !s107 G:/software/FPGA/workplace/week8/task2_2/digit1.v|G:/software/FPGA/workplace/week8/task2_2/fre_div2_2.v|G:/software/FPGA/workplace/week8/task2_2/addrgen.v|G:/software/FPGA/workplace/week8/task2_2/myrom.v|G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v|G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v|
 Z6 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/software/FPGA/workplace/week8/task2_2|G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v|
 !i113 1
@@ -132,16 +132,16 @@ R9
 vtb_task2_2
 R1
 !i10b 1
-!s100 a4YOgPEGlf0PTFOIV=I>01
+!s100 ?HoKHjiWLMCGQ85VU>c:_1
 R2
-I5z[Pd_Zz_kQ_nnXfg:RIW2
+IR7:kJC[z`AWZ8klQ?@n:h2
 R3
 R0
-w1700399459
+w1700399951
 8G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v
 FG:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v
 !i122 1
-L0 4 40
+L0 4 42
 R4
 r1
 !s85 0

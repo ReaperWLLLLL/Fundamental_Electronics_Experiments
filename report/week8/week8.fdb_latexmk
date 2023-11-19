@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1700399329 "g:/software/FPGA/workplace/report/week8/week8.tex" "week8.pdf" "week8" 1700399332 2
+["pdflatex"] 1700400670 "g:/software/FPGA/workplace/report/week8/week8.tex" "week8.pdf" "week8" 1700400671 0
   "c:/Windows/Fonts/msyh.ttc" 1689344617 19701556 07c864a5b15e68fa47639738197fae38 ""
   "c:/Windows/Fonts/simhei.ttf" 1651842600 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "c:/Windows/Fonts/simsun.ttc" 1689344618 18008680 490583a172d4371a68d1e0526a6bca81 ""
-  "g:/software/FPGA/workplace/report/week8/week8.tex" 1700399325 12519 9aeaf4b7572fa117664e7d99a93f9963 ""
+  "g:/software/FPGA/workplace/report/week8/week8.tex" 1700400669 13244 f03d89a0b15155bfa474a649d11cbde6 ""
   "g:/software/latex/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1680280922 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "g:/software/latex/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1680308779 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "g:/software/latex/texlive/2023/texmf-dist/fonts/sfd/ttf2pk/UGBK.sfd" 1680310014 182544 bcd31d5d273400b38612a969fcab55f9 ""
@@ -180,9 +180,8 @@
   "task1_3_3.png" 1700394387 78402 7d5b0468961f7a0d4f91cefe5a1255b9 ""
   "task1_3_4.png" 1700394828 65739 a5d1d9e3474911c6587c8fb552717754 ""
   "task1_3_5.png" 1700395246 45076 54816fa2ce0947c180bbffc213a769d5 ""
-  "task2_2_1" 0 -1 0 ""
-  "week8.aux" 1700399331 2778 fd0333a11e8997938feb18ce3e0d2e29 "pdflatex"
-  "week8.tex" 1700399325 12519 9aeaf4b7572fa117664e7d99a93f9963 ""
+  "week8.aux" 1700400671 2752 bbbb306ebde7e79852a2c9e2f2dff169 "pdflatex"
+  "week8.tex" 1700400669 13244 f03d89a0b15155bfa474a649d11cbde6 ""
   (generated)
   "week8.aux"
   "week8.log"

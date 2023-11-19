@@ -20,7 +20,6 @@ module tb_task2_2;
   task2_2_top u_task2_2_top (
       .clk(clk),
       .rst(rst),
-
       .clk_div_out (clk_div_out),
       .clk_div_out1(clk_div_out1),
       .digit       (digit[3:0]),
@@ -28,8 +27,8 @@ module tb_task2_2;
   );
 
   initial begin
-    $dumpfile(".\\wave\\tb_task2_2_top.vcd");
-    $dumpvars(0, tb_task2_2);
+    //$dumpfile(".\\wave\\tb_task2_2_top.vcd");
+    //$dumpvars(0, tb_task2_2);
     clk = 0;
     rst = 0;
     #100 rst = 1;
