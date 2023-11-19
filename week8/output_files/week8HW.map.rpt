@@ -1,5 +1,5 @@
 Analysis & Synthesis report for week8HW
-Sun Nov 19 20:29:18 2023
+Sun Nov 19 21:39:27 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Inverted Register Statistics
- 13. Source assignments for myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated
+ 13. Source assignments for myrom:uut1|altsyncram:altsyncram_component|altsyncram_e0e1:auto_generated
  14. Parameter Settings for User Entity Instance: myrom:uut1|altsyncram:altsyncram_component
  15. altsyncram Parameter Settings by Entity Instance
  16. Post-Synthesis Netlist Statistics for Top Partition
@@ -50,7 +50,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 19 20:29:18 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 19 21:39:27 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week8HW                                     ;
 ; Top-level Entity Name              ; task2_2_top                                 ;
@@ -59,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 70                                          ;
 ;     Dedicated logic registers      ; 61                                          ;
 ; Total registers                    ; 61                                          ;
-; Total pins                         ; 16                                          ;
+; Total pins                         ; 24                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,048                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -170,28 +170,28 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
-; task2_2/task2_2_top.v            ; yes             ; User Verilog HDL File                  ; G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v                       ;         ;
-; task2_2/myrom.v                  ; yes             ; Auto-Found Verilog HDL File            ; G:/software/FPGA/workplace/week8/task2_2/myrom.v                             ;         ;
-; task2_2/addrgen.v                ; yes             ; Auto-Found Verilog HDL File            ; G:/software/FPGA/workplace/week8/task2_2/addrgen.v                           ;         ;
-; task2_2/fre_div2_2.v             ; yes             ; Auto-Found Verilog HDL File            ; G:/software/FPGA/workplace/week8/task2_2/fre_div2_2.v                        ;         ;
-; task2_2/digit1.v                 ; yes             ; Auto-Found Verilog HDL File            ; G:/software/FPGA/workplace/week8/task2_2/digit1.v                            ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_soa1.tdf           ; yes             ; Auto-Generated Megafunction            ; G:/software/FPGA/workplace/week8/db/altsyncram_soa1.tdf                      ;         ;
-; task2_2/week8hw.hex              ; yes             ; Auto-Found Memory Initialization File  ; G:/software/FPGA/workplace/week8/task2_2/week8hw.hex                         ;         ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                   ;
++------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                     ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
++------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; task2_2/task2_2_top.v                                ; yes             ; User Verilog HDL File                  ; G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v                       ;         ;
+; task2_2/myrom.v                                      ; yes             ; Auto-Found Verilog HDL File            ; G:/software/FPGA/workplace/week8/task2_2/myrom.v                             ;         ;
+; task2_2/addrgen.v                                    ; yes             ; Auto-Found Verilog HDL File            ; G:/software/FPGA/workplace/week8/task2_2/addrgen.v                           ;         ;
+; task2_2/fre_div2_2.v                                 ; yes             ; Auto-Found Verilog HDL File            ; G:/software/FPGA/workplace/week8/task2_2/fre_div2_2.v                        ;         ;
+; task2_2/digit1.v                                     ; yes             ; Auto-Found Verilog HDL File            ; G:/software/FPGA/workplace/week8/task2_2/digit1.v                            ;         ;
+; altsyncram.tdf                                       ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc                                ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                                          ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                                       ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal201.inc                                       ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
+; a_rdenreg.inc                                        ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                                           ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                                           ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                                         ; yes             ; Megafunction                           ; g:/software/fpga/tools/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_e0e1.tdf                               ; yes             ; Auto-Generated Megafunction            ; G:/software/FPGA/workplace/week8/db/altsyncram_e0e1.tdf                      ;         ;
+; G:/software/FPGA/workplace/week8/task2_2/week8HW.hex ; yes             ; Auto-Found Memory Initialization File  ; G:/software/FPGA/workplace/week8/task2_2/week8HW.hex                         ;         ;
++------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -215,15 +215,15 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 61        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 16        ;
+; I/O pins                                    ; 24        ;
 ; Total memory bits                           ; 2048      ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; rst~input ;
 ; Maximum fan-out                             ; 61        ;
-; Total fan-out                               ; 461       ;
-; Average fan-out                             ; 2.70      ;
+; Total fan-out                               ; 477       ;
+; Average fan-out                             ; 2.55      ;
 +---------------------------------------------+-----------+
 
 
@@ -232,24 +232,24 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                    ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+-----------------+--------------+
-; |task2_2_top                              ; 70 (0)              ; 61 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 16   ; 0            ; |task2_2_top                                                                           ; task2_2_top     ; work         ;
+; |task2_2_top                              ; 70 (0)              ; 61 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 24   ; 0            ; |task2_2_top                                                                           ; task2_2_top     ; work         ;
 ;    |addrgen:uut2|                         ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|addrgen:uut2                                                              ; addrgen         ; work         ;
 ;    |digit1:uut4|                          ; 14 (14)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|digit1:uut4                                                               ; digit1          ; work         ;
 ;    |fre_div2_2:uut3|                      ; 48 (48)             ; 34 (34)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|fre_div2_2:uut3                                                           ; fre_div2_2      ; work         ;
 ;    |myrom:uut1|                           ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|myrom:uut1                                                                ; myrom           ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|myrom:uut1|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_soa1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated ; altsyncram_soa1 ; work         ;
+;          |altsyncram_e0e1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |task2_2_top|myrom:uut1|altsyncram:altsyncram_component|altsyncram_e0e1:auto_generated ; altsyncram_e0e1 ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
-; Name                                                                                 ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                   ;
-+--------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
-; myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; ./task2_2/week8HW.hex ;
-+--------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                             ;
++--------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------------------------------------------+
+; Name                                                                                 ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                                  ;
++--------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------------------------------------------+
+; myrom:uut1|altsyncram:altsyncram_component|altsyncram_e0e1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; G:\software\FPGA\workplace\week8\task2_2\week8HW.hex ;
++--------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -337,7 +337,7 @@ Encoding Type:  One-Hot
 
 
 +--------------------------------------------------------------------------------------------------+
-; Source assignments for myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated ;
+; Source assignments for myrom:uut1|altsyncram:altsyncram_component|altsyncram_e0e1:auto_generated ;
 +---------------------------------+--------------------+------+------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                 ;
 +---------------------------------+--------------------+------+------------------------------------+
@@ -345,64 +345,64 @@ Encoding Type:  One-Hot
 +---------------------------------+--------------------+------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: myrom:uut1|altsyncram:altsyncram_component ;
-+------------------------------------+-----------------------+----------------------------+
-; Parameter Name                     ; Value                 ; Type                       ;
-+------------------------------------+-----------------------+----------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                     ; Untyped                    ;
-; AUTO_CARRY_CHAINS                  ; ON                    ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS               ; OFF                   ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS                ; ON                    ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                   ; IGNORE_CASCADE             ;
-; WIDTH_BYTEENA                      ; 1                     ; Untyped                    ;
-; OPERATION_MODE                     ; ROM                   ; Untyped                    ;
-; WIDTH_A                            ; 8                     ; Signed Integer             ;
-; WIDTHAD_A                          ; 8                     ; Signed Integer             ;
-; NUMWORDS_A                         ; 256                   ; Signed Integer             ;
-; OUTDATA_REG_A                      ; UNREGISTERED          ; Untyped                    ;
-; ADDRESS_ACLR_A                     ; NONE                  ; Untyped                    ;
-; OUTDATA_ACLR_A                     ; NONE                  ; Untyped                    ;
-; WRCONTROL_ACLR_A                   ; NONE                  ; Untyped                    ;
-; INDATA_ACLR_A                      ; NONE                  ; Untyped                    ;
-; BYTEENA_ACLR_A                     ; NONE                  ; Untyped                    ;
-; WIDTH_B                            ; 1                     ; Untyped                    ;
-; WIDTHAD_B                          ; 1                     ; Untyped                    ;
-; NUMWORDS_B                         ; 1                     ; Untyped                    ;
-; INDATA_REG_B                       ; CLOCK1                ; Untyped                    ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                ; Untyped                    ;
-; RDCONTROL_REG_B                    ; CLOCK1                ; Untyped                    ;
-; ADDRESS_REG_B                      ; CLOCK1                ; Untyped                    ;
-; OUTDATA_REG_B                      ; UNREGISTERED          ; Untyped                    ;
-; BYTEENA_REG_B                      ; CLOCK1                ; Untyped                    ;
-; INDATA_ACLR_B                      ; NONE                  ; Untyped                    ;
-; WRCONTROL_ACLR_B                   ; NONE                  ; Untyped                    ;
-; ADDRESS_ACLR_B                     ; NONE                  ; Untyped                    ;
-; OUTDATA_ACLR_B                     ; NONE                  ; Untyped                    ;
-; RDCONTROL_ACLR_B                   ; NONE                  ; Untyped                    ;
-; BYTEENA_ACLR_B                     ; NONE                  ; Untyped                    ;
-; WIDTH_BYTEENA_A                    ; 1                     ; Signed Integer             ;
-; WIDTH_BYTEENA_B                    ; 1                     ; Untyped                    ;
-; RAM_BLOCK_TYPE                     ; AUTO                  ; Untyped                    ;
-; BYTE_SIZE                          ; 8                     ; Untyped                    ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE             ; Untyped                    ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ  ; Untyped                    ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ  ; Untyped                    ;
-; INIT_FILE                          ; ./task2_2/week8HW.hex ; Untyped                    ;
-; INIT_FILE_LAYOUT                   ; PORT_A                ; Untyped                    ;
-; MAXIMUM_DEPTH                      ; 0                     ; Untyped                    ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                ; Untyped                    ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                ; Untyped                    ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                ; Untyped                    ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                ; Untyped                    ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN       ; Untyped                    ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN       ; Untyped                    ;
-; ENABLE_ECC                         ; FALSE                 ; Untyped                    ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                 ; Untyped                    ;
-; WIDTH_ECCSTATUS                    ; 3                     ; Untyped                    ;
-; DEVICE_FAMILY                      ; Cyclone 10 LP         ; Untyped                    ;
-; CBXI_PARAMETER                     ; altsyncram_soa1       ; Untyped                    ;
-+------------------------------------+-----------------------+----------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: myrom:uut1|altsyncram:altsyncram_component                    ;
++------------------------------------+------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                ; Type           ;
++------------------------------------+------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                    ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                   ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                  ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                   ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                  ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                    ; Untyped        ;
+; OPERATION_MODE                     ; ROM                                                  ; Untyped        ;
+; WIDTH_A                            ; 8                                                    ; Signed Integer ;
+; WIDTHAD_A                          ; 8                                                    ; Signed Integer ;
+; NUMWORDS_A                         ; 256                                                  ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                         ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                 ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                 ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                 ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                 ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                 ; Untyped        ;
+; WIDTH_B                            ; 1                                                    ; Untyped        ;
+; WIDTHAD_B                          ; 1                                                    ; Untyped        ;
+; NUMWORDS_B                         ; 1                                                    ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                               ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                               ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                               ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                               ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                         ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                               ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                 ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                 ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                 ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                 ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                 ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                 ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                    ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                                    ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                 ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                    ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                            ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                 ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                 ; Untyped        ;
+; INIT_FILE                          ; G:\software\FPGA\workplace\week8\task2_2\week8HW.hex ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                               ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                    ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                               ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                               ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                               ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                               ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                      ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                      ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                    ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone 10 LP                                        ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_e0e1                                      ; Untyped        ;
++------------------------------------+------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -431,7 +431,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 16                          ;
+; boundary_port         ; 24                          ;
 ; cycloneiii_ff         ; 61                          ;
 ;     CLR               ; 55                          ;
 ;     ENA               ; 4                           ;
@@ -467,7 +467,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Nov 19 20:29:10 2023
+    Info: Processing started: Sun Nov 19 21:39:20 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off week8HW -c week8HW
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -478,14 +478,14 @@ Info (12021): Found 5 design units, including 5 entities, in source file task2_2
     Info (12023): Found entity 4: digit1 File: G:/software/FPGA/workplace/week8/task2_2/digit1.v Line: 1
     Info (12023): Found entity 5: task2_2_top File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 6
 Info (12127): Elaborating entity "task2_2_top" for the top level hierarchy
-Info (12128): Elaborating entity "myrom" for hierarchy "myrom:uut1" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 20
+Info (12128): Elaborating entity "myrom" for hierarchy "myrom:uut1" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 22
 Info (12128): Elaborating entity "altsyncram" for hierarchy "myrom:uut1|altsyncram:altsyncram_component" File: G:/software/FPGA/workplace/week8/task2_2/myrom.v Line: 82
 Info (12130): Elaborated megafunction instantiation "myrom:uut1|altsyncram:altsyncram_component" File: G:/software/FPGA/workplace/week8/task2_2/myrom.v Line: 82
 Info (12133): Instantiated megafunction "myrom:uut1|altsyncram:altsyncram_component" with the following parameter: File: G:/software/FPGA/workplace/week8/task2_2/myrom.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "./task2_2/week8HW.hex"
+    Info (12134): Parameter "init_file" = "G:\software\FPGA\workplace\week8\task2_2\week8HW.hex"
     Info (12134): Parameter "intended_device_family" = "Cyclone 10 LP"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -496,29 +496,29 @@ Info (12133): Instantiated megafunction "myrom:uut1|altsyncram:altsyncram_compon
     Info (12134): Parameter "widthad_a" = "8"
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_soa1.tdf
-    Info (12023): Found entity 1: altsyncram_soa1 File: G:/software/FPGA/workplace/week8/db/altsyncram_soa1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_soa1" for hierarchy "myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated" File: g:/software/fpga/tools/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "addrgen" for hierarchy "addrgen:uut2" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_e0e1.tdf
+    Info (12023): Found entity 1: altsyncram_e0e1 File: G:/software/FPGA/workplace/week8/db/altsyncram_e0e1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_e0e1" for hierarchy "myrom:uut1|altsyncram:altsyncram_component|altsyncram_e0e1:auto_generated" File: g:/software/fpga/tools/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "addrgen" for hierarchy "addrgen:uut2" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 29
 Warning (10230): Verilog HDL assignment warning at addrgen.v(12): truncated value with size 32 to match size of target (8) File: G:/software/FPGA/workplace/week8/task2_2/addrgen.v Line: 12
-Info (12128): Elaborating entity "fre_div2_2" for hierarchy "fre_div2_2:uut3" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 34
-Info (12128): Elaborating entity "digit1" for hierarchy "digit1:uut4" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 42
+Info (12128): Elaborating entity "fre_div2_2" for hierarchy "fre_div2_2:uut3" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 36
+Info (12128): Elaborating entity "digit1" for hierarchy "digit1:uut4" File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 44
 Info (13000): Registers with preset signals will power-up high File: G:/software/FPGA/workplace/week8/task2_2/digit1.v Line: 17
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "seg[7]" is stuck at VCC File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 13
+    Warning (13410): Pin "seg[7]" is stuck at VCC File: G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 99 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 107 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 14 output pins
+    Info (21059): Implemented 22 output pins
     Info (21061): Implemented 75 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4823 megabytes
-    Info: Processing ended: Sun Nov 19 20:29:18 2023
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Sun Nov 19 21:39:27 2023
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:08
 
 

@@ -16,6 +16,7 @@ module tb_task2_2;
   wire       clk_div_out1;
   wire [3:0] digit;
   wire [7:0] seg;
+  wire [7:0] addr;
 
   task2_2_top u_task2_2_top (
       .clk(clk),
@@ -23,7 +24,9 @@ module tb_task2_2;
       .clk_div_out (clk_div_out),
       .clk_div_out1(clk_div_out1),
       .digit       (digit[3:0]),
-      .seg         (seg[7:0])
+      .seg         (seg[7:0]),
+      .addr        (addr[7:0])
+
   );
 
   initial begin
@@ -33,7 +36,7 @@ module tb_task2_2;
     rst = 0;
     #100 rst = 1;
     #100 rst = 0;
-    #500
+    #5000
     $finish;
   end
 

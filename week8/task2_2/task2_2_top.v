@@ -9,22 +9,22 @@ module task2_2_top(
     output clk_div_out,
     output clk_div_out1,
     output [3:0] digit,
-    output [7:0] seg
+    output [7:0] seg,
+    output [7:0] addr
 );
 wire [7:0] data_temp;
-wire [7:0] addr;
-
-myrom uut1(
-    .clock(clk_div_out1),
-    .address(addr),
-    .q(data_temp)
-);
 
 
 addrgen uut2(
     .clk(clk_div_out),
     .rst(rst),
     .addr(addr)
+);
+
+myrom uut1(
+    .clock(clk_div_out1),
+    .address(addr),
+    .q(data_temp)
 );
 
 fre_div2_2 uut3(

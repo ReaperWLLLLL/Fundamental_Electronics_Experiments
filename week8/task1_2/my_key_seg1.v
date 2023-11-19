@@ -154,11 +154,13 @@ always @(posedge clk, posedge rst) begin
 						FSM_state <= RESULT;
 					end
 					SUB_OPERATOR: begin
-						result[3:0] <= (first_num[3:0] - second_num[3:0])%10;
-						result[7:4] <= (first_num[7:4] - second_num[7:4] + (first_num[3:0] - second_num[3:0])/10)%10;
-						result[11:8] <= (first_num[11:8] - second_num[11:8] + (first_num[7:4] - second_num[7:4] + (first_num[3:0] - second_num[3:0])/10)/10)%10;
-						result[15:12] <= (first_num[11:8] - second_num[11:8] + (first_num[7:4] - second_num[7:4] + (first_num[3:0] - second_num[3:0])/10)/10)/10;
-						FSM_state <= RESULT;
+						if(first_num > second_num || first_num == second_num) begin
+							result <= {12'b0,first_num[11:8]}*100 + {12'b0,first_num[7:4]}*10 + {12'b0,first_num[3:0]} - {12'b0,second_num[11:8]}*100 - {12'b0,second_num[7:4]}*10 - {12'b0,second_num[3:0]};
+						end
+						else begin
+							result <= 12'b111111111111;
+							FSM_state <= RESULT;
+						end
 					end
 					COMPARE_OPERATOR: begin
 						if(first_num > second_num) begin

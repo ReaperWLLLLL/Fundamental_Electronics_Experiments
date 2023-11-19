@@ -15,6 +15,14 @@ seg[4] <= digit1:uut4.seg
 seg[5] <= digit1:uut4.seg
 seg[6] <= digit1:uut4.seg
 seg[7] <= digit1:uut4.seg
+addr[0] <= addr[0].DB_MAX_OUTPUT_PORT_TYPE
+addr[1] <= addr[1].DB_MAX_OUTPUT_PORT_TYPE
+addr[2] <= addr[2].DB_MAX_OUTPUT_PORT_TYPE
+addr[3] <= addr[3].DB_MAX_OUTPUT_PORT_TYPE
+addr[4] <= addr[4].DB_MAX_OUTPUT_PORT_TYPE
+addr[5] <= addr[5].DB_MAX_OUTPUT_PORT_TYPE
+addr[6] <= addr[6].DB_MAX_OUTPUT_PORT_TYPE
+addr[7] <= addr[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |task2_2_top|myrom:uut1
@@ -51,18 +59,18 @@ data_a[5] => ~NO_FANOUT~
 data_a[6] => ~NO_FANOUT~
 data_a[7] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_soa1:auto_generated.address_a[0]
-address_a[1] => altsyncram_soa1:auto_generated.address_a[1]
-address_a[2] => altsyncram_soa1:auto_generated.address_a[2]
-address_a[3] => altsyncram_soa1:auto_generated.address_a[3]
-address_a[4] => altsyncram_soa1:auto_generated.address_a[4]
-address_a[5] => altsyncram_soa1:auto_generated.address_a[5]
-address_a[6] => altsyncram_soa1:auto_generated.address_a[6]
-address_a[7] => altsyncram_soa1:auto_generated.address_a[7]
+address_a[0] => altsyncram_e0e1:auto_generated.address_a[0]
+address_a[1] => altsyncram_e0e1:auto_generated.address_a[1]
+address_a[2] => altsyncram_e0e1:auto_generated.address_a[2]
+address_a[3] => altsyncram_e0e1:auto_generated.address_a[3]
+address_a[4] => altsyncram_e0e1:auto_generated.address_a[4]
+address_a[5] => altsyncram_e0e1:auto_generated.address_a[5]
+address_a[6] => altsyncram_e0e1:auto_generated.address_a[6]
+address_a[7] => altsyncram_e0e1:auto_generated.address_a[7]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_soa1:auto_generated.clock0
+clock0 => altsyncram_e0e1:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -72,21 +80,21 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_soa1:auto_generated.q_a[0]
-q_a[1] <= altsyncram_soa1:auto_generated.q_a[1]
-q_a[2] <= altsyncram_soa1:auto_generated.q_a[2]
-q_a[3] <= altsyncram_soa1:auto_generated.q_a[3]
-q_a[4] <= altsyncram_soa1:auto_generated.q_a[4]
-q_a[5] <= altsyncram_soa1:auto_generated.q_a[5]
-q_a[6] <= altsyncram_soa1:auto_generated.q_a[6]
-q_a[7] <= altsyncram_soa1:auto_generated.q_a[7]
+q_a[0] <= altsyncram_e0e1:auto_generated.q_a[0]
+q_a[1] <= altsyncram_e0e1:auto_generated.q_a[1]
+q_a[2] <= altsyncram_e0e1:auto_generated.q_a[2]
+q_a[3] <= altsyncram_e0e1:auto_generated.q_a[3]
+q_a[4] <= altsyncram_e0e1:auto_generated.q_a[4]
+q_a[5] <= altsyncram_e0e1:auto_generated.q_a[5]
+q_a[6] <= altsyncram_e0e1:auto_generated.q_a[6]
+q_a[7] <= altsyncram_e0e1:auto_generated.q_a[7]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|task2_2_top|myrom:uut1|altsyncram:altsyncram_component|altsyncram_soa1:auto_generated
+|task2_2_top|myrom:uut1|altsyncram:altsyncram_component|altsyncram_e0e1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR

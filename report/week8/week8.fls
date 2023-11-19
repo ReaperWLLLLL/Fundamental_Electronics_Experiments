@@ -641,6 +641,11 @@ INPUT g:/software/latex/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tctt1000.t
 INPUT g:/software/latex/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT g:/software/latex/texlive/2023/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei75.tfm
 INPUT g:/software/latex/texlive/2023/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei62.tfm
+INPUT ./task2_2_1.png
+INPUT ./task2_2_1.png
+INPUT task2_2_1.png
+INPUT ./task2_2_1.png
+INPUT ./task2_2_1.png
 INPUT week8.aux
 INPUT c:/Windows/Fonts/simhei.ttf
 INPUT c:/Windows/Fonts/simhei.ttf

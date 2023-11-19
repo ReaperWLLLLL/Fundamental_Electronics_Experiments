@@ -12,7 +12,7 @@
 # 
 # vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/week8/task2_2 {G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:19:39 on Nov 19,2023
+# Start time: 21:46:43 on Nov 19,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/week8/task2_2" G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v 
 # -- Compiling module myrom
 # -- Compiling module addrgen
@@ -22,12 +22,12 @@
 # 
 # Top level modules:
 # 	task2_2_top
-# End time: 21:19:39 on Nov 19,2023, Elapsed time: 0:00:00
+# End time: 21:46:43 on Nov 19,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/week8/task2_2 {G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:19:39 on Nov 19,2023
+# Start time: 21:46:43 on Nov 19,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/week8/task2_2" G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v 
 # -- Compiling module myrom
 # -- Compiling module addrgen
@@ -38,17 +38,17 @@
 # 
 # Top level modules:
 # 	tb_task2_2
-# End time: 21:19:39 on Nov 19,2023, Elapsed time: 0:00:00
+# End time: 21:46:43 on Nov 19,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs="+acc"  tb_task2_2
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs=""+acc"" tb_task2_2 
-# Start time: 21:19:39 on Nov 19,2023
+# Start time: 21:46:44 on Nov 19,2023
 # Loading work.tb_task2_2
 # Loading work.task2_2_top
+# Loading work.addrgen
 # Loading work.myrom
 # Loading altera_mf_ver.altsyncram
-# Loading work.addrgen
 # Loading work.fre_div2_2
 # Loading work.digit1
 # Loading altera_mf_ver.altsyncram_body
@@ -61,16 +61,11 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $finish    : G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v(38)
-#    Time: 700 ps  Iteration: 0  Instance: /tb_task2_2
+# ** Note: $finish    : G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v(40)
+#    Time: 5200 ps  Iteration: 0  Instance: /tb_task2_2
 # 1
-# Break in Module tb_task2_2 at G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v line 38
-view -new wave
-# -new not supported on PE
+# Break in Module tb_task2_2 at G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v line 40
 add wave -position insertpoint  \
-sim:/tb_task2_2/u_task2_2_top/uut2/addr
-# WARNING: No extended dataflow license exists
-add dataflow  \
-sim:/tb_task2_2/u_task2_2_top/uut1/address
-# End time: 21:31:53 on Nov 19,2023, Elapsed time: 0:12:14
+sim:/tb_task2_2/u_task2_2_top/uut1/q
+# End time: 21:49:35 on Nov 19,2023, Elapsed time: 0:02:51
 # Errors: 0, Warnings: 0

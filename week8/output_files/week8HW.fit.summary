@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sun Nov 19 20:29:22 2023
+Fitter Status : Successful - Sun Nov 19 21:39:32 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : week8HW
 Top-level Entity Name : task2_2_top
@@ -9,7 +9,7 @@ Total logic elements : 77 / 6,272 ( 1 % )
     Total combinational functions : 70 / 6,272 ( 1 % )
     Dedicated logic registers : 61 / 6,272 ( < 1 % )
 Total registers : 61
-Total pins : 16 / 89 ( 18 % )
+Total pins : 24 / 89 ( 27 % )
 Total virtual pins : 0
 Total memory bits : 2,048 / 276,480 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
