@@ -155,7 +155,10 @@ always @(posedge clk, posedge rst) begin
 					end
 					SUB_OPERATOR: begin
 						if(first_num > second_num || first_num == second_num) begin
-							result <= {12'b0,first_num[11:8]}*100 + {12'b0,first_num[7:4]}*10 + {12'b0,first_num[3:0]} - {12'b0,second_num[11:8]}*100 - {12'b0,second_num[7:4]}*10 - {12'b0,second_num[3:0]};
+							result[11:8] <= ({12'b0,first_num[11:8]}*100 + {12'b0,first_num[7:4]}*10 + {12'b0,first_num[3:0]} - {12'b0,second_num[11:8]}*100 - {12'b0,second_num[7:4]}*10 - {12'b0,second_num[3:0]})/100;
+							result[7:4] <= ({12'b0,first_num[11:8]}*100 + {12'b0,first_num[7:4]}*10 + {12'b0,first_num[3:0]} - {12'b0,second_num[11:8]}*100 - {12'b0,second_num[7:4]}*10 - {12'b0,second_num[3:0]})%100/10;
+							result[3:0] <= ({12'b0,first_num[11:8]}*100 + {12'b0,first_num[7:4]}*10 + {12'b0,first_num[3:0]} - {12'b0,second_num[11:8]}*100 - {12'b0,second_num[7:4]}*10 - {12'b0,second_num[3:0]})%10;
+
 						end
 						else begin
 							result <= 12'b111111111111;
