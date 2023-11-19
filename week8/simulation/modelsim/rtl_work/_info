@@ -1,0 +1,155 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/software/FPGA/workplace/week8/simulation/modelsim
+vaddrgen
+Z1 !s110 1700399521
+!i10b 1
+!s100 BLL?`32cXFboOLHIMM[B23
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I2?kb=Gag<JD^MzYNe>7SL0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1700218683
+8G:/software/FPGA/workplace/week8/task2_2/addrgen.v
+FG:/software/FPGA/workplace/week8/task2_2/addrgen.v
+!i122 1
+L0 1 15
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1700399521.000000
+!s107 G:/software/FPGA/workplace/week8/task2_2/digit1.v|G:/software/FPGA/workplace/week8/task2_2/fre_div2_2.v|G:/software/FPGA/workplace/week8/task2_2/addrgen.v|G:/software/FPGA/workplace/week8/task2_2/myrom.v|G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v|G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v|
+Z6 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/software/FPGA/workplace/week8/task2_2|G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+G:/software/FPGA/workplace/week8/task2_2
+Z9 tCvgOpt 0
+vdigit1
+R1
+!i10b 1
+!s100 0LnC8cn@ZHIa>FbKSS3K<1
+R2
+IzSefMR]S0DT:BGGFETJ@D1
+R3
+R0
+w1700222985
+8G:/software/FPGA/workplace/week8/task2_2/digit1.v
+FG:/software/FPGA/workplace/week8/task2_2/digit1.v
+!i122 1
+L0 1 76
+R4
+r1
+!s85 0
+31
+R5
+Z10 !s107 G:/software/FPGA/workplace/week8/task2_2/digit1.v|G:/software/FPGA/workplace/week8/task2_2/fre_div2_2.v|G:/software/FPGA/workplace/week8/task2_2/addrgen.v|G:/software/FPGA/workplace/week8/task2_2/myrom.v|G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v|G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v|
+R6
+!i113 1
+R7
+R8
+R9
+vfre_div2_2
+R1
+!i10b 1
+!s100 oQ`nZ=mRMh__c4UQg21UG1
+R2
+Ij]kn1b]:4Qi;bY7A2`Zjz1
+R3
+R0
+w1700396310
+8G:/software/FPGA/workplace/week8/task2_2/fre_div2_2.v
+FG:/software/FPGA/workplace/week8/task2_2/fre_div2_2.v
+!i122 1
+L0 4 38
+R4
+r1
+!s85 0
+31
+R5
+R10
+R6
+!i113 1
+R7
+R8
+R9
+vmyrom
+R1
+!i10b 1
+!s100 cU1IBZG<WIY`_W3mo1U2K1
+R2
+IC]docBI<iP6>08zL^9T^E2
+R3
+R0
+w1700399254
+8G:/software/FPGA/workplace/week8/task2_2/myrom.v
+FG:/software/FPGA/workplace/week8/task2_2/myrom.v
+!i122 1
+L0 40 66
+R4
+r1
+!s85 0
+31
+R5
+R10
+R6
+!i113 1
+R7
+R8
+R9
+vtask2_2_top
+R1
+!i10b 1
+!s100 WhMd9:Qh27E:a<]Z6Z=1n3
+R2
+IF7FD1giVYJdZzRcEe@Vj>3
+R3
+R0
+w1700399325
+8G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v
+FG:/software/FPGA/workplace/week8/task2_2/task2_2_top.v
+!i122 1
+L0 6 42
+R4
+r1
+!s85 0
+31
+R5
+R10
+R6
+!i113 1
+R7
+R8
+R9
+vtb_task2_2
+R1
+!i10b 1
+!s100 a4YOgPEGlf0PTFOIV=I>01
+R2
+I5z[Pd_Zz_kQ_nnXfg:RIW2
+R3
+R0
+w1700399459
+8G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v
+FG:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v
+!i122 1
+L0 4 40
+R4
+r1
+!s85 0
+31
+R5
+R10
+R6
+!i113 1
+R7
+R8
+R9

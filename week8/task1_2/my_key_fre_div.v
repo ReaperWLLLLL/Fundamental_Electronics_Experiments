@@ -1,5 +1,5 @@
-`define CNT_MAX 1000000
-`define CNT_MAX1 25000
+`define CNT_MAX 10
+`define CNT_MAX1 25
 
 module my_key_fre_div(
 	input clk,

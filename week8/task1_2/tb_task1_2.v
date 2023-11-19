@@ -15,7 +15,6 @@ module tb_task1_2_top;
     // task1_2_top Outputs
     wire [3:0] hl;
     wire [3:0] digit;
-    wire clk_div_out;
     wire [7:0] seg;
 
     task1_2_top u_task1_2_top (
@@ -24,7 +23,6 @@ module tb_task1_2_top;
         .vl(vl[3:0]),
         .hl(hl[3:0]),
         .digit(digit[3:0]),
-        .clk_div_out(clk_div_out),
         .seg(seg[7:0])
     );
 
@@ -37,12 +35,23 @@ module tb_task1_2_top;
         rst = 1;
         #10
         rst = 0;
-        #1000
+        #500
         $finish;
     end
 
     always begin
         #1 clk = ~clk;
+    end
+
+    always begin
+        #100
+        vl = 4'b1110;
+        #100
+        vl = 4'b1101;
+        #100
+        vl = 4'b1011;
+        #100
+        vl = 4'b0111;
     end
 
 endmodule

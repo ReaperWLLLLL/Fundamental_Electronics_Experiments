@@ -87,7 +87,7 @@ module myrom (
 `ifdef NO_PLI
 		altsyncram_component.init_file = "./task2_2/week8HW.rif"
 `else
-		altsyncram_component.init_file = "./task2_2/week8HW.hex"
+		altsyncram_component.init_file = "G:\\software\\FPGA\\workplace\\week8\\task2_2\\week8HW.hex"
 `endif
 ,
 		altsyncram_component.intended_device_family = "Cyclone 10 LP",

@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/week8/task1_2 {G:/software/FPGA/workplace/week8/task1_2/task1_2_top.v}
+

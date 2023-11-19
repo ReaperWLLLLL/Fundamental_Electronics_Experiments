@@ -1,0 +1,71 @@
+# Reading pref.tcl
+# do week8HW_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying G:/software/FPGA/TOOLS/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/week8/task2_2 {G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:01 on Nov 19,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/week8/task2_2" G:/software/FPGA/workplace/week8/task2_2/task2_2_top.v 
+# -- Compiling module myrom
+# -- Compiling module addrgen
+# -- Compiling module fre_div2_2
+# -- Compiling module digit1
+# -- Compiling module task2_2_top
+# 
+# Top level modules:
+# 	task2_2_top
+# End time: 21:12:01 on Nov 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/week8/task2_2 {G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:01 on Nov 19,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/week8/task2_2" G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v 
+# -- Compiling module myrom
+# -- Compiling module addrgen
+# -- Compiling module fre_div2_2
+# -- Compiling module digit1
+# -- Compiling module task2_2_top
+# -- Compiling module tb_task2_2
+# 
+# Top level modules:
+# 	tb_task2_2
+# End time: 21:12:01 on Nov 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs="+acc"  tb_task2_2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs=""+acc"" tb_task2_2 
+# Start time: 21:12:01 on Nov 19,2023
+# Loading work.tb_task2_2
+# Loading work.task2_2_top
+# Loading work.myrom
+# Loading altera_mf_ver.altsyncram
+# Loading work.addrgen
+# Loading work.fre_div2_2
+# Loading work.digit1
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v(36)
+#    Time: 700 ps  Iteration: 0  Instance: /tb_task2_2
+# 1
+# Break in Module tb_task2_2 at G:/software/FPGA/workplace/week8/task2_2/tb_task2_2.v line 36
+add wave -position insertpoint  \
+sim:/tb_task2_2/u_task2_2_top/uut1/address
+# End time: 21:14:01 on Nov 19,2023, Elapsed time: 0:02:00
+# Errors: 0, Warnings: 0
