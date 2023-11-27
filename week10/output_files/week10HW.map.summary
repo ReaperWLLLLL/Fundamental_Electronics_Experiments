@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Nov 27 21:16:01 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : week10HW
+Top-level Entity Name : uart2_top
+Family : Cyclone 10 LP
+Total logic elements : 106
+    Total combinational functions : 103
+    Dedicated logic registers : 70
+Total registers : 70
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 6,144
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

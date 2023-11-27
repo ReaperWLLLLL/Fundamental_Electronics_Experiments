@@ -1,0 +1,69 @@
+# Reading pref.tcl
+# do week10HW_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying G:/software/FPGA/TOOLS/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/week10/uart_transmit {G:/software/FPGA/workplace/week10/uart_transmit/uart_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:58 on Nov 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/week10/uart_transmit" G:/software/FPGA/workplace/week10/uart_transmit/uart_top.v 
+# -- Compiling module uart_transmit
+# -- Compiling module uart_fre_fiv
+# -- Compiling module addr_tx_en
+# -- Compiling module sin_rom
+# -- Compiling module uart_top
+# 
+# Top level modules:
+# 	uart_top
+# End time: 19:36:58 on Nov 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+G:/software/FPGA/workplace/week10/uart_transmit {G:/software/FPGA/workplace/week10/uart_transmit/tb_uart_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:36:58 on Nov 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/software/FPGA/workplace/week10/uart_transmit" G:/software/FPGA/workplace/week10/uart_transmit/tb_uart_top.v 
+# -- Compiling module uart_transmit
+# -- Compiling module uart_fre_fiv
+# -- Compiling module addr_tx_en
+# -- Compiling module sin_rom
+# -- Compiling module uart_top
+# -- Compiling module tb_uart_top
+# 
+# Top level modules:
+# 	tb_uart_top
+# End time: 19:36:59 on Nov 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs="+acc"  tb_uart_top
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10lp_ver -L rtl_work -L work -voptargs=""+acc"" tb_uart_top 
+# Start time: 19:36:59 on Nov 27,2023
+# Loading work.tb_uart_top
+# Loading work.uart_top
+# Loading work.uart_fre_fiv
+# Loading work.addr_tx_en
+# Loading work.sin_rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.uart_transmit
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : G:/software/FPGA/workplace/week10/uart_transmit/tb_uart_top.v(27)
+#    Time: 25000010 ps  Iteration: 0  Instance: /tb_uart_top
+# 1
+# Break in Module tb_uart_top at G:/software/FPGA/workplace/week10/uart_transmit/tb_uart_top.v line 27
+# End time: 19:56:35 on Nov 27,2023, Elapsed time: 0:19:36
+# Errors: 0, Warnings: 0

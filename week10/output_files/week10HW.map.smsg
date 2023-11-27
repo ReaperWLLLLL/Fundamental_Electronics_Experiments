@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at uart2_fre_div.v(9): always construct contains both blocking and non-blocking assignments File: G:/software/FPGA/workplace/week10/uart_transmit2/uart2_fre_div.v Line: 9

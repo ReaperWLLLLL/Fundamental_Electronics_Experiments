@@ -1,0 +1,10 @@
+width = 8;
+depth = 256;
+%phase = 0;
+phase = pi/2;
+fid = fopen('sin_phase90.txt','w');
+for i=0:depth-1
+  sin_data = floor((sin(2*pi*i/depth + phase) + 1) * 0.5 * (2^width - 1));
+  fprintf(fid,'%x\n',sin_data);%16进制  
+end
+fclose(fid);

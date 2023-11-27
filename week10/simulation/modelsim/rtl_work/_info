@@ -1,0 +1,155 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/software/FPGA/workplace/week10/simulation/modelsim
+vaddr_tx_en
+Z1 !s110 1701085019
+!i10b 1
+!s100 0;]_Joo5T4=69cj[G7aW@1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I6KnjQWfS>2]PB7=5>YjOa0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1701082282
+8G:/software/FPGA/workplace/week10/uart_transmit/addr_tx_en.v
+FG:/software/FPGA/workplace/week10/uart_transmit/addr_tx_en.v
+!i122 1
+L0 1 54
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1701085018.000000
+!s107 G:/software/FPGA/workplace/week10/uart_transmit/sin_rom.v|G:/software/FPGA/workplace/week10/uart_transmit/addr_tx_en.v|G:/software/FPGA/workplace/week10/uart_transmit/uart_fre_div.v|G:/software/FPGA/workplace/week10/uart_transmit/uart_transmit.v|G:/software/FPGA/workplace/week10/uart_transmit/uart_top.v|G:/software/FPGA/workplace/week10/uart_transmit/tb_uart_top.v|
+Z6 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/software/FPGA/workplace/week10/uart_transmit|G:/software/FPGA/workplace/week10/uart_transmit/tb_uart_top.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+G:/software/FPGA/workplace/week10/uart_transmit
+Z9 tCvgOpt 0
+vsin_rom
+R1
+!i10b 1
+!s100 4j2n3RcezKe;b]WY]oP_d0
+R2
+I_lD=?TXZdi8d7Zz33Y9nG3
+R3
+R0
+w1701084621
+8G:/software/FPGA/workplace/week10/uart_transmit/sin_rom.v
+FG:/software/FPGA/workplace/week10/uart_transmit/sin_rom.v
+!i122 1
+L0 40 61
+R4
+r1
+!s85 0
+31
+R5
+Z10 !s107 G:/software/FPGA/workplace/week10/uart_transmit/sin_rom.v|G:/software/FPGA/workplace/week10/uart_transmit/addr_tx_en.v|G:/software/FPGA/workplace/week10/uart_transmit/uart_fre_div.v|G:/software/FPGA/workplace/week10/uart_transmit/uart_transmit.v|G:/software/FPGA/workplace/week10/uart_transmit/uart_top.v|G:/software/FPGA/workplace/week10/uart_transmit/tb_uart_top.v|
+R6
+!i113 1
+R7
+R8
+R9
+vtb_uart_top
+R1
+!i10b 1
+!s100 lNR7:VKcSB8`i3AB[I;M?1
+R2
+I3Gk?IhdOHo5naa:8HFY`;0
+R3
+R0
+w1701084955
+8G:/software/FPGA/workplace/week10/uart_transmit/tb_uart_top.v
+FG:/software/FPGA/workplace/week10/uart_transmit/tb_uart_top.v
+!i122 1
+L0 4 31
+R4
+r1
+!s85 0
+31
+R5
+R10
+R6
+!i113 1
+R7
+R8
+R9
+vuart_fre_fiv
+R1
+!i10b 1
+!s100 oWIVE09f;L1b6@bEWRRbO3
+R2
+I=8M3Dg18ch[DgkQ]ekk5^1
+R3
+R0
+w1701084967
+8G:/software/FPGA/workplace/week10/uart_transmit/uart_fre_div.v
+FG:/software/FPGA/workplace/week10/uart_transmit/uart_fre_div.v
+!i122 1
+L0 2 21
+R4
+r1
+!s85 0
+31
+R5
+R10
+R6
+!i113 1
+R7
+R8
+R9
+vuart_top
+R1
+!i10b 1
+!s100 ]MeoPTcHA]?6m<GbWh6Qi3
+R2
+IGO@Ag:kjMm?V?EM=Cb0[i3
+R3
+R0
+w1700709823
+8G:/software/FPGA/workplace/week10/uart_transmit/uart_top.v
+FG:/software/FPGA/workplace/week10/uart_transmit/uart_top.v
+!i122 1
+L0 6 39
+R4
+r1
+!s85 0
+31
+R5
+R10
+R6
+!i113 1
+R7
+R8
+R9
+vuart_transmit
+R1
+!i10b 1
+!s100 6>nGF_F_H7]VggQNl;1U;2
+R2
+IV_`=h2Fg;HeO8=N:QEDAP1
+R3
+R0
+w1700708193
+8G:/software/FPGA/workplace/week10/uart_transmit/uart_transmit.v
+FG:/software/FPGA/workplace/week10/uart_transmit/uart_transmit.v
+!i122 1
+L0 1 60
+R4
+r1
+!s85 0
+31
+R5
+R10
+R6
+!i113 1
+R7
+R8
+R9
