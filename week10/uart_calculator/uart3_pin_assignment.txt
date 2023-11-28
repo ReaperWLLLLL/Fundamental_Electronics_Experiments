@@ -1,0 +1,17 @@
+To,     Location
+clk,    PIN_23
+rst,  PIN_58
+rx,  PIN_52
+sci_tx, PIN_51
+seg[0],  PIN_136
+seg[1],  PIN_138
+seg[2],  PIN_133
+seg[3],  PIN_129
+seg[4],  PIN_128
+seg[5],  PIN_137
+seg[6],  PIN_135
+seg[7],  PIN_132
+digit[0], PIN_124
+digit[1], PIN_125
+digit[2], PIN_126
+digit[3], PIN_127

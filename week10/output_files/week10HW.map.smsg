@@ -1,1 +1,3 @@
-Warning (10268): Verilog HDL information at uart2_fre_div.v(9): always construct contains both blocking and non-blocking assignments File: G:/software/FPGA/workplace/week10/uart_transmit2/uart2_fre_div.v Line: 9
+Info (10281): Verilog HDL Declaration information at uart_calculator.v(13): object "RESULT" differs only in case from object "result" in the same scope File: G:/software/FPGA/workplace/week10/uart_calculator/uart_calculator.v Line: 13
+Info (10281): Verilog HDL Declaration information at uart_calculator.v(14): object "operator" differs only in case from object "OPERATOR" in the same scope File: G:/software/FPGA/workplace/week10/uart_calculator/uart_calculator.v Line: 14
+Warning (10268): Verilog HDL information at uart3_fre_div.v(9): always construct contains both blocking and non-blocking assignments File: G:/software/FPGA/workplace/week10/uart_calculator/uart3_fre_div.v Line: 9

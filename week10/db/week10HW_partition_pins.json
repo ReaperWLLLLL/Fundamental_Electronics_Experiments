@@ -4,11 +4,47 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "sci_tx",
+					"name" : "seg[0]",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "digit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "digit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "digit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "digit[3]",
 					"strict" : false
 				},
 				{
@@ -16,15 +52,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "switch[0]",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "switch[1]",
-					"strict" : false
-				},
-				{
-					"name" : "switch[2]",
+					"name" : "rx",
 					"strict" : false
 				}
 			]

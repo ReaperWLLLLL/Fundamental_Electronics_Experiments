@@ -188,11 +188,11 @@ always @(posedge clk, posedge rst) begin
 end
 
 //process the origin input to a simple one
-reg [2:0] input_type;
-parameter NUMBER = 3'b001;
-parameter OPERATOR = 3'b010;
-parameter EQUAL = 3'b100;
-
+reg [3:0] input_type;
+parameter NUMBER = 4'b0001;
+parameter OPERATOR = 4'b0010;
+parameter EQUAL = 4'b0100;
+parameter RESET = 4'b1000;
 reg [4:0] input_temp;
 
 always @ (posedge clk,posedge rst) begin

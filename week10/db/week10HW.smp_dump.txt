@@ -1,0 +1,21 @@
+
+State Machine - |uart_calculator_top|uart_digit:uut4|state1
+Name state1.11 state1.10 state1.01 state1.00 
+state1.00 0 0 0 0 
+state1.01 0 0 1 1 
+state1.10 0 1 0 1 
+state1.11 1 0 0 1 
+
+State Machine - |uart_calculator_top|uart_calculator:uut2|input_type
+Name input_type.0000 input_type.RESET input_type.EQUAL input_type.OPERATOR input_type.NUMBER 
+input_type.0000 0 0 0 0 0 
+input_type.NUMBER 1 0 0 0 1 
+input_type.OPERATOR 1 0 0 1 0 
+input_type.EQUAL 1 0 1 0 0 
+input_type.RESET 1 1 0 0 0 
+
+State Machine - |uart_calculator_top|uart_calculator:uut2|FSM_state
+Name FSM_state.RESULT FSM_state.SECOND FSM_state.FIRST 
+FSM_state.FIRST 0 0 0 
+FSM_state.SECOND 0 1 1 
+FSM_state.RESULT 1 0 1 

@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone 10 LP"
 set_global_assignment -name DEVICE 10CL010YE144C8G
-set_global_assignment -name TOP_LEVEL_ENTITY uart2_top
+set_global_assignment -name TOP_LEVEL_ENTITY uart_calculator_top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:22:04  NOVEMBER 23, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -70,11 +70,24 @@ set_global_assignment -name EDA_TEST_BENCH_NAME tb_uart_top -section_id eda_simu
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_uart_top
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_uart_top -section_id tb_uart_top
 set_global_assignment -name EDA_TEST_BENCH_FILE uart_transmit/tb_uart_top.v -section_id tb_uart_top
-set_global_assignment -name VERILOG_FILE uart_transmit2/uart2_top.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_67 -to switch[0]
 set_location_assignment PIN_66 -to switch[1]
 set_location_assignment PIN_65 -to switch[2]
+set_global_assignment -name VERILOG_FILE uart_calculator/uart_calculator_top.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_52 -to rx
+set_location_assignment PIN_136 -to seg[0]
+set_location_assignment PIN_138 -to seg[1]
+set_location_assignment PIN_133 -to seg[2]
+set_location_assignment PIN_129 -to seg[3]
+set_location_assignment PIN_128 -to seg[4]
+set_location_assignment PIN_137 -to seg[5]
+set_location_assignment PIN_135 -to seg[6]
+set_location_assignment PIN_132 -to seg[7]
+set_location_assignment PIN_124 -to digit[0]
+set_location_assignment PIN_125 -to digit[1]
+set_location_assignment PIN_126 -to digit[2]
+set_location_assignment PIN_127 -to digit[3]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
