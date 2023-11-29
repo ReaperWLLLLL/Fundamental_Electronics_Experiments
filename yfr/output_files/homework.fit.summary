@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Nov 29 19:18:38 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : homework
+Top-level Entity Name : uart_top
+Family : Cyclone 10 LP
+Device : 10CL006YE144C6G
+Timing Models : Final
+Total logic elements : 107 / 6,272 ( 2 % )
+    Total combinational functions : 103 / 6,272 ( 2 % )
+    Dedicated logic registers : 70 / 6,272 ( 1 % )
+Total registers : 70
+Total pins : 6 / 89 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 6,144 / 276,480 ( 2 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
