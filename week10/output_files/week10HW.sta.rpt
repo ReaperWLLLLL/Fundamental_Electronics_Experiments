@@ -1,5 +1,5 @@
 Timing Analyzer report for week10HW
-Tue Nov 28 19:52:26 2023
+Wed Nov 29 21:37:09 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -105,12 +105,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.59        ;
+; Average used               ; 1.63        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   3.9%      ;
+;     Processors 2-16        ;   4.2%      ;
 +----------------------------+-------------+
 
 
@@ -343,8 +343,8 @@ No paths to report.
 ; -0.238 ; uart_digit:uut4|state1.10             ; uart_digit:uut4|digit[2]     ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.081     ; 1.158      ;
 ; -0.224 ; uart_calculator:uut2|display_data[12] ; uart_digit:uut4|data_temp[0] ; clk                        ; uart3_fre_div:uut3|clk_div ; 1.000        ; 0.213      ; 1.428      ;
 ; -0.216 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[1]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.082     ; 1.135      ;
-; -0.215 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[0]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.082     ; 1.134      ;
 ; -0.215 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[2]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.082     ; 1.134      ;
+; -0.215 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[0]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.082     ; 1.134      ;
 ; -0.214 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[3]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.082     ; 1.133      ;
 ; -0.212 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[6]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.082     ; 1.131      ;
 ; -0.208 ; uart_digit:uut4|state1.01             ; uart_digit:uut4|digit[1]     ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.081     ; 1.128      ;
@@ -761,8 +761,8 @@ No paths to report.
 ; -0.129 ; uart_digit:uut4|state1.10             ; uart_digit:uut4|digit[2]     ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.071     ; 1.060      ;
 ; -0.114 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[0]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.074     ; 1.042      ;
 ; -0.114 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[1]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.074     ; 1.042      ;
-; -0.113 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[4]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.074     ; 1.041      ;
 ; -0.113 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[3]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.074     ; 1.041      ;
+; -0.113 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[4]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.074     ; 1.041      ;
 ; -0.111 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[5]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.074     ; 1.039      ;
 ; -0.111 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[6]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.074     ; 1.039      ;
 ; -0.103 ; uart_digit:uut4|state1.01             ; uart_digit:uut4|digit[1]     ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.071     ; 1.034      ;
@@ -857,9 +857,9 @@ No paths to report.
 ; Slack ; From Node                             ; To Node                                                                                                      ; Launch Clock               ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------------+--------------------------------------------------------------------------------------------------------------+----------------------------+-------------+--------------+------------+------------+
 ; 0.401 ; uart_receive:uut1|work_en             ; uart_receive:uut1|work_en                                                                                    ; clk                        ; clk         ; 0.000        ; 0.073      ; 0.669      ;
+; 0.402 ; uart_calculator:uut2|FSM_state.SECOND ; uart_calculator:uut2|FSM_state.SECOND                                                                        ; clk                        ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; uart_calculator:uut2|FSM_state.RESULT ; uart_calculator:uut2|FSM_state.RESULT                                                                        ; clk                        ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; uart_calculator:uut2|FSM_state.FIRST  ; uart_calculator:uut2|FSM_state.FIRST                                                                         ; clk                        ; clk         ; 0.000        ; 0.072      ; 0.669      ;
-; 0.402 ; uart_calculator:uut2|FSM_state.SECOND ; uart_calculator:uut2|FSM_state.SECOND                                                                        ; clk                        ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.416 ; uart_receive:uut1|bit_cnt[3]          ; uart_receive:uut1|bit_cnt[3]                                                                                 ; clk                        ; clk         ; 0.000        ; 0.073      ; 0.684      ;
 ; 0.463 ; uart_calculator:uut2|FSM_state.FIRST  ; uart_calculator:uut2|FSM_state.SECOND                                                                        ; clk                        ; clk         ; 0.000        ; 0.072      ; 0.730      ;
 ; 0.468 ; uart3_fre_div:uut3|clk_div_cnt[24]    ; uart3_fre_div:uut3|clk_div_cnt[24]                                                                           ; clk                        ; clk         ; 0.000        ; 0.074      ; 0.737      ;
@@ -1168,10 +1168,10 @@ No paths to report.
 ; 0.412  ; uart_calculator:uut2|display_data[12] ; uart_digit:uut4|data_temp[0] ; clk                        ; uart3_fre_div:uut3|clk_div ; 1.000        ; 0.054      ; 0.619      ;
 ; 0.421  ; uart_calculator:uut2|display_data[14] ; uart_digit:uut4|data_temp[2] ; clk                        ; uart3_fre_div:uut3|clk_div ; 1.000        ; 0.054      ; 0.610      ;
 ; 0.447  ; uart_calculator:uut2|display_data[3]  ; uart_digit:uut4|data_temp[3] ; clk                        ; uart3_fre_div:uut3|clk_div ; 1.000        ; 0.054      ; 0.584      ;
-; 0.458  ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[1]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.037     ; 0.492      ;
 ; 0.458  ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[0]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.037     ; 0.492      ;
-; 0.459  ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[4]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.037     ; 0.491      ;
+; 0.458  ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[1]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.037     ; 0.492      ;
 ; 0.459  ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[3]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.037     ; 0.491      ;
+; 0.459  ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[4]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.037     ; 0.491      ;
 ; 0.461  ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[6]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.037     ; 0.489      ;
 ; 0.462  ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[5]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.037     ; 0.488      ;
 ; 0.463  ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[2]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 1.000        ; -0.037     ; 0.487      ;
@@ -1211,8 +1211,8 @@ No paths to report.
 ; 0.287 ; uart_digit:uut4|state1.11             ; uart_digit:uut4|state1.00    ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.036      ; 0.407      ;
 ; 0.288 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[6]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.035      ; 0.407      ;
 ; 0.288 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[5]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.035      ; 0.407      ;
-; 0.290 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[0]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.035      ; 0.409      ;
 ; 0.290 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[4]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.035      ; 0.409      ;
+; 0.290 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[0]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.035      ; 0.409      ;
 ; 0.290 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[3]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.035      ; 0.409      ;
 ; 0.291 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[1]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.035      ; 0.410      ;
 ; 0.294 ; uart_digit:uut4|data_temp[0]          ; uart_digit:uut4|seg[2]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.035      ; 0.413      ;
@@ -1237,12 +1237,12 @@ No paths to report.
 ; 0.459 ; uart_digit:uut4|data_temp[2]          ; uart_digit:uut4|seg[5]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.026      ; 0.569      ;
 ; 0.461 ; uart_digit:uut4|data_temp[2]          ; uart_digit:uut4|seg[4]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.026      ; 0.571      ;
 ; 0.495 ; uart_digit:uut4|data_temp[3]          ; uart_digit:uut4|seg[0]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.043      ; 0.622      ;
-; 0.496 ; uart_digit:uut4|data_temp[3]          ; uart_digit:uut4|seg[1]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.043      ; 0.623      ;
 ; 0.496 ; uart_digit:uut4|data_temp[3]          ; uart_digit:uut4|seg[2]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.043      ; 0.623      ;
-; 0.497 ; uart_digit:uut4|data_temp[3]          ; uart_digit:uut4|seg[3]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.043      ; 0.624      ;
+; 0.496 ; uart_digit:uut4|data_temp[3]          ; uart_digit:uut4|seg[1]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.043      ; 0.623      ;
 ; 0.497 ; uart_digit:uut4|data_temp[3]          ; uart_digit:uut4|seg[4]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.043      ; 0.624      ;
-; 0.502 ; uart_digit:uut4|data_temp[3]          ; uart_digit:uut4|seg[5]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.043      ; 0.629      ;
+; 0.497 ; uart_digit:uut4|data_temp[3]          ; uart_digit:uut4|seg[3]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.043      ; 0.624      ;
 ; 0.502 ; uart_digit:uut4|data_temp[3]          ; uart_digit:uut4|seg[6]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.043      ; 0.629      ;
+; 0.502 ; uart_digit:uut4|data_temp[3]          ; uart_digit:uut4|seg[5]       ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.043      ; 0.629      ;
 ; 0.629 ; uart_digit:uut4|state1.01             ; uart_digit:uut4|data_temp[1] ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.037      ; 0.750      ;
 ; 0.668 ; uart_digit:uut4|state1.11             ; uart_digit:uut4|data_temp[3] ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.029      ; 0.781      ;
 ; 0.687 ; uart_digit:uut4|state1.11             ; uart_digit:uut4|data_temp[1] ; uart3_fre_div:uut3|clk_div ; uart3_fre_div:uut3|clk_div ; 0.000        ; 0.037      ; 0.808      ;
@@ -1264,9 +1264,9 @@ No paths to report.
 ; Slack ; From Node                             ; To Node                                                                                                      ; Launch Clock               ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------------+--------------------------------------------------------------------------------------------------------------+----------------------------+-------------+--------------+------------+------------+
 ; 0.186 ; uart_receive:uut1|work_en             ; uart_receive:uut1|work_en                                                                                    ; clk                        ; clk         ; 0.000        ; 0.037      ; 0.307      ;
-; 0.187 ; uart_calculator:uut2|FSM_state.SECOND ; uart_calculator:uut2|FSM_state.SECOND                                                                        ; clk                        ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; uart_calculator:uut2|FSM_state.RESULT ; uart_calculator:uut2|FSM_state.RESULT                                                                        ; clk                        ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; uart_calculator:uut2|FSM_state.FIRST  ; uart_calculator:uut2|FSM_state.FIRST                                                                         ; clk                        ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; uart_calculator:uut2|FSM_state.SECOND ; uart_calculator:uut2|FSM_state.SECOND                                                                        ; clk                        ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.193 ; uart_receive:uut1|rx_reg1             ; uart_receive:uut1|rx_reg2                                                                                    ; clk                        ; clk         ; 0.000        ; 0.037      ; 0.314      ;
 ; 0.193 ; uart_receive:uut1|bit_cnt[3]          ; uart_receive:uut1|bit_cnt[3]                                                                                 ; clk                        ; clk         ; 0.000        ; 0.037      ; 0.314      ;
 ; 0.197 ; uart_receive:uut1|rx_reg2             ; uart_receive:uut1|rx_reg3                                                                                    ; clk                        ; clk         ; 0.000        ; 0.037      ; 0.318      ;
@@ -1615,7 +1615,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 28 19:52:25 2023
+    Info: Processing started: Wed Nov 29 21:37:07 2023
 Info: Command: quartus_sta week10HW -c week10HW
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1703,9 +1703,9 @@ Info (332114): Report Metastability: Found 13 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4913 megabytes
-    Info: Processing ended: Tue Nov 28 19:52:26 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4914 megabytes
+    Info: Processing ended: Wed Nov 29 21:37:09 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

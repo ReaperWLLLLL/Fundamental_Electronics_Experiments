@@ -1,6 +1,6 @@
 module uart_receive #(
     parameter BAUD_RATE = 'd115200,
-    parameter CLK_FREQ  = 25000000
+    parameter CLK_FREQ  = 'd25000000
 ) (
     input clk,
     input rst,

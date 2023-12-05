@@ -2,18 +2,18 @@
 clk => clk.IN3
 rst => rst.IN4
 rx => rx.IN1
-seg[0] <= uart_digit:uut4.seg
-seg[1] <= uart_digit:uut4.seg
-seg[2] <= uart_digit:uut4.seg
-seg[3] <= uart_digit:uut4.seg
-seg[4] <= uart_digit:uut4.seg
-seg[5] <= uart_digit:uut4.seg
-seg[6] <= uart_digit:uut4.seg
-seg[7] <= uart_digit:uut4.seg
-digit[0] <= uart_digit:uut4.digit
-digit[1] <= uart_digit:uut4.digit
-digit[2] <= uart_digit:uut4.digit
-digit[3] <= uart_digit:uut4.digit
+seg[0] << uart_digit:uut4.seg
+seg[1] << uart_digit:uut4.seg
+seg[2] << uart_digit:uut4.seg
+seg[3] << uart_digit:uut4.seg
+seg[4] << uart_digit:uut4.seg
+seg[5] << uart_digit:uut4.seg
+seg[6] << uart_digit:uut4.seg
+seg[7] << uart_digit:uut4.seg
+digit[0] << uart_digit:uut4.digit
+digit[1] << uart_digit:uut4.digit
+digit[2] << uart_digit:uut4.digit
+digit[3] << uart_digit:uut4.digit
 
 
 |uart_calculator_top|uart_receive:uut1

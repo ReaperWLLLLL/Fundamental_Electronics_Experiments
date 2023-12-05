@@ -1,0 +1,4 @@
+To,     Location
+clk,    PIN_23
+rst,  PIN_58
+sci_tx, PIN_51
