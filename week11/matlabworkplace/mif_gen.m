@@ -15,7 +15,7 @@ fprintf(fid, 'CONTENT BEGIN\n');
 % 循环生成16位正弦波数据并写入文件
 for i = 0:depth - 1
     sin_data = floor((sin(2 * pi * i / depth + phase) + 1) * 0.5 * (2 ^ width - 1));
-    fprintf(fid, '%d:%x;\n', i, sin_data); % 以十进制格式写入文件
+    fprintf(fid, '%d:%x;\n', i, sin_data); % 以十六进制格式写入文件
 end
 
 % 写入文件尾部信息并关闭文件

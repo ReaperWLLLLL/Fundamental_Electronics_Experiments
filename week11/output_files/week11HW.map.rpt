@@ -1,5 +1,5 @@
 Analysis & Synthesis report for week11HW
-Tue Dec 05 19:02:43 2023
+Wed Dec 06 18:21:31 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 05 19:02:43 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 06 18:21:31 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week11HW                                    ;
 ; Top-level Entity Name              ; uart_frame_transmit_top                     ;
@@ -781,24 +781,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec 05 19:02:18 2023
+    Info: Processing started: Wed Dec 06 18:21:08 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off week11HW -c week11HW
-Critical Warning (138067): Current license file does not support incremental compilation. The Quartus Prime software removes all the user-specified design partitions in the design automatically.
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 7 design units, including 7 entities, in source file task1/uart_frame_transmit_top.v
-    Info (12023): Found entity 1: addr_tx_en File: G:/software/FPGA/workplace/week11/task1/addr_tx_en.v Line: 3
+    Info (12023): Found entity 1: addr_tx_en File: G:/software/FPGA/workplace/week11/task1/addr_tx_en.v Line: 4
     Info (12023): Found entity 2: sin_16_rom File: G:/software/FPGA/workplace/week11/task1/sin_16_rom.v Line: 40
     Info (12023): Found entity 3: fre_div File: G:/software/FPGA/workplace/week11/task1/fre_div.v Line: 1
     Info (12023): Found entity 4: uart_byte_controller File: G:/software/FPGA/workplace/week11/task1/uart_byte_controller.v Line: 2
     Info (12023): Found entity 5: uart_2byte_controller_withoutHeader File: G:/software/FPGA/workplace/week11/task1/uart_2byte_controller_withoutHeader.v Line: 1
     Info (12023): Found entity 6: uart_tx_byte File: G:/software/FPGA/workplace/week11/task1/uart_tx_byte.v Line: 1
-    Info (12023): Found entity 7: uart_frame_transmit_top File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 7
+    Info (12023): Found entity 7: uart_frame_transmit_top File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 11
 Warning (10222): Verilog HDL Parameter Declaration warning at uart_byte_controller.v(18): Parameter Declaration in module "uart_byte_controller" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: G:/software/FPGA/workplace/week11/task1/uart_byte_controller.v Line: 18
 Info (12127): Elaborating entity "uart_frame_transmit_top" for the top level hierarchy
-Info (12128): Elaborating entity "fre_div" for hierarchy "fre_div:uut1" File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 18
-Info (12128): Elaborating entity "addr_tx_en" for hierarchy "addr_tx_en:uut2" File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 32
-Info (12128): Elaborating entity "sin_16_rom" for hierarchy "sin_16_rom:uut3" File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 39
+Info (12128): Elaborating entity "fre_div" for hierarchy "fre_div:uut1" File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 22
+Info (12128): Elaborating entity "addr_tx_en" for hierarchy "addr_tx_en:uut2" File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 36
+Info (12128): Elaborating entity "sin_16_rom" for hierarchy "sin_16_rom:uut3" File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 43
 Info (12128): Elaborating entity "altsyncram" for hierarchy "sin_16_rom:uut3|altsyncram:altsyncram_component" File: G:/software/FPGA/workplace/week11/task1/sin_16_rom.v Line: 82
 Info (12130): Elaborated megafunction instantiation "sin_16_rom:uut3|altsyncram:altsyncram_component" File: G:/software/FPGA/workplace/week11/task1/sin_16_rom.v Line: 82
 Info (12133): Instantiated megafunction "sin_16_rom:uut3|altsyncram:altsyncram_component" with the following parameter: File: G:/software/FPGA/workplace/week11/task1/sin_16_rom.v Line: 82
@@ -819,7 +818,7 @@ Info (12133): Instantiated megafunction "sin_16_rom:uut3|altsyncram:altsyncram_c
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6sf1.tdf
     Info (12023): Found entity 1: altsyncram_6sf1 File: G:/software/FPGA/workplace/week11/db/altsyncram_6sf1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_6sf1" for hierarchy "sin_16_rom:uut3|altsyncram:altsyncram_component|altsyncram_6sf1:auto_generated" File: g:/software/fpga/tools/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "uart_2byte_controller_withoutHeader" for hierarchy "uart_2byte_controller_withoutHeader:uut4" File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 62
+Info (12128): Elaborating entity "uart_2byte_controller_withoutHeader" for hierarchy "uart_2byte_controller_withoutHeader:uut4" File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 57
 Warning (10230): Verilog HDL assignment warning at uart_2byte_controller_withoutHeader.v(18): truncated value with size 3 to match size of target (2) File: G:/software/FPGA/workplace/week11/task1/uart_2byte_controller_withoutHeader.v Line: 18
 Warning (10230): Verilog HDL assignment warning at uart_2byte_controller_withoutHeader.v(28): truncated value with size 3 to match size of target (2) File: G:/software/FPGA/workplace/week11/task1/uart_2byte_controller_withoutHeader.v Line: 28
 Warning (10230): Verilog HDL assignment warning at uart_2byte_controller_withoutHeader.v(33): truncated value with size 3 to match size of target (2) File: G:/software/FPGA/workplace/week11/task1/uart_2byte_controller_withoutHeader.v Line: 33
@@ -841,8 +840,7 @@ Info (10041): Inferred latch for "tx_d[5]" at uart_2byte_controller_withoutHeade
 Info (10041): Inferred latch for "tx_d[6]" at uart_2byte_controller_withoutHeader.v(22) File: G:/software/FPGA/workplace/week11/task1/uart_2byte_controller_withoutHeader.v Line: 22
 Info (10041): Inferred latch for "tx_d[7]" at uart_2byte_controller_withoutHeader.v(22) File: G:/software/FPGA/workplace/week11/task1/uart_2byte_controller_withoutHeader.v Line: 22
 Info (10041): Inferred latch for "tx_en" at uart_2byte_controller_withoutHeader.v(22) File: G:/software/FPGA/workplace/week11/task1/uart_2byte_controller_withoutHeader.v Line: 22
-Info (12128): Elaborating entity "uart_tx_byte" for hierarchy "uart_tx_byte:uut5" File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 71
-Critical Warning (138067): Current license file does not support incremental compilation. The Quartus Prime software removes all the user-specified design partitions in the design automatically.
+Info (12128): Elaborating entity "uart_tx_byte" for hierarchy "uart_tx_byte:uut5" File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 66
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_ela_trigger_flow_sel_ol31.tdf
     Info (12023): Found entity 1: sld_ela_trigger_flow_sel_ol31 File: G:/software/FPGA/workplace/week11/db/sld_ela_trigger_flow_sel_ol31.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_reserved_week11hw_auto_signaltap_0_flow_mgr_c90c.v
@@ -869,7 +867,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_ggc File: G:/software/FPGA/workplace/week11/db/cmpr_ggc.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.12.05.19:02:32 Progress: Loading sld940eb7f4/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.12.06.18:21:21 Progress: Loading sld940eb7f4/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -923,11 +921,11 @@ Info (21057): Implemented 951 device resources after synthesis - the final resou
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 915 logic cells
     Info (21064): Implemented 28 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 4891 megabytes
-    Info: Processing ended: Tue Dec 05 19:02:43 2023
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:21
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 4890 megabytes
+    Info: Processing ended: Wed Dec 06 18:21:31 2023
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +------------------------------------------+

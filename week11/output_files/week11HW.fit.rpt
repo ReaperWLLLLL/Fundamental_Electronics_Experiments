@@ -1,5 +1,5 @@
 Fitter report for week11HW
-Tue Dec 05 19:02:50 2023
+Wed Dec 06 18:21:38 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Dec 05 19:02:50 2023       ;
+; Fitter Status                      ; Successful - Wed Dec 06 18:21:38 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week11HW                                    ;
 ; Top-level Entity Name              ; uart_frame_transmit_top                     ;
@@ -155,19 +155,19 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.40        ;
+; Average used               ; 1.33        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.7%      ;
-;     Processor 3            ;   2.7%      ;
-;     Processor 4            ;   2.7%      ;
-;     Processor 5            ;   2.7%      ;
-;     Processor 6            ;   2.7%      ;
-;     Processor 7            ;   2.7%      ;
-;     Processor 8            ;   2.7%      ;
-;     Processors 9-16        ;   2.7%      ;
+;     Processor 2            ;   2.2%      ;
+;     Processor 3            ;   2.2%      ;
+;     Processor 4            ;   2.2%      ;
+;     Processor 5            ;   2.2%      ;
+;     Processor 6            ;   2.2%      ;
+;     Processor 7            ;   2.2%      ;
+;     Processor 8            ;   2.2%      ;
+;     Processors 9-16        ;   2.2%      ;
 +----------------------------+-------------+
 
 
@@ -1154,7 +1154,7 @@ Info (332111): Found 1 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
     Info (332111):  100.000 altera_reserved_tck
-Info (176353): Automatically promoted node clk~input (placed in PIN 23 (CLK1, DIFFCLK_0n)) File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 8
+Info (176353): Automatically promoted node clk~input (placed in PIN 23 (CLK1, DIFFCLK_0n)) File: G:/software/FPGA/workplace/week11/task1/uart_frame_transmit_top.v Line: 12
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
 Info (176353): Automatically promoted node altera_internal_jtag~TCKUTAP 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
@@ -1162,7 +1162,7 @@ Info (176353): Automatically promoted node fre_div:uut1|clk_div_addr  File: G:/s
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node fre_div:uut1|clk_div_addr~0 File: G:/software/FPGA/workplace/week11/task1/fre_div.v Line: 8
-        Info (176357): Destination node addr_tx_en:uut2|pulse1 File: G:/software/FPGA/workplace/week11/task1/addr_tx_en.v Line: 40
+        Info (176357): Destination node addr_tx_en:uut2|pulse1 File: G:/software/FPGA/workplace/week11/task1/addr_tx_en.v Line: 43
 Info (176353): Automatically promoted node uart_2byte_controller_withoutHeader:uut4|Mux8~0  File: G:/software/FPGA/workplace/week11/task1/uart_2byte_controller_withoutHeader.v Line: 22
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
@@ -1190,17 +1190,17 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file G:/software/FPGA/workplace/week11/output_files/week11HW.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 11 warnings
     Info: Peak virtual memory: 6508 megabytes
-    Info: Processing ended: Tue Dec 05 19:02:50 2023
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Wed Dec 06 18:21:38 2023
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:02
 
 
