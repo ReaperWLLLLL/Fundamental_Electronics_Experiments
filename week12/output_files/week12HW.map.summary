@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Dec 11 17:24:45 2023
+Analysis & Synthesis Status : Successful - Mon Dec 11 19:05:16 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : week12HW
-Top-level Entity Name : task1_top
+Top-level Entity Name : task2_top
 Family : Cyclone 10 LP
-Total logic elements : 165
-    Total combinational functions : 162
-    Dedicated logic registers : 74
-Total registers : 74
-Total pins : 3
+Total logic elements : 119
+    Total combinational functions : 119
+    Dedicated logic registers : 48
+Total registers : 48
+Total pins : 6
 Total virtual pins : 0
-Total memory bits : 6,144
+Total memory bits : 12,288
 Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total PLLs : 1

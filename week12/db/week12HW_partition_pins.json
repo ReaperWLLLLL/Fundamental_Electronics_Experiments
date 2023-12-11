@@ -4,7 +4,15 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "sci_tx",
+					"name" : "lrck_dac",
+					"strict" : false
+				},
+				{
+					"name" : "sclk_dac",
+					"strict" : false
+				},
+				{
+					"name" : "sdata_dac",
 					"strict" : false
 				},
 				{
