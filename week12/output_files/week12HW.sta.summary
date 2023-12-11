@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'uart_NbyteTran_3byteData_controller:uut3|state[0]'
+Slack : -5.679
+TNS   : -47.718
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.480
+TNS   : -153.552
+
+Type  : Slow 1200mV 85C Model Setup 'fre_div:uut1|clk_div_addr'
+Slack : -1.369
+TNS   : -8.539
+
+Type  : Slow 1200mV 85C Model Hold 'uart_NbyteTran_3byteData_controller:uut3|state[0]'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fre_div:uut1|clk_div_addr'
+Slack : 0.763
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.201
+TNS   : -104.343
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fre_div:uut1|clk_div_addr'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'uart_NbyteTran_3byteData_controller:uut3|state[0]'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'uart_NbyteTran_3byteData_controller:uut3|state[0]'
+Slack : -5.559
+TNS   : -45.902
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.139
+TNS   : -136.190
+
+Type  : Slow 1200mV 0C Model Setup 'fre_div:uut1|clk_div_addr'
+Slack : -1.138
+TNS   : -6.923
+
+Type  : Slow 1200mV 0C Model Hold 'uart_NbyteTran_3byteData_controller:uut3|state[0]'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fre_div:uut1|clk_div_addr'
+Slack : 0.706
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.201
+TNS   : -104.343
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fre_div:uut1|clk_div_addr'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'uart_NbyteTran_3byteData_controller:uut3|state[0]'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'uart_NbyteTran_3byteData_controller:uut3|state[0]'
+Slack : -1.928
+TNS   : -16.073
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.323
+TNS   : -29.891
+
+Type  : Fast 1200mV 0C Model Setup 'fre_div:uut1|clk_div_addr'
+Slack : -0.025
+TNS   : -0.046
+
+Type  : Fast 1200mV 0C Model Hold 'uart_NbyteTran_3byteData_controller:uut3|state[0]'
+Slack : -0.177
+TNS   : -0.459
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fre_div:uut1|clk_div_addr'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -75.489
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fre_div:uut1|clk_div_addr'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'uart_NbyteTran_3byteData_controller:uut3|state[0]'
+Slack : 0.404
+TNS   : 0.000
+
+------------------------------------------------------------

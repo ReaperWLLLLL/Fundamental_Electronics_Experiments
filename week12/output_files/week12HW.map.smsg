@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at fre_div.v(11): always construct contains both blocking and non-blocking assignments File: G:/software/FPGA/workplace/week12/task1/fre_div.v Line: 11
+Info (10281): Verilog HDL Declaration information at fre_div.v(4): object "CLK_DIV_ADDR" differs only in case from object "clk_div_addr" in the same scope File: G:/software/FPGA/workplace/week12/task1/fre_div.v Line: 4
