@@ -50,8 +50,7 @@ dac_controller uut4(
 
 fre_div uut5(
     .inclk0(clk),
-    .c0(c0),
-    .c1(c1)
+    .c0(c0)
 );
 
 endmodule

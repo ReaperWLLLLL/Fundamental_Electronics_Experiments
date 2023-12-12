@@ -1,5 +1,5 @@
 Analysis & Synthesis report for week12HW
-Mon Dec 11 19:05:16 2023
+Tue Dec 12 17:49:20 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 11 19:05:16 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 12 17:49:20 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week12HW                                    ;
 ; Top-level Entity Name              ; task2_top                                   ;
@@ -879,13 +879,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+--------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "fre_div:uut5"                                                                       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c1   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fre_div:uut5"                                                                                            ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; c1   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -933,7 +933,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -943,7 +943,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Dec 11 19:05:05 2023
+    Info: Processing started: Tue Dec 12 17:49:12 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off week12HW -c week12HW
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -979,7 +979,7 @@ Info (12128): Elaborating entity "altsyncram_fhc1" for hierarchy "rom_array_sync
 Info (12128): Elaborating entity "dac_controller" for hierarchy "dac_controller:uut4" File: G:/software/FPGA/workplace/week12/task2/task2_top.v Line: 49
 Warning (10230): Verilog HDL assignment warning at dac_controller.v(52): truncated value with size 32 to match size of target (1) File: G:/software/FPGA/workplace/week12/task2/dac_controller.v Line: 52
 Warning (10230): Verilog HDL assignment warning at dac_controller.v(53): truncated value with size 32 to match size of target (1) File: G:/software/FPGA/workplace/week12/task2/dac_controller.v Line: 53
-Info (12128): Elaborating entity "fre_div" for hierarchy "fre_div:uut5" File: G:/software/FPGA/workplace/week12/task2/task2_top.v Line: 55
+Info (12128): Elaborating entity "fre_div" for hierarchy "fre_div:uut5" File: G:/software/FPGA/workplace/week12/task2/task2_top.v Line: 54
 Info (12128): Elaborating entity "altpll" for hierarchy "fre_div:uut5|altpll:altpll_component" File: G:/software/FPGA/workplace/week12/task2/fre_div.v Line: 95
 Info (12130): Elaborated megafunction instantiation "fre_div:uut5|altpll:altpll_component" File: G:/software/FPGA/workplace/week12/task2/fre_div.v Line: 95
 Info (12133): Instantiated megafunction "fre_div:uut5|altpll:altpll_component" with the following parameter: File: G:/software/FPGA/workplace/week12/task2/fre_div.v Line: 95
@@ -1044,7 +1044,7 @@ Info (12133): Instantiated megafunction "fre_div:uut5|altpll:altpll_component" w
 Info (12021): Found 1 design units, including 1 entities, in source file db/fre_div_altpll.v
     Info (12023): Found entity 1: fre_div_altpll File: G:/software/FPGA/workplace/week12/db/fre_div_altpll.v Line: 30
 Info (12128): Elaborating entity "fre_div_altpll" for hierarchy "fre_div:uut5|altpll:altpll_component|fre_div_altpll:auto_generated" File: g:/software/fpga/tools/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
@@ -1057,8 +1057,8 @@ Info (21057): Implemented 175 device resources after synthesis - the final resou
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4834 megabytes
-    Info: Processing ended: Mon Dec 11 19:05:16 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Processing ended: Tue Dec 12 17:49:20 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 

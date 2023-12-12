@@ -1,5 +1,5 @@
 Timing Analyzer report for week12HW
-Mon Dec 11 19:05:28 2023
+Tue Dec 12 17:49:30 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -111,12 +111,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.35        ;
+; Average used               ; 1.27        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   2.3%      ;
+;     Processors 2-16        ;   1.8%      ;
 +----------------------------+-------------+
 
 
@@ -262,8 +262,8 @@ No paths to report.
 ; -5.348 ; dac_controller:uut4|dac_cntL[5]                                                                                    ; dac_controller:uut4|dac_cntL[5] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.081     ; 6.268      ;
 ; -5.348 ; dac_controller:uut4|dac_cntL[5]                                                                                    ; dac_controller:uut4|dac_cntL[2] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.081     ; 6.268      ;
 ; -5.332 ; dac_controller:uut4|dac_cntR[4]                                                                                    ; dac_controller:uut4|dac_cntR[5] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.080     ; 6.253      ;
-; -5.332 ; dac_controller:uut4|dac_cntR[4]                                                                                    ; dac_controller:uut4|dac_cntR[0] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.080     ; 6.253      ;
 ; -5.332 ; dac_controller:uut4|dac_cntR[4]                                                                                    ; dac_controller:uut4|dac_cntR[2] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.080     ; 6.253      ;
+; -5.332 ; dac_controller:uut4|dac_cntR[4]                                                                                    ; dac_controller:uut4|dac_cntR[0] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.080     ; 6.253      ;
 ; -5.322 ; dac_controller:uut4|dac_cntR[1]                                                                                    ; dac_controller:uut4|dac_cntR[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.082     ; 6.241      ;
 ; -5.302 ; dac_controller:uut4|dac_cntL[2]                                                                                    ; dac_controller:uut4|dac_cntL[0] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.081     ; 6.222      ;
 ; -5.302 ; dac_controller:uut4|dac_cntL[2]                                                                                    ; dac_controller:uut4|dac_cntL[5] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.081     ; 6.222      ;
@@ -277,8 +277,8 @@ No paths to report.
 ; -5.203 ; dac_controller:uut4|dac_cntR[3]                                                                                    ; dac_controller:uut4|dac_flagL   ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.082     ; 6.122      ;
 ; -5.178 ; dac_controller:uut4|dac_cntR[5]                                                                                    ; dac_controller:uut4|dac_flagR   ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.082     ; 6.097      ;
 ; -5.178 ; dac_controller:uut4|dac_cntR[5]                                                                                    ; dac_controller:uut4|dac_flagL   ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.082     ; 6.097      ;
-; -5.176 ; dac_controller:uut4|dac_cntR[4]                                                                                    ; dac_controller:uut4|dac_cntR[3] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.080     ; 6.097      ;
 ; -5.176 ; dac_controller:uut4|dac_cntR[4]                                                                                    ; dac_controller:uut4|dac_cntR[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.080     ; 6.097      ;
+; -5.176 ; dac_controller:uut4|dac_cntR[4]                                                                                    ; dac_controller:uut4|dac_cntR[3] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.080     ; 6.097      ;
 ; -5.173 ; dac_controller:uut4|dac_cntR[0]                                                                                    ; dac_controller:uut4|dac_cntR[0] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.081     ; 6.093      ;
 ; -5.173 ; dac_controller:uut4|dac_cntR[0]                                                                                    ; dac_controller:uut4|dac_cntR[2] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.081     ; 6.093      ;
 ; -5.173 ; dac_controller:uut4|dac_cntR[0]                                                                                    ; dac_controller:uut4|dac_cntR[5] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.081     ; 6.093      ;
@@ -1229,16 +1229,16 @@ No paths to report.
 ; -2.143 ; dac_controller:uut4|lrck_dac_cnt[8]                                                                                ; dac_controller:uut4|dac_cntR[3] ; uut5|altpll_component|auto_generated|pll1|clk[0] ; dac_controller:uut4|delay_flag ; 0.001        ; 1.828      ; 3.879      ;
 ; -2.143 ; dac_controller:uut4|lrck_dac_cnt[8]                                                                                ; dac_controller:uut4|dac_cntR[1] ; uut5|altpll_component|auto_generated|pll1|clk[0] ; dac_controller:uut4|delay_flag ; 0.001        ; 1.828      ; 3.879      ;
 ; -2.131 ; dac_controller:uut4|lrck_dac_cnt[8]                                                                                ; dac_controller:uut4|dac_flagR   ; uut5|altpll_component|auto_generated|pll1|clk[0] ; dac_controller:uut4|delay_flag ; 0.001        ; 1.826      ; 3.865      ;
-; -2.100 ; dac_controller:uut4|dac_cntL[1]                                                                                    ; dac_controller:uut4|dac_cntL[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 3.051      ;
 ; -2.100 ; dac_controller:uut4|dac_cntL[1]                                                                                    ; dac_controller:uut4|dac_cntL[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 3.051      ;
+; -2.100 ; dac_controller:uut4|dac_cntL[1]                                                                                    ; dac_controller:uut4|dac_cntL[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 3.051      ;
 ; -2.096 ; dac_controller:uut4|dac_cntL[1]                                                                                    ; dac_controller:uut4|dac_cntL[3] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 3.047      ;
 ; -2.091 ; dac_controller:uut4|dac_cntR[5]                                                                                    ; dac_controller:uut4|dac_cntR[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 3.042      ;
 ; -2.091 ; dac_controller:uut4|dac_cntR[5]                                                                                    ; dac_controller:uut4|dac_cntR[3] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 3.042      ;
 ; -2.078 ; dac_controller:uut4|dac_cntR[1]                                                                                    ; dac_controller:uut4|dac_cntR[5] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 3.029      ;
 ; -2.078 ; dac_controller:uut4|dac_cntR[1]                                                                                    ; dac_controller:uut4|dac_cntR[0] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 3.029      ;
 ; -2.078 ; dac_controller:uut4|dac_cntR[1]                                                                                    ; dac_controller:uut4|dac_cntR[2] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 3.029      ;
-; -2.076 ; dac_controller:uut4|dac_cntL[5]                                                                                    ; dac_controller:uut4|dac_cntL[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 3.019      ;
 ; -2.076 ; dac_controller:uut4|dac_cntL[5]                                                                                    ; dac_controller:uut4|dac_cntL[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 3.019      ;
+; -2.076 ; dac_controller:uut4|dac_cntL[5]                                                                                    ; dac_controller:uut4|dac_cntL[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 3.019      ;
 ; -2.072 ; dac_controller:uut4|dac_cntL[5]                                                                                    ; dac_controller:uut4|dac_cntL[3] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 3.015      ;
 ; -2.055 ; dac_controller:uut4|dac_cntR[3]                                                                                    ; dac_controller:uut4|dac_cntR[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.038     ; 3.004      ;
 ; -2.046 ; dac_controller:uut4|lrck_dac_cnt[8]                                                                                ; dac_controller:uut4|dac_cntR[4] ; uut5|altpll_component|auto_generated|pll1|clk[0] ; dac_controller:uut4|delay_flag ; 0.001        ; 1.826      ; 3.780      ;
@@ -1247,20 +1247,20 @@ No paths to report.
 ; -2.037 ; dac_controller:uut4|dac_cntR[4]                                                                                    ; dac_controller:uut4|dac_cntR[2] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.034     ; 2.990      ;
 ; -2.020 ; dac_controller:uut4|dac_cntR[1]                                                                                    ; dac_controller:uut4|dac_cntR[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.971      ;
 ; -2.020 ; dac_controller:uut4|dac_cntR[1]                                                                                    ; dac_controller:uut4|dac_cntR[3] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.971      ;
-; -2.010 ; dac_controller:uut4|dac_cntL[2]                                                                                    ; dac_controller:uut4|dac_cntL[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 2.953      ;
 ; -2.010 ; dac_controller:uut4|dac_cntL[2]                                                                                    ; dac_controller:uut4|dac_cntL[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 2.953      ;
+; -2.010 ; dac_controller:uut4|dac_cntL[2]                                                                                    ; dac_controller:uut4|dac_cntL[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 2.953      ;
 ; -2.006 ; dac_controller:uut4|dac_cntL[2]                                                                                    ; dac_controller:uut4|dac_cntL[3] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 2.949      ;
-; -1.999 ; dac_controller:uut4|dac_cntR[2]                                                                                    ; dac_controller:uut4|dac_cntR[5] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.950      ;
 ; -1.999 ; dac_controller:uut4|dac_cntR[2]                                                                                    ; dac_controller:uut4|dac_cntR[0] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.950      ;
+; -1.999 ; dac_controller:uut4|dac_cntR[2]                                                                                    ; dac_controller:uut4|dac_cntR[5] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.950      ;
 ; -1.999 ; dac_controller:uut4|dac_cntR[2]                                                                                    ; dac_controller:uut4|dac_cntR[2] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.950      ;
 ; -1.994 ; dac_controller:uut4|dac_cntR[5]                                                                                    ; dac_controller:uut4|dac_cntR[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.038     ; 2.943      ;
-; -1.994 ; dac_controller:uut4|dac_cntL[3]                                                                                    ; dac_controller:uut4|dac_cntL[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.945      ;
 ; -1.994 ; dac_controller:uut4|dac_cntL[3]                                                                                    ; dac_controller:uut4|dac_cntL[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.945      ;
+; -1.994 ; dac_controller:uut4|dac_cntL[3]                                                                                    ; dac_controller:uut4|dac_cntL[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.945      ;
 ; -1.990 ; dac_controller:uut4|dac_cntL[3]                                                                                    ; dac_controller:uut4|dac_cntL[3] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.941      ;
-; -1.987 ; dac_controller:uut4|dac_cntL[0]                                                                                    ; dac_controller:uut4|dac_cntL[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 2.930      ;
 ; -1.987 ; dac_controller:uut4|dac_cntL[0]                                                                                    ; dac_controller:uut4|dac_cntL[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 2.930      ;
-; -1.986 ; dac_controller:uut4|dac_cntL[4]                                                                                    ; dac_controller:uut4|dac_cntL[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.937      ;
+; -1.987 ; dac_controller:uut4|dac_cntL[0]                                                                                    ; dac_controller:uut4|dac_cntL[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 2.930      ;
 ; -1.986 ; dac_controller:uut4|dac_cntL[4]                                                                                    ; dac_controller:uut4|dac_cntL[4] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.937      ;
+; -1.986 ; dac_controller:uut4|dac_cntL[4]                                                                                    ; dac_controller:uut4|dac_cntL[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.937      ;
 ; -1.983 ; dac_controller:uut4|dac_cntL[0]                                                                                    ; dac_controller:uut4|dac_cntL[3] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.044     ; 2.926      ;
 ; -1.982 ; dac_controller:uut4|dac_cntL[4]                                                                                    ; dac_controller:uut4|dac_cntL[3] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.036     ; 2.933      ;
 ; -1.979 ; dac_controller:uut4|dac_cntR[4]                                                                                    ; dac_controller:uut4|dac_cntR[1] ; dac_controller:uut4|delay_flag                   ; dac_controller:uut4|delay_flag ; 1.000        ; -0.034     ; 2.932      ;
@@ -1844,7 +1844,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Dec 11 19:05:26 2023
+    Info: Processing started: Tue Dec 12 17:49:28 2023
 Info: Command: quartus_sta week12HW -c week12HW
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1938,9 +1938,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4904 megabytes
-    Info: Processing ended: Mon Dec 11 19:05:28 2023
+    Info: Peak virtual memory: 4911 megabytes
+    Info: Processing ended: Tue Dec 12 17:49:30 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
