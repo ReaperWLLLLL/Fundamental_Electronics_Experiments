@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Tue Dec 19 18:47:56 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : week13HW
+Top-level Entity Name : task3_top
+Family : Cyclone 10 LP
+Total logic elements : 1,677
+    Total combinational functions : 951
+    Dedicated logic registers : 1,256
+Total registers : 1256
+Total pins : 61
+Total virtual pins : 0
+Total memory bits : 221,184
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
