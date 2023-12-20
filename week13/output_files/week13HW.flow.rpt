@@ -1,5 +1,5 @@
 Flow report for week13HW
-Tue Dec 19 19:09:40 2023
+Wed Dec 20 18:18:00 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Dec 19 19:09:40 2023       ;
+; Flow Status                        ; Successful - Wed Dec 20 18:18:00 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; week13HW                                    ;
-; Top-level Entity Name              ; task3_top                                   ;
+; Top-level Entity Name              ; task2_top                                   ;
 ; Family                             ; Cyclone 10 LP                               ;
 ; Device                             ; 10CL006YE144C8G                             ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,605 / 6,272 ( 26 % )                      ;
-;     Total combinational functions  ; 957 / 6,272 ( 15 % )                        ;
-;     Dedicated logic registers      ; 1,271 / 6,272 ( 20 % )                      ;
-; Total registers                    ; 1271                                        ;
-; Total pins                         ; 61 / 89 ( 69 % )                            ;
+; Total logic elements               ; 1,505 / 6,272 ( 24 % )                      ;
+;     Total combinational functions  ; 841 / 6,272 ( 13 % )                        ;
+;     Dedicated logic registers      ; 1,231 / 6,272 ( 20 % )                      ;
+; Total registers                    ; 1231                                        ;
+; Total pins                         ; 59 / 89 ( 66 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 225,280 / 276,480 ( 81 % )                  ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/19/2023 19:09:01 ;
+; Start date & time ; 12/20/2023 18:17:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; week13HW            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                                                                                                                                                                                     ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 88974379758660.170298414015572                                                                                                                                                                            ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 88974379758660.170306744011732                                                                                                                                                                            ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                                                                                                                                                                       ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                                                                                                                                                                       ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                                                                                                                                                                       ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -88,9 +88,9 @@ https://fpgasoftware.intel.com/eula.
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                                                                                                                                        ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                                                                                                                                         ; --            ; --          ; --                                ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                                                                                                                                                                      ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                                                                                                                                                    ; --            ; task3_top   ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                                                                                                                                                    ; --            ; task3_top   ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                                                                                                                                                    ; --            ; task3_top   ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                                                                                                                                                    ; --            ; task2_top   ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                                                                                                                                                    ; --            ; task2_top   ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                                                                                                                                                    ; --            ; task2_top   ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                                                                                                                                                       ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                                                                                                                                     ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                                                                                                                                              ; --            ; --          ; --                                ;
@@ -122,7 +122,7 @@ https://fpgasoftware.intel.com/eula.
 ; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_BITS=52                                                                                                                                                                             ; --            ; --          ; auto_signaltap_0                  ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; auto_signaltap_0                  ;
 ; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=182                                                                                                                                                                             ; --            ; --          ; auto_signaltap_0                  ;
-; TOP_LEVEL_ENTITY                    ; task3_top                                                                                                                                                                                                 ; week13HW      ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; task2_top                                                                                                                                                                                                 ; week13HW      ; --          ; --                                ;
 ; USE_SIGNALTAP_FILE                  ; task2/stp3.stp                                                                                                                                                                                            ; --            ; --          ; --                                ;
 +-------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
 
@@ -132,12 +132,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4905 MB             ; 00:00:19                           ;
-; Fitter               ; 00:00:06     ; 1.5                     ; 6514 MB             ; 00:00:04                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4690 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.7                     ; 4926 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4650 MB             ; 00:00:01                           ;
-; Total                ; 00:00:34     ; --                      ; --                  ; 00:00:26                           ;
+; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4905 MB             ; 00:00:22                           ;
+; Fitter               ; 00:00:07     ; 1.4                     ; 6521 MB             ; 00:00:03                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4688 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.7                     ; 4929 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4652 MB             ; 00:00:02                           ;
+; Total                ; 00:00:34     ; --                      ; --                  ; 00:00:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

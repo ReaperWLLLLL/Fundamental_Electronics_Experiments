@@ -1,5 +1,5 @@
 Assembler report for week13HW
-Tue Dec 19 19:09:34 2023
+Wed Dec 20 18:17:54 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -39,9 +39,9 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Dec 19 19:09:34 2023 ;
+; Assembler Status      ; Successful - Wed Dec 20 18:17:54 2023 ;
 ; Revision Name         ; week13HW                              ;
-; Top-level Entity Name ; task3_top                             ;
+; Top-level Entity Name ; task2_top                             ;
 ; Family                ; Cyclone 10 LP                         ;
 ; Device                ; 10CL006YE144C8G                       ;
 +-----------------------+---------------------------------------+
@@ -78,8 +78,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+----------------------------------------------------------------------+
 ; Option         ; Setting                                                              ;
 +----------------+----------------------------------------------------------------------+
-; JTAG usercode  ; 0x001A8413                                                           ;
-; Checksum       ; 0x001A8413                                                           ;
+; JTAG usercode  ; 0x0019ADA3                                                           ;
+; Checksum       ; 0x0019ADA3                                                           ;
 +----------------+----------------------------------------------------------------------+
 
 
@@ -89,14 +89,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec 19 19:09:33 2023
+    Info: Processing started: Wed Dec 20 18:17:53 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off week13HW -c week13HW
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4691 megabytes
-    Info: Processing ended: Tue Dec 19 19:09:34 2023
+    Info: Peak virtual memory: 4688 megabytes
+    Info: Processing ended: Wed Dec 20 18:17:54 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

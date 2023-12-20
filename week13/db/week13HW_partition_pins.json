@@ -216,14 +216,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "send_en",
-					"strict" : false
-				},
-				{
-					"name" : "sci_tx",
-					"strict" : false
-				},
-				{
 					"name" : "rst",
 					"strict" : false
 				},
