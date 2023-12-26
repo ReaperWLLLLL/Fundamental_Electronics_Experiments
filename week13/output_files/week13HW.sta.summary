@@ -2,64 +2,220 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
-Slack : 44.290
+Type  : Slow 1200mV 85C Model Setup 'adc_data_ready_tri:uut7|send_en'
+Slack : -11.038
+TNS   : -84.315
+
+Type  : Slow 1200mV 85C Model Setup 'uut5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -10.607
+TNS   : -11.496
+
+Type  : Slow 1200mV 85C Model Setup 'uart_NbyteTran_3byteData_controller:uut8|state[0]'
+Slack : -10.145
+TNS   : -82.214
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.528
+TNS   : -16.899
+
+Type  : Slow 1200mV 85C Model Setup 'dac_controller_new_1213:uut4|delay_flag'
+Slack : -1.718
+TNS   : -22.295
+
+Type  : Slow 1200mV 85C Model Setup 'uut5|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 774.895
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.452
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.829
+TNS   : -6.632
+
+Type  : Slow 1200mV 85C Model Hold 'uut5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.027
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 94.921
+Type  : Slow 1200mV 85C Model Hold 'uut5|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.453
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
-Slack : 1.565
+Type  : Slow 1200mV 85C Model Hold 'dac_controller_new_1213:uut4|delay_flag'
+Slack : 0.510
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.402
+Type  : Slow 1200mV 85C Model Hold 'uart_NbyteTran_3byteData_controller:uut8|state[0]'
+Slack : 1.046
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
-Slack : 44.688
+Type  : Slow 1200mV 85C Model Hold 'adc_data_ready_tri:uut7|send_en'
+Slack : 1.562
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.400
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'dac_controller_new_1213:uut4|delay_flag'
+Slack : -3.444
+TNS   : -30.680
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'adc_data_ready_tri:uut7|send_en'
+Slack : -3.444
+TNS   : -3.444
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'uart_NbyteTran_3byteData_controller:uut8|state[0]'
+Slack : 0.185
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 95.271
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : 19.620
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
-Slack : 1.408
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'uut5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 75.957
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.263
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'uut5|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 390.393
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
-Slack : 47.597
+Type  : Slow 1200mV 0C Model Setup 'adc_data_ready_tri:uut7|send_en'
+Slack : -10.772
+TNS   : -81.688
+
+Type  : Slow 1200mV 0C Model Setup 'uart_NbyteTran_3byteData_controller:uut8|state[0]'
+Slack : -9.882
+TNS   : -79.203
+
+Type  : Slow 1200mV 0C Model Setup 'uut5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -9.683
+TNS   : -10.363
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.305
+TNS   : -15.605
+
+Type  : Slow 1200mV 0C Model Setup 'dac_controller_new_1213:uut4|delay_flag'
+Slack : -1.539
+TNS   : -19.247
+
+Type  : Slow 1200mV 0C Model Setup 'uut5|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 775.161
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.728
+TNS   : -5.824
+
+Type  : Slow 1200mV 0C Model Hold 'uut5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.113
+TNS   : -0.113
+
+Type  : Slow 1200mV 0C Model Hold 'uut5|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'dac_controller_new_1213:uut4|delay_flag'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'uart_NbyteTran_3byteData_controller:uut8|state[0]'
+Slack : 0.988
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'adc_data_ready_tri:uut7|send_en'
+Slack : 1.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'dac_controller_new_1213:uut4|delay_flag'
+Slack : -3.444
+TNS   : -30.680
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'adc_data_ready_tri:uut7|send_en'
+Slack : -3.444
+TNS   : -3.444
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'uart_NbyteTran_3byteData_controller:uut8|state[0]'
+Slack : 0.071
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 19.570
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'uut5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 75.964
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'uut5|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 390.399
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'adc_data_ready_tri:uut7|send_en'
+Slack : -4.785
+TNS   : -36.306
+
+Type  : Fast 1200mV 0C Model Setup 'uut5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -4.333
+TNS   : -4.874
+
+Type  : Fast 1200mV 0C Model Setup 'uart_NbyteTran_3byteData_controller:uut8|state[0]'
+Slack : -4.135
+TNS   : -32.813
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.405
+TNS   : -4.557
+
+Type  : Fast 1200mV 0C Model Setup 'dac_controller_new_1213:uut4|delay_flag'
+Slack : -0.144
+TNS   : -1.198
+
+Type  : Fast 1200mV 0C Model Setup 'uut5|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 778.597
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.484
+TNS   : -3.872
+
+Type  : Fast 1200mV 0C Model Hold 'uut5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'uut5|altpll_component|auto_generated|pll1|clk[1]'
 Slack : 0.186
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 97.634
+Type  : Fast 1200mV 0C Model Hold 'dac_controller_new_1213:uut4|delay_flag'
+Slack : 0.205
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.656
+Type  : Fast 1200mV 0C Model Hold 'uart_NbyteTran_3byteData_controller:uut8|state[0]'
+Slack : 0.278
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.424
+Type  : Fast 1200mV 0C Model Hold 'adc_data_ready_tri:uut7|send_en'
+Slack : 0.517
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'dac_controller_new_1213:uut4|delay_flag'
+Slack : -3.000
+TNS   : -22.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'adc_data_ready_tri:uut7|send_en'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'uart_NbyteTran_3byteData_controller:uut8|state[0]'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 19.346
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'uut5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 76.064
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'uut5|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 390.497
 TNS   : 0.000
 
 ------------------------------------------------------------

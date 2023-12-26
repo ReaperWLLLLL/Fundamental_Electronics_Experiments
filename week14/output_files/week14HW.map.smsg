@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at uart_rx_Nbyte_controller.v(29): always construct contains both blocking and non-blocking assignments File: G:/software/FPGA/workplace/week14/task2/uart_rx_Nbyte_controller.v Line: 29

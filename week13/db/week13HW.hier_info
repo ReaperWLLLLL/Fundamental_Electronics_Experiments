@@ -1,6 +1,6 @@
-|task2_top
-clk => clk.IN3
-rst => rst.IN3
+|task3_top
+clk => clk.IN6
+rst => rst.IN6
 sdout_adc => sdout_adc.IN1
 lrck_dac <= lrck_dac.DB_MAX_OUTPUT_PORT_TYPE
 sclk_dac <= dac_controller_new_1213:uut4.sclk_dac
@@ -8,7 +8,7 @@ mclk_dac <= dac_controller_new_1213:uut4.mclk_dac
 sdata_dac <= dac_controller_new_1213:uut4.sdata_dac
 mclk_adc <= adc_controller_new_1213:uut6.mclk_adc
 sclk_adc <= adc_controller_new_1213:uut6.sclk_adc
-lrck_adc <= adc_controller_new_1213:uut6.lrck_adc
+lrck_adc <= lrck_adc.DB_MAX_OUTPUT_PORT_TYPE
 buzz <= <VCC>
 dataL_adc[0] <= adc_controller_new_1213:uut6.dataL_adc
 dataL_adc[1] <= adc_controller_new_1213:uut6.dataL_adc
@@ -34,33 +34,35 @@ dataL_adc[20] <= adc_controller_new_1213:uut6.dataL_adc
 dataL_adc[21] <= adc_controller_new_1213:uut6.dataL_adc
 dataL_adc[22] <= adc_controller_new_1213:uut6.dataL_adc
 dataL_adc[23] <= adc_controller_new_1213:uut6.dataL_adc
-dataR_adc[0] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[1] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[2] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[3] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[4] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[5] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[6] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[7] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[8] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[9] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[10] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[11] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[12] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[13] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[14] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[15] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[16] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[17] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[18] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[19] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[20] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[21] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[22] <= adc_controller_new_1213:uut6.dataR_adc
-dataR_adc[23] <= adc_controller_new_1213:uut6.dataR_adc
+dataR_adc[0] <= dataR_adc[0].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[1] <= dataR_adc[1].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[2] <= dataR_adc[2].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[3] <= dataR_adc[3].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[4] <= dataR_adc[4].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[5] <= dataR_adc[5].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[6] <= dataR_adc[6].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[7] <= dataR_adc[7].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[8] <= dataR_adc[8].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[9] <= dataR_adc[9].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[10] <= dataR_adc[10].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[11] <= dataR_adc[11].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[12] <= dataR_adc[12].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[13] <= dataR_adc[13].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[14] <= dataR_adc[14].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[15] <= dataR_adc[15].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[16] <= dataR_adc[16].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[17] <= dataR_adc[17].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[18] <= dataR_adc[18].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[19] <= dataR_adc[19].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[20] <= dataR_adc[20].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[21] <= dataR_adc[21].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[22] <= dataR_adc[22].DB_MAX_OUTPUT_PORT_TYPE
+dataR_adc[23] <= dataR_adc[23].DB_MAX_OUTPUT_PORT_TYPE
+send_en <= send_en.DB_MAX_OUTPUT_PORT_TYPE
+sci_tx <= uart_tx_byte:uut9.sci_tx
 
 
-|task2_top|rom_data_tri:uut1
+|task3_top|rom_data_tri:uut1
 lr_ch_tri_clk => addr_chL[0]~reg0.CLK
 lr_ch_tri_clk => addr_chL[1]~reg0.CLK
 lr_ch_tri_clk => addr_chL[2]~reg0.CLK
@@ -111,7 +113,7 @@ addr_chR[6] <= addr_chR[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 addr_chR[7] <= addr_chR[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|task2_top|rom_base:uut2
+|task3_top|rom_base:uut2
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -147,7 +149,7 @@ q[22] <= altsyncram:altsyncram_component.q_a
 q[23] <= altsyncram:altsyncram_component.q_a
 
 
-|task2_top|rom_base:uut2|altsyncram:altsyncram_component
+|task3_top|rom_base:uut2|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -228,7 +230,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|task2_top|rom_base:uut2|altsyncram:altsyncram_component|altsyncram_91d1:auto_generated
+|task3_top|rom_base:uut2|altsyncram:altsyncram_component|altsyncram_91d1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -471,7 +473,7 @@ q_a[22] <= ram_block1a22.PORTADATAOUT
 q_a[23] <= ram_block1a23.PORTADATAOUT
 
 
-|task2_top|rom_harmony:uut3
+|task3_top|rom_harmony:uut3
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -507,7 +509,7 @@ q[22] <= altsyncram:altsyncram_component.q_a
 q[23] <= altsyncram:altsyncram_component.q_a
 
 
-|task2_top|rom_harmony:uut3|altsyncram:altsyncram_component
+|task3_top|rom_harmony:uut3|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -588,7 +590,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|task2_top|rom_harmony:uut3|altsyncram:altsyncram_component|altsyncram_ccd1:auto_generated
+|task3_top|rom_harmony:uut3|altsyncram:altsyncram_component|altsyncram_ccd1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -831,7 +833,7 @@ q_a[22] <= ram_block1a22.PORTADATAOUT
 q_a[23] <= ram_block1a23.PORTADATAOUT
 
 
-|task2_top|dac_controller_new_1213:uut4
+|task3_top|dac_controller_new_1213:uut4
 clk => sdata_dac~reg0.CLK
 clk => lrck_dac_buf.CLK
 clk => bit_cnt[0].CLK
@@ -937,7 +939,7 @@ lrck_dac <= lrck_dac.DB_MAX_OUTPUT_PORT_TYPE
 sdata_dac <= sdata_dac~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|task2_top|adc_controller_new_1213:uut6
+|task3_top|adc_controller_new_1213:uut6
 clk => dataR_adc[0]~reg0.CLK
 clk => dataR_adc[1]~reg0.CLK
 clk => dataR_adc[2]~reg0.CLK
@@ -1211,13 +1213,13 @@ dataR_adc[22] <= dataR_adc[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dataR_adc[23] <= dataR_adc[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|task2_top|mypll2:uut5
+|task3_top|mypll2:uut5
 inclk0 => sub_wire1[0].IN1
 c0 <= altpll:altpll_component.clk
 c1 <= altpll:altpll_component.clk
 
 
-|task2_top|mypll2:uut5|altpll:altpll_component
+|task3_top|mypll2:uut5|altpll:altpll_component
 inclk[0] => mypll2_altpll:auto_generated.inclk[0]
 inclk[1] => mypll2_altpll:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
@@ -1277,7 +1279,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|task2_top|mypll2:uut5|altpll:altpll_component|mypll2_altpll:auto_generated
+|task3_top|mypll2:uut5|altpll:altpll_component|mypll2_altpll:auto_generated
 clk[0] <= pll1.CLK
 clk[1] <= pll1.CLK1
 clk[2] <= pll1.CLK2
@@ -1285,5 +1287,216 @@ clk[3] <= pll1.CLK3
 clk[4] <= pll1.CLK4
 inclk[0] => pll1.CLK
 inclk[1] => pll1.CLK1
+
+
+|task3_top|adc_data_ready_tri:uut7
+clk => send_en~reg0.CLK
+clk => pulse3.CLK
+clk => pulse2.CLK
+clk => pulse1.CLK
+rst => send_en~reg0.ACLR
+rst => pulse3.ACLR
+rst => pulse2.ACLR
+rst => pulse1.ACLR
+lrck => pulse1.DATAIN
+send_en <= send_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|task3_top|uart_NbyteTran_3byteData_controller:uut8
+clk => frame_cnt[0].CLK
+clk => frame_cnt[1].CLK
+clk => frame_cnt[2].CLK
+clk => frame_cnt[3].CLK
+clk => frame_cnt[4].CLK
+clk => frame_cnt[5].CLK
+clk => frame_cnt[6].CLK
+clk => frame_cnt[7].CLK
+clk => frame_cnt[8].CLK
+clk => frame_cnt[9].CLK
+clk => frame_cnt[10].CLK
+clk => state[0]~reg0.CLK
+clk => state[1]~reg0.CLK
+clk => state[2]~reg0.CLK
+clk => state[3]~reg0.CLK
+clk => state[4]~reg0.CLK
+rst => frame_cnt[0].ACLR
+rst => frame_cnt[1].ACLR
+rst => frame_cnt[2].ACLR
+rst => frame_cnt[3].ACLR
+rst => frame_cnt[4].ACLR
+rst => frame_cnt[5].ACLR
+rst => frame_cnt[6].ACLR
+rst => frame_cnt[7].ACLR
+rst => frame_cnt[8].ACLR
+rst => frame_cnt[9].ACLR
+rst => frame_cnt[10].ACLR
+rst => state[0]~reg0.ACLR
+rst => state[1]~reg0.ACLR
+rst => state[2]~reg0.ACLR
+rst => state[3]~reg0.ACLR
+rst => state[4]~reg0.ACLR
+send_en => nextstate.OUTPUTSELECT
+send_en => nextstate.OUTPUTSELECT
+send_en => Mux12.IN31
+send_en => Selector0.IN7
+send_en => frame_cnt[10].ENA
+send_en => frame_cnt[9].ENA
+send_en => frame_cnt[8].ENA
+send_en => frame_cnt[7].ENA
+send_en => frame_cnt[6].ENA
+send_en => frame_cnt[5].ENA
+send_en => frame_cnt[4].ENA
+send_en => frame_cnt[3].ENA
+send_en => frame_cnt[2].ENA
+send_en => frame_cnt[1].ENA
+send_en => frame_cnt[0].ENA
+tx_done => Mux2.IN31
+tx_done => Mux1.IN31
+tx_done => Mux3.IN25
+tx_done => Mux3.IN26
+tx_done => Mux3.IN27
+tx_done => Mux3.IN28
+tx_done => Mux3.IN29
+tx_done => Mux3.IN30
+tx_done => Mux3.IN31
+tx_done => Mux0.IN31
+data[0] => tx_d.DATAA
+data[0] => Mux4.IN29
+data[0] => Mux4.IN30
+data[0] => Mux4.IN31
+data[1] => tx_d.DATAA
+data[1] => Mux5.IN29
+data[1] => Mux5.IN30
+data[1] => Mux5.IN31
+data[2] => tx_d.DATAA
+data[2] => Mux6.IN29
+data[2] => Mux6.IN30
+data[2] => Mux6.IN31
+data[3] => tx_d.DATAA
+data[3] => Mux7.IN29
+data[3] => Mux7.IN30
+data[3] => Mux7.IN31
+data[4] => tx_d.DATAA
+data[4] => Mux8.IN29
+data[4] => Mux8.IN30
+data[4] => Mux8.IN31
+data[5] => tx_d.DATAA
+data[5] => Mux9.IN29
+data[5] => Mux9.IN30
+data[5] => Mux9.IN31
+data[6] => tx_d.DATAA
+data[6] => Mux10.IN29
+data[6] => Mux10.IN30
+data[6] => Mux10.IN31
+data[7] => tx_d.DATAA
+data[7] => Mux11.IN29
+data[7] => Mux11.IN30
+data[7] => Mux11.IN31
+data[8] => Mux4.IN27
+data[8] => Mux4.IN28
+data[9] => Mux5.IN27
+data[9] => Mux5.IN28
+data[10] => Mux6.IN27
+data[10] => Mux6.IN28
+data[11] => Mux7.IN27
+data[11] => Mux7.IN28
+data[12] => Mux8.IN27
+data[12] => Mux8.IN28
+data[13] => Mux9.IN27
+data[13] => Mux9.IN28
+data[14] => Mux10.IN27
+data[14] => Mux10.IN28
+data[15] => Mux11.IN27
+data[15] => Mux11.IN28
+data[16] => Mux4.IN25
+data[16] => Mux4.IN26
+data[17] => Mux5.IN25
+data[17] => Mux5.IN26
+data[18] => Mux6.IN25
+data[18] => Mux6.IN26
+data[19] => Mux7.IN25
+data[19] => Mux7.IN26
+data[20] => Mux8.IN25
+data[20] => Mux8.IN26
+data[21] => Mux9.IN25
+data[21] => Mux9.IN26
+data[22] => Mux10.IN25
+data[22] => Mux10.IN26
+data[23] => Mux11.IN25
+data[23] => Mux11.IN26
+tx_en <= tx_en$latch.DB_MAX_OUTPUT_PORT_TYPE
+send_done <= <GND>
+tx_d[0] <= tx_d[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tx_d[1] <= tx_d[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tx_d[2] <= tx_d[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tx_d[3] <= tx_d[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tx_d[4] <= tx_d[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tx_d[5] <= tx_d[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tx_d[6] <= tx_d[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tx_d[7] <= tx_d[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= state[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[4] <= state[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nextstate[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+nextstate[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+nextstate[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+nextstate[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+nextstate[4] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|task3_top|uart_tx_byte:uut9
+clk => tx_done~reg0.CLK
+clk => sci_tx~reg0.CLK
+clk => tx_num[0].CLK
+clk => tx_num[1].CLK
+clk => tx_num[2].CLK
+clk => tx_num[3].CLK
+clk => div_cnt[0].CLK
+clk => div_cnt[1].CLK
+clk => div_cnt[2].CLK
+clk => div_cnt[3].CLK
+clk => div_cnt[4].CLK
+clk => div_cnt[5].CLK
+clk => div_cnt[6].CLK
+clk => div_cnt[7].CLK
+clk => div_cnt[8].CLK
+clk => div_cnt[9].CLK
+clk => div_cnt[10].CLK
+clk => div_cnt[11].CLK
+clk => div_cnt[12].CLK
+clk => tx_flag.CLK
+rst => tx_done~reg0.ACLR
+rst => sci_tx~reg0.PRESET
+rst => tx_num[0].ACLR
+rst => tx_num[1].ACLR
+rst => tx_num[2].ACLR
+rst => tx_num[3].ACLR
+rst => div_cnt[0].ACLR
+rst => div_cnt[1].ACLR
+rst => div_cnt[2].ACLR
+rst => div_cnt[3].ACLR
+rst => div_cnt[4].ACLR
+rst => div_cnt[5].ACLR
+rst => div_cnt[6].ACLR
+rst => div_cnt[7].ACLR
+rst => div_cnt[8].ACLR
+rst => div_cnt[9].ACLR
+rst => div_cnt[10].ACLR
+rst => div_cnt[11].ACLR
+rst => div_cnt[12].ACLR
+rst => tx_flag.ACLR
+tx_en => tx_flag.OUTPUTSELECT
+rx_d[0] => Mux0.IN15
+rx_d[1] => Mux0.IN14
+rx_d[2] => Mux0.IN13
+rx_d[3] => Mux0.IN12
+rx_d[4] => Mux0.IN11
+rx_d[5] => Mux0.IN10
+rx_d[6] => Mux0.IN9
+rx_d[7] => Mux0.IN8
+sci_tx <= sci_tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx_done <= tx_done~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

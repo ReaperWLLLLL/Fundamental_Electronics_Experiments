@@ -1,0 +1,7 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,mymult:uut14|lpm_mult:lpm_mult_component|mult_v6n:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,mymult:uut13|lpm_mult:lpm_mult_component|mult_v6n:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,mymult:uut13|lpm_mult:lpm_mult_component|mult_v6n:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,mymult:uut14|lpm_mult:lpm_mult_component|mult_v6n:auto_generated|mac_out4,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,mymult:uut13|lpm_mult:lpm_mult_component|mult_v6n:auto_generated|mac_mult3,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,mymult:uut14|lpm_mult:lpm_mult_component|mult_v6n:auto_generated|mac_mult3,
