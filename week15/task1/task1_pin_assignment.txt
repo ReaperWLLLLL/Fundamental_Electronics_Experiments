@@ -1,0 +1,14 @@
+To,     Location
+clk,    PIN_23
+rst,  PIN_58
+sdata_dac, PIN_42
+sclk_dac,  PIN_38
+lrck_dac,  PIN_33
+mclk_dac,  PIN_31
+sdout_adc, PIN_3
+sclk_adc,  PIN_1
+lrck_adc,  PIN_143
+mclk_adc,  PIN_141
+buzz, PIN_72
+sci_tx, PIN_51
+sci_rx, PIN_52
