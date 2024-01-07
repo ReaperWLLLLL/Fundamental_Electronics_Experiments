@@ -49,6 +49,8 @@
 \subsection{实现功能}
 最终构建的测量系统实现主要功能如图\ref{fig:system}所示。FPGA作为下位机，控制DAC实现双路数模转换，控制ADC实现双路模拟测量。使用simulink搭建上位机，通过串口与FPGA通信，实现数据的传输与显示。
 
+在测试中，将DAC的输出与ADC的输入相接实现回环测试。
+
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{system.png}
